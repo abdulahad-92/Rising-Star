@@ -1,0 +1,1012 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MUET Entry Test Report - 20250526</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- ApexCharts -->
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        <!-- html2canvas -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+        <!-- Load jsPDF explicitly -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        <style>
+            body {
+                font-family: 'Segoe UI', Arial, sans-serif;
+                color: #333;
+                background-color: #f0f2f5;
+                padding: 20px 0;
+                line-height: 1.6;
+            }
+            .container {
+                max-width: 1400px;
+                margin: 0 auto;
+            }
+            h1 {
+                color: #2E86C1;
+                text-align: center;
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+                font-weight: 600;
+            }
+            h2 {
+                color: #444;
+                font-size: 1.75rem;
+                margin-bottom: 20px;
+                font-weight: 500;
+                text-align: center;
+            }
+            h3 {
+                color: #555;
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+                font-weight: 500;
+                text-align: center;
+            }
+            #section-section-wise h3 {
+                margin-bottom: 30px; /* Added space between section title and graph title */
+            }
+            .section {
+                margin-bottom: 80px;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                transition: transform 0.2s;
+                page-break-inside: avoid;
+            }
+            .section:hover {
+                transform: translateY(-2px);
+            }
+            .summary-card {
+                background-color: #e3f2fd;
+                padding: 15px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+            .chart-container {
+                position: relative;
+                width: 100%;
+                height: 400px;
+                margin: 20px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .strength-weakness-container {
+                height: 350px;
+                margin-bottom: 30px;
+                width: 100%;
+                max-width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .strength-weakness-wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                height: 900px;
+                align-items: center;
+                page-break-inside: avoid;
+            }
+            .chart-container::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 40px;
+                height: 40px;
+                border: 4px solid #2E86C1;
+                border-top: 4px solid transparent;
+                border-radius: 50%;
+                animation: spin 1s linear infinite;
+                transform: translate(-50%, -50%);
+            }
+            .chart-container.loaded::before {
+                display: none;
+            }
+            .no-weakness-message::before {
+                display: none !important;
+            }
+            .no-weakness-message {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 350px;
+                text-align: center;
+            }
+            .no-weakness-text {
+                font-size: 1.2rem;
+                color: #388E3C;
+                font-weight: 500;
+            }
+            .summary-text {
+                font-size: 1.1rem;
+                margin-bottom: 15px;
+                color: #666;
+            }
+            ul {
+                padding-left: 20px;
+            }
+            li {
+                margin-bottom: 10px;
+                font-size: 1rem;
+            }
+            .tip-critical {
+                color: #D32F2F;
+                font-weight: 500;
+            }
+            .tip-moderate {
+                color: #F57C00;
+                font-weight: 500;
+            }
+            .tip-maintenance {
+                color: #388E3C;
+                font-weight: 500;
+            }
+            .quote {
+                font-style: italic;
+                color: #555;
+                margin: 10px 0;
+                font-size: 0.95rem;
+            }
+            .featured-quote {
+                font-size: 1.1rem;
+                color: #2E86C1;
+                font-weight: 500;
+            }
+            .download-btn {
+                margin-bottom: 20px;
+                margin-right: 20px;
+                text-align: right;
+            }
+            .loading-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: rgba(0, 0, 0, 0.5);
+                backdrop-filter: blur(5px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 1000;
+                color: white;
+                font-size: 1.2rem;
+            }
+            .spinner {
+                width: 40px;
+                height: 40px;
+                border: 4px solid #f3f3f3;
+                border-top: 4px solid #2E86C1;
+                border-radius: 50%;
+                animation: spin 1s linear infinite;
+                margin-right: 10px;
+            }
+            @media print {
+                body {
+                    padding: 10mm;
+                }
+                .container {
+                    width: 100%;
+                    max-width: 190mm; /* A4 width minus margins */
+                    margin: 0 auto;
+                }
+                h1 {
+                    font-size: 2.5rem;
+                    margin-bottom: 10mm;
+                }
+                h2 {
+                    font-size: 1.75rem;
+                    margin-bottom: 10mm;
+                    text-align: center;
+                }
+                h3 {
+                    font-size: 1.5rem;
+                }
+                #section-section-wise h3 {
+                    margin-bottom: 30px; /* Maintain space in PDF */
+                }
+                .summary-text {
+                    font-size: 1.1rem;
+                }
+                .section {
+                    margin-bottom: 20px;
+                    padding: 15px;
+                    page-break-inside: avoid;
+                    break-inside: avoid;
+                }
+                .strength-weakness-wrapper {
+                    height: 700px;
+                    gap: 30px;
+                    page-break-inside: avoid;
+                    break-inside: avoid;
+                }
+                .chart-container {
+                    height: 350px;
+                }
+                .strength-weakness-container {
+                    height: 300px;
+                    max-width: 500px;
+                }
+                .no-weakness-text {
+                    font-size: 1.2rem;
+                }
+                .download-btn {
+                    display: none;
+                }
+                .loading-overlay {
+                    display: none;
+                }
+                .apexcharts-toolbar {
+                    display: none;
+                }
+            }
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+            @media (max-width: 768px) {
+                h1 {
+                    font-size: 2rem;
+                }
+                h2 {
+                    font-size: 1.5rem;
+                }
+                h3 {
+                    font-size: 1.25rem;
+                }
+                .summary-text {
+                    font-size: 1rem;
+                }
+                .chart-container {
+                    height: 300px;
+                }
+                .strength-weakness-container {
+                    height: 450px;
+                    max-width: 100%;
+                }
+                .strength-weakness-wrapper {
+                    height: 1430px;
+                }
+                .section {
+                    padding: 20px;
+                    margin-bottom: 88px;
+                }
+                .tips-section {
+                    margin-top: 50px !important;
+                }
+                .no-weakness-text {
+                    font-size: 1rem;
+                }
+            }
+            @media (max-width: 576px) {
+                h1 {
+                    font-size: 1.5rem;
+                }
+                h2 {
+                    font-size: 1.2rem;
+                }
+                h3 {
+                    font-size: 1rem;
+                }
+                .summary-text {
+                    font-size: 0.9rem;
+                }
+                .chart-container {
+                    height: 250px;
+                }
+                .strength-weakness-container {
+                    height: 400px;
+                    max-width: 100%;
+                }
+                .strength-weakness-wrapper {
+                    height: 1300px;
+                }
+                .section {
+                    margin-bottom: 77px;
+                }
+                .no-weakness-text {
+                    font-size: 0.9rem;
+                }
+            }
+            @media (min-width: 768px) {
+                .chart-container {
+                    height: 350px;
+                }
+                .strength-weakness-wrapper {
+                    height: 1400px;
+                }
+                .strength-weakness-container {
+                    height: 350px;
+                }
+                .row > .col-md-4, .row > .col-lg-4 {
+                    padding: 0 10px;
+                }
+            }
+            @media (min-width: 1440px) {
+                h1 {
+                    font-size: 3rem;
+                }
+                h2 {
+                    font-size: 2rem;
+                }
+                h3 {
+                    font-size: 1.75rem;
+                }
+                .summary-text {
+                    font-size: 1.2rem;
+                }
+                .chart-container {
+                    height: 300px;
+                }
+                .strength-weakness-wrapper {
+                    height: 1600px;
+                }
+                .strength-weakness-container {
+                    height: 400px;
+                }
+                .row > .col-lg-4 {
+                    flex: 0 0 30%;
+                    max-width: 30%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="download-btn">
+            <button class="btn btn-primary" onclick="downloadPDF()">Download as PDF</button>
+        </div>
+        <div class="container" id="content-to-pdf">
+            <h1>MUET Entry Test Performance Report</h1>
+            <h2>Test Date: May 24, 2025 | Report Generated: 06:02 AM PKT on May 25, 2025</h2>
+
+            <div class="section summary-card" id="section-summary">
+                <h3>Quick Summary</h3>
+                <p class="summary-text">Score: 21/100 (21.00%)</p>
+                <p class="summary-text">Top Strength: Physics (52.00%)</p>
+                <p class="summary-text">Critical Weak Area: Mathematics - Algebra (0.00%)</p>
+            </div>
+
+            <div class="section" id="section-overall">
+                <h3>Overall Performance</h3>
+                <p class="summary-text">Score: 21/100 (21.00%)</p>
+                <p class="summary-text">Attempted: 100, Skipped: 0</p>
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-4 mb-3">
+                        <div class="chart-container" id="progressChart"></div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4 mb-3">
+                        <div class="chart-container" id="overallPieChart"></div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <div class="chart-container" id="overallBarChart"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="section-section-wise">
+                <h3>Section-wise Performance</h3>
+                <div class="chart-container" id="sectionChart"></div>
+            </div>
+
+            <div class="section" id="section-topic-wise">
+                <h3>Topic-wise Insights</h3>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6 mb-4"><h4>Mathematics</h4><div class="chart-container" id="topicChart_Mathematics"></div></div><div class="col-12 col-md-6 col-lg-6 mb-4"><h4>Physics</h4><div class="chart-container" id="topicChart_Physics"></div></div><div class="col-12 col-md-6 col-lg-6 mb-4"><h4>Chemistry</h4><div class="chart-container" id="topicChart_Chemistry"></div></div><div class="col-12 col-md-6 col-lg-6 mb-4"><h4>English</h4><div class="chart-container" id="topicChart_English"></div></div>
+                </div>
+            </div>
+
+            <div class="section" id="section-strength-weakness">
+                <h3>Strengths & Weaknesses</h3>
+                <div class="strength-weakness-wrapper">
+                    <div class="chart-container strength-weakness-container" id="strengthDonutChart"></div>
+                    
+        <div class="chart-container strength-weakness-container" id="weakDonutChart"></div>
+    
+                    <div class="chart-container strength-weakness-container" id="radarChart"></div>
+                </div>
+                <div style="margin-top: 50px;"></div>
+            </div>
+
+            <div class="section tips-section" id="section-tips" style="margin-top: 80px;">
+                <h3>Tips for Improvement</h3>
+                <ul><li class="tip-critical">Overall Performance: Your score is below 40%. Focus on consistent daily practice across all sections.</li><li class="tip-critical">Mathematics: Practice 15 problems daily on weak topics like Trigonometry or Calculus.</li><li class="tip-critical">Physics: Solve 10 numerical problems daily on Mechanics or Electromagnetism.</li><li class="tip-critical">Chemistry: Review Organic Chemistry or Acids and Bases with flashcards.</li><li class="tip-critical">English: Improve vocabulary and grammar with daily reading and writing.</li></ul>
+            </div>
+
+            <div class="section" id="section-quotes">
+                <h3>Keep Going!</h3>
+                <p class="quote featured-quote">Every small step forward is progress—keep going! - Unknown</p><p class="quote ">Challenges are just opportunities in disguise. Take them on! - Unknown</p><p class="quote ">The journey of a thousand miles begins with one step. - Lao Tzu</p>
+            </div>
+        </div>
+        <div class="loading-overlay" id="loadingOverlay" style="display: none;">
+            <div class="spinner"></div>
+            <span id="loadingMessage">Preparing PDF...</span>
+        </div>
+
+        <script>
+            function markChartLoaded(id) {
+                document.querySelector('#' + id).classList.add('loaded');
+            }
+
+            // Progress Chart
+            new ApexCharts(document.querySelector("#progressChart"), {
+                chart: {
+                    type: 'radialBar',
+                    height: '100%'
+                },
+                series: [21.0],
+                plotOptions: {
+                    radialBar: {
+                        hollow: {
+                            size: '70%'
+                        },
+                        dataLabels: {
+                            show: true,
+                            name: {
+                                show: true,
+                                fontSize: '22px'
+                            },
+                            value: {
+                                show: true,
+                                fontSize: 16,
+                                formatter: function (val) {
+                                    return val + '%';
+                                }
+                            }
+                        }
+                    }
+                },
+                labels: ['Score'],
+                colors: ['#2E86C1'],
+                title: {
+                    text: 'Overall Score',
+                    align: 'center'
+                },
+                responsive: [{
+                    breakpoint: 576,
+                    options: {
+                        chart: {
+                            height: 250
+                        }
+                    }
+                }]
+            }).render().then(() => markChartLoaded('progressChart'));
+
+            // Overall Pie Chart (Distribution)
+            new ApexCharts(document.querySelector("#overallPieChart"), {
+                chart: {
+                    type: 'pie',
+                    height: '100%'
+                },
+                series: [21, 79, 0],
+                labels: ["Correct", "Incorrect", "Skipped"],
+                colors: ['#4CAF50', '#F44336', '#FF9800'],
+                title: {
+                    text: 'Answer Distribution',
+                    align: 'center'
+                },
+                responsive: [{
+                    breakpoint: 576,
+                    options: {
+                        chart: {
+                            height: 250
+                        },
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }]
+            }).render().then(() => markChartLoaded('overallPieChart'));
+
+            // Overall Bar Chart (Performance Breakdown)
+            new ApexCharts(document.querySelector("#overallBarChart"), {
+                chart: {
+                    type: 'bar',
+                    height: '100%'
+                },
+                series: [{
+                    name: 'Count',
+                    data: [21, 79, 0]
+                }],
+                xaxis: {
+                    categories: ["Correct", "Incorrect", "Skipped"],
+                    title: {
+                        text: 'Categories'
+                    }
+                },
+                yaxis: {
+                    max: 100,
+                    title: {
+                        text: 'Questions'
+                    }
+                },
+                colors: ['#4CAF50', '#F44336', '#FF9800'],
+                title: {
+                    text: 'Performance Breakdown',
+                    align: 'center'
+                },
+                responsive: [{
+                    breakpoint: 576,
+                    options: {
+                        chart: {
+                            height: 250
+                        }
+                    }
+                }]
+            }).render().then(() => markChartLoaded('overallBarChart'));
+
+            // Section-wise Performance Chart
+            new ApexCharts(document.querySelector("#sectionChart"), {
+                chart: {
+                    type: 'bar',
+                    height: '100%'
+                },
+                series: [{
+                    name: 'Accuracy (%)',
+                    data: [48.0, 52.0, 48.0, 52.0]
+                }],
+                xaxis: {
+                    categories: ["Mathematics", "Physics", "Chemistry", "English"],
+                    title: {
+                        text: 'Sections'
+                    }
+                },
+                yaxis: {
+                    max: 100,
+                    title: {
+                        text: 'Accuracy (%)'
+                    }
+                },
+                colors: ['#2196F3', '#4CAF50', '#F44336', '#9C27B0'],
+                title: {
+                    text: 'Section-wise Accuracy',
+                    align: 'center'
+                },
+                responsive: [{
+                    breakpoint: 576,
+                    options: {
+                        chart: {
+                            height: 250
+                        }
+                    }
+                }]
+            }).render().then(() => markChartLoaded('sectionChart'));
+
+            // Topic-wise Charts per Section
+            
+                new ApexCharts(document.querySelector("#topicChart_Mathematics"), {
+                    chart: {
+                        type: 'bar',
+                        height: '100%'
+                    },
+                    series: [{
+                        name: 'Accuracy (%)',
+                        data: [100.0, 0.0, 100.0, 0.0, 100.0, 100.0, 100.0, 100.0, 0.0, 100.0, 100.0, 100.0, 0.0, 0.0, 0.0, 100.0]
+                    }],
+                    xaxis: {
+                        categories: ["Trigonometry", "Algebra", "Combinatorics", "Sequences and Series", "Complex Numbers", "Logarithms", "Calculus", "Probability", "Set Theory", "Conic Sections", "Functions", "Vectors", "Exponents", "Geometry", "Statistics", "Matrices"],
+                        title: {
+                            text: 'Topics'
+                        }
+                    },
+                    yaxis: {
+                        max: 100,
+                        title: {
+                            text: 'Accuracy (%)'
+                        }
+                    },
+                    colors: ['#2196F3', '#FFD700', '#90CAF9'],
+                    title: {
+                        text: 'Mathematics Topics',
+                        align: 'center'
+                    },
+                    dataLabels: {
+                        enabled: false
+                    },
+                    tooltip: {
+                        y: {
+                            formatter: function(val, { series, seriesIndex, dataPointIndex }) {
+                                const stats = [{"name": "Trigonometry", "stats": {"attempted": 1, "correct": 1, "incorrect": 0, "skipped": 0, "accuracy": 100.0}}, {"name": "Algebra", "stats": {"attempted": 1, "correct": 0, "incorrect": 1, "skipped": 0, "accuracy": 0.0}}, {"name": "Combinatorics", "stats": {"attempted": 1, "correct": 1, "incorrect": 0, "skipped": 0, "accuracy": 100.0}}, {"name": "Sequences and Series", "stats": {"attempted": 1, "correct": 0, "incorrect": 1, "skipped": 0, "accuracy": 0.0}}, {"name": "Complex Numbers", "stats": {"attempted": 1, "correct": 1, "incorrect": 0, "skipped": 0, "accuracy": 100.0}}, {"name": "Logarithms", "stats": {"attempted": 1, "correct": 1, "incorrect": 0, "skipped": 0, "accuracy": 100.0}}, {"name": "Calculus", "stats": {"attempted": 1, "correct": 1, "incorrect": 0, "skipped": 0, "accuracy": 100.0}}, {"name": "Probability", "stats": {"attempted": 1, "correct": 1, "incorrect": 0, "skipped": 0, "accuracy": 100.0}}, {"name": "Set Theory", "stats": {"attempted": 1, "correct": 0, "incorrect": 1, "skipped": 0, "accuracy": 0.0}}, {"name": "Conic Sections", "stats": {"attempted": 1, "correct": 1, "incorrect": 0, "skipped": 0, "accuracy": 100.0}}, {"name": "Functions", "stats": {"attempted": 1, "correct": 1, "incorrect": 0, "skipped": 0, "accuracy": 100.0}}, {"name": "Vectors", "stats": {"attempted": 1, "correct": 1, "incorrect": 0, "skipped": 0, "accuracy": 100.0}}, {"name": "Exponents", "stats": {"attempted": 1, "correct": 0, "incorrect": 1, "skipped": 0, "accuracy": 0.0}}, {"name": "Geometry", "stats": {"attempted": 1, "correct": 0, "incorrect": 1, "skipped": 0, "accuracy": 0.0}}, {"name": "Statistics", "stats": {"attempted": 1, "correct": 0, "incorrect": 1, "skipped": 0, "accuracy": 0.0}}, {"name": "Matrices", "stats": {"attempted": 1, "correct": 1, "incorrect": 0, "skipped": 0, "accuracy": 100.0}}][dataPointIndex].stats;
+                                return `Attempted: ${stats.attempted}, Correct: ${stats.correct}, Accuracy: ${stats.accuracy.toFixed(2)}%`;
+                            }
+                        }
+                    },
+                    responsive: [{
+                        breakpoint: 576,
+                        options: {
+                            chart: {
+                                height: 250
+                            }
+                        }
+                    }]
+                }).render().then(() => markChartLoaded('topicChart_Mathematics'));
+                
+                new ApexCharts(document.querySelector("#topicChart_Physics"), {
+                    chart: {
+                        type: 'bar',
+                        height: '100%'
+                    },
+                    series: [{
+                        name: 'Accuracy (%)',
+                        data: [100.0, 100.0, 0.0, 0.0, 0.0, 100.0, 100.0, 0.0]
+                    }],
+                    xaxis: {
+                        categories: ["Mechanics", "Quantum Mechanics", "Dimensional Analysis", "Optics", "Electromagnetism", "Waves", "Thermodynamics", "Nuclear Physics"],
+                        title: {
+                            text: 'Topics'
+                        }
+                    },
+                    yaxis: {
+                        max: 100,
+                        title: {
+                            text: 'Accuracy (%)'
+                        }
+                    },
+                    colors: ['#4CAF50', '#FFD700', '#90CAF9'],
+                    title: {
+                        text: 'Physics Topics',
+                        align: 'center'
+                    },
+                    dataLabels: {
+                        enabled: false
+                    },
+                    tooltip: {
+                        y: {
+                            formatter: function(val, { series, seriesIndex, dataPointIndex }) {
+                                const stats = [{"name": "Mechanics", "stats": {"attempted": 1, "correct": 1, "incorrect": 0, "skipped": 0, "accuracy": 100.0}}, {"name": "Quantum Mechanics", "stats": {"attempted": 1, "correct": 1, "incorrect": 0, "skipped": 0, "accuracy": 100.0}}, {"name": "Dimensional Analysis", "stats": {"attempted": 1, "correct": 0, "incorrect": 1, "skipped": 0, "accuracy": 0.0}}, {"name": "Optics", "stats": {"attempted": 1, "correct": 0, "incorrect": 1, "skipped": 0, "accuracy": 0.0}}, {"name": "Electromagnetism", "stats": {"attempted": 1, "correct": 0, "incorrect": 1, "skipped": 0, "accuracy": 0.0}}, {"name": "Waves", "stats": {"attempted": 1, "correct": 1, "incorrect": 0, "skipped": 0, "accuracy": 100.0}}, {"name": "Thermodynamics", "stats": {"attempted": 1, "correct": 1, "incorrect": 0, "skipped": 0, "accuracy": 100.0}}, {"name": "Nuclear Physics", "stats": {"attempted": 1, "correct": 0, "incorrect": 1, "skipped": 0, "accuracy": 0.0}}][dataPointIndex].stats;
+                                return `Attempted: ${stats.attempted}, Correct: ${stats.correct}, Accuracy: ${stats.accuracy.toFixed(2)}%`;
+                            }
+                        }
+                    },
+                    responsive: [{
+                        breakpoint: 576,
+                        options: {
+                            chart: {
+                                height: 250
+                            }
+                        }
+                    }]
+                }).render().then(() => markChartLoaded('topicChart_Physics'));
+                
+                new ApexCharts(document.querySelector("#topicChart_Chemistry"), {
+                    chart: {
+                        type: 'bar',
+                        height: '100%'
+                    },
+                    series: [{
+                        name: 'Accuracy (%)',
+                        data: [100.0, 0.0, 0.0, 0.0, 0.0, 0.0, 100.0, 100.0, 100.0, 0.0]
+                    }],
+                    xaxis: {
+                        categories: ["Atomic Structure", "Organic Chemistry", "Acids and Bases", "Chemical Bonding", "Stoichiometry", "Industrial Chemistry", "Periodic Table", "Thermodynamics", "Physical Chemistry", "Inorganic Chemistry"],
+                        title: {
+                            text: 'Topics'
+                        }
+                    },
+                    yaxis: {
+                        max: 100,
+                        title: {
+                            text: 'Accuracy (%)'
+                        }
+                    },
+                    colors: ['#F44336', '#FFD700', '#90CAF9'],
+                    title: {
+                        text: 'Chemistry Topics',
+                        align: 'center'
+                    },
+                    dataLabels: {
+                        enabled: false
+                    },
+                    tooltip: {
+                        y: {
+                            formatter: function(val, { series, seriesIndex, dataPointIndex }) {
+                                const stats = [{"name": "Atomic Structure", "stats": {"attempted": 1, "correct": 1, "incorrect": 0, "skipped": 0, "accuracy": 100.0}}, {"name": "Organic Chemistry", "stats": {"attempted": 1, "correct": 0, "incorrect": 1, "skipped": 0, "accuracy": 0.0}}, {"name": "Acids and Bases", "stats": {"attempted": 1, "correct": 0, "incorrect": 1, "skipped": 0, "accuracy": 0.0}}, {"name": "Chemical Bonding", "stats": {"attempted": 1, "correct": 0, "incorrect": 1, "skipped": 0, "accuracy": 0.0}}, {"name": "Stoichiometry", "stats": {"attempted": 1, "correct": 0, "incorrect": 1, "skipped": 0, "accuracy": 0.0}}, {"name": "Industrial Chemistry", "stats": {"attempted": 1, "correct": 0, "incorrect": 1, "skipped": 0, "accuracy": 0.0}}, {"name": "Periodic Table", "stats": {"attempted": 1, "correct": 1, "incorrect": 0, "skipped": 0, "accuracy": 100.0}}, {"name": "Thermodynamics", "stats": {"attempted": 1, "correct": 1, "incorrect": 0, "skipped": 0, "accuracy": 100.0}}, {"name": "Physical Chemistry", "stats": {"attempted": 1, "correct": 1, "incorrect": 0, "skipped": 0, "accuracy": 100.0}}, {"name": "Inorganic Chemistry", "stats": {"attempted": 1, "correct": 0, "incorrect": 1, "skipped": 0, "accuracy": 0.0}}][dataPointIndex].stats;
+                                return `Attempted: ${stats.attempted}, Correct: ${stats.correct}, Accuracy: ${stats.accuracy.toFixed(2)}%`;
+                            }
+                        }
+                    },
+                    responsive: [{
+                        breakpoint: 576,
+                        options: {
+                            chart: {
+                                height: 250
+                            }
+                        }
+                    }]
+                }).render().then(() => markChartLoaded('topicChart_Chemistry'));
+                
+                new ApexCharts(document.querySelector("#topicChart_English"), {
+                    chart: {
+                        type: 'bar',
+                        height: '100%'
+                    },
+                    series: [{
+                        name: 'Accuracy (%)',
+                        data: [60.0, 54.55, 40.0]
+                    }],
+                    xaxis: {
+                        categories: ["Vocabulary", "Grammar", "Sentence Correction"],
+                        title: {
+                            text: 'Topics'
+                        }
+                    },
+                    yaxis: {
+                        max: 100,
+                        title: {
+                            text: 'Accuracy (%)'
+                        }
+                    },
+                    colors: ['#9C27B0', '#FFD700', '#90CAF9'],
+                    title: {
+                        text: 'English Topics',
+                        align: 'center'
+                    },
+                    dataLabels: {
+                        enabled: false
+                    },
+                    tooltip: {
+                        y: {
+                            formatter: function(val, { series, seriesIndex, dataPointIndex }) {
+                                const stats = [{"name": "Vocabulary", "stats": {"attempted": 5, "correct": 3, "incorrect": 2, "skipped": 0, "accuracy": 60.0}}, {"name": "Grammar", "stats": {"attempted": 11, "correct": 6, "incorrect": 5, "skipped": 0, "accuracy": 54.55}}, {"name": "Sentence Correction", "stats": {"attempted": 5, "correct": 2, "incorrect": 3, "skipped": 0, "accuracy": 40.0}}][dataPointIndex].stats;
+                                return `Attempted: ${stats.attempted}, Correct: ${stats.correct}, Accuracy: ${stats.accuracy.toFixed(2)}%`;
+                            }
+                        }
+                    },
+                    responsive: [{
+                        breakpoint: 576,
+                        options: {
+                            chart: {
+                                height: 250
+                            }
+                        }
+                    }]
+                }).render().then(() => markChartLoaded('topicChart_English'));
+                
+
+            // Donut Chart for Strengths
+            new ApexCharts(document.querySelector("#strengthDonutChart"), {
+                chart: {
+                    type: 'donut',
+                    height: 350
+                },
+                series: [10, 4, 4],
+                labels: ["Mathematics (10)", "Physics (4)", "Chemistry (4)"],
+                colors: ['#4CAF50', '#2196F3', '#F44336', '#9C27B0'],
+                title: {
+                    text: 'Strength Distribution',
+                    align: 'center'
+                },
+                dataLabels: {
+                    enabled: true,
+                    formatter: function (val, opts) {
+                        return opts.w.globals.labels[opts.seriesIndex];
+                    }
+                },
+                tooltip: {
+                    y: {
+                        formatter: function (val) {
+                            return val + ' strong topics';
+                        }
+                    }
+                },
+                responsive: [{
+                    breakpoint: 768,
+                    options: {
+                        chart: {
+                            height: 450
+                        }
+                    }
+                }, {
+                    breakpoint: 576,
+                    options: {
+                        chart: {
+                            height: 400
+                        },
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }]
+            }).render().then(() => markChartLoaded('strengthDonutChart'));
+
+            // Donut Chart for Weak Areas (only render if there are weaknesses)
+            
+            new ApexCharts(document.querySelector("#weakDonutChart"), {
+                chart: {
+                    type: 'donut',
+                    height: 350
+                },
+                series: [6, 4, 6, 1],
+                labels: ["Mathematics (6)", "Physics (4)", "Chemistry (6)", "English (1)"],
+                colors: ['#F44336', '#FF9800', '#9C27B0', '#2196F3'],
+                title: {
+                    text: 'Weak Area Distribution',
+                    align: 'center'
+                },
+                dataLabels: {
+                    enabled: true,
+                    formatter: function (val, opts) {
+                        return opts.w.globals.labels[opts.seriesIndex];
+                    }
+                },
+                tooltip: {
+                    y: {
+                        formatter: function (val) {
+                            return val + ' weak topics';
+                        }
+                    }
+                },
+                responsive: [{
+                    breakpoint: 768,
+                    options: {
+                        chart: {
+                            height: 450
+                        }
+                    }
+                }, {
+                    breakpoint: 576,
+                    options: {
+                        chart: {
+                            height: 400
+                        },
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }]
+            }).render().then(() => markChartLoaded('weakDonutChart'));
+            
+
+            // Radar Chart for Strengths and Weaknesses
+            new ApexCharts(document.querySelector("#radarChart"), {
+                chart: {
+                    type: 'radar',
+                    height: 350
+                },
+                series: [{
+                    name: 'Strengths',
+                    data: [48.0, 52.0, 48.0, 0]
+                }, {
+                    name: 'Weaknesses',
+                    data: [48.0, 52.0, 48.0, 52.0]
+                }],
+                xaxis: {
+                    categories: ["Mathematics", "Physics", "Chemistry", "English"]
+                },
+                yaxis: {
+                    max: 100
+                },
+                colors: ['#4CAF50', '#F44336'],
+                title: {
+                    text: 'Strengths vs Weaknesses',
+                    align: 'center'
+                },
+                responsive: [{
+                    breakpoint: 768,
+                    options: {
+                        chart: {
+                            height: 450
+                        }
+                    }
+                }, {
+                    breakpoint: 576,
+                    options: {
+                        chart: {
+                            height: 400
+                        }
+                    }
+                }]
+            }).render().then(() => markChartLoaded('radarChart'));
+
+            // Download PDF Functionality
+            async function downloadPDF() {
+                const loadingOverlay = document.getElementById('loadingOverlay');
+                const loadingMessage = document.getElementById('loadingMessage');
+
+                // Set overlay dimensions to current viewport size
+                loadingOverlay.style.width = `${window.innerWidth}px`;
+                loadingOverlay.style.height = `${window.innerHeight}px`;
+                loadingOverlay.style.display = 'flex';
+                loadingMessage.textContent = 'Preparing PDF...';
+
+                console.log("Initializing jsPDF...");
+                const { jsPDF } = window.jspdf;
+                if (!jsPDF) {
+                    console.error("jsPDF is not loaded!");
+                    loadingOverlay.style.display = 'none';
+                    return;
+                }
+                const doc = new jsPDF({
+                    orientation: 'portrait',
+                    unit: 'mm',
+                    format: 'a4'
+                });
+
+                // Create temporary wrapper for large screen rendering
+                const tempWrapper = document.createElement('div');
+                tempWrapper.style.width = '1400px';
+                tempWrapper.style.margin = '0 auto';
+                document.body.appendChild(tempWrapper);
+
+                // Capture title and subheading
+                const titleElement = document.querySelector('h1');
+                const subheadingElement = document.querySelector('h2');
+                const tempTitleDiv = document.createElement('div');
+                tempTitleDiv.style.width = '100%';
+                tempTitleDiv.style.textAlign = 'center';
+                const clonedTitle = titleElement.cloneNode(true);
+                const clonedSubheading = subheadingElement.cloneNode(true);
+                clonedSubheading.style.marginTop = '10px';
+                tempTitleDiv.appendChild(clonedTitle);
+                tempTitleDiv.appendChild(clonedSubheading);
+                tempWrapper.appendChild(tempTitleDiv);
+
+                loadingMessage.textContent = 'Capturing title...';
+                const titleCanvas = await html2canvas(tempTitleDiv, {
+                    scale: 2,
+                    useCORS: true
+                });
+                const titleImgData = titleCanvas.toDataURL('image/jpeg', 0.98);
+                const titleImgWidth = 190; // A4 width minus margins
+                const titleImgHeight = (titleCanvas.height * titleImgWidth) / titleCanvas.width;
+
+                let currentY = 10;
+                doc.addImage(titleImgData, 'JPEG', 10, currentY, titleImgWidth, titleImgHeight);
+                currentY += titleImgHeight + 10; // Add gap after title
+
+                tempWrapper.removeChild(tempTitleDiv);
+
+                // Capture sections
+                const sections = [
+                    'section-summary',
+                    'section-overall',
+                    'section-section-wise',
+                    'section-topic-wise',
+                    'section-strength-weakness',
+                    'section-tips',
+                    'section-quotes'
+                ];
+
+                for (let i = 0; i < sections.length; i++) {
+                    const section = document.getElementById(sections[i]);
+                    if (!section) continue;
+
+                    loadingMessage.textContent = `Capturing ${section.id}...`;
+                    const tempSectionDiv = document.createElement('div');
+                    tempSectionDiv.style.width = '100%';
+                    const clonedSection = section.cloneNode(true);
+                    tempSectionDiv.appendChild(clonedSection);
+                    tempWrapper.appendChild(tempSectionDiv);
+
+                    const canvas = await html2canvas(tempSectionDiv, {
+                        scale: 2,
+                        useCORS: true
+                    });
+
+                    const imgData = canvas.toDataURL('image/jpeg', 0.98);
+                    const imgWidth = 190; // A4 width minus margins
+                    const imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+                    if (currentY + imgHeight > 297 - 10) { // A4 height is 297mm, minus bottom margin
+                        doc.addPage();
+                        currentY = 10;
+                    }
+
+                    doc.addImage(imgData, 'JPEG', 10, currentY, imgWidth, imgHeight);
+                    currentY += imgHeight + 20; // Gap between sections
+
+                    tempWrapper.removeChild(tempSectionDiv);
+                }
+
+                document.body.removeChild(tempWrapper);
+                loadingMessage.textContent = 'Saving PDF...';
+                doc.save(`MUET_Entry_Test_Report_$20250526.pdf`);
+                loadingOverlay.style.display = 'none';
+            }
+        </script>
+    </body>
+    </html>
+    
