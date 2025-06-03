@@ -9,20 +9,26 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentQuestion = 0;
   let answers = {};
 
-  // Load questions from JSON
-  const questions = JSON.parse(
-    document.getElementById("questions-data").textContent
-  );
+  // Load questions from JSON with fallback
+  let questions = [];
+  try {
+    questions =
+      JSON.parse(document.getElementById("questions-data").textContent) || [];
+  } catch (e) {
+    console.error("Error parsing questions.json:", e);
+    alert("Questions failed to load. Please contact support.");
+  }
 
   // Configure Uploadcare
-  uploadcare.defaults.pubkey = "52a1bfb4563c9c1f7cfd"; // Replace with your Uploadcare public key
+  uploadcare.defaults.pubkey = "your_uploadcare_public_key"; // Replace with your Uploadcare public key
+  uploadcare.defaults.multiple = false;
 
   // Show popup on load
   popup.classList.remove("hidden");
 
   // Handle form submission (local storage)
   registrationForm.addEventListener("submit", (e) => {
-    e.preventDefault(); // Prevent form submission and redirect
+    e.preventDefault(); // Prevent default form submission
     const formData = new FormData(registrationForm);
     const studentInfo = Object.fromEntries(formData);
     sessionStorage.setItem("studentInfo", JSON.stringify(studentInfo));
@@ -60,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
     questionSection.style.opacity = "0";
     setTimeout(() => {
       document.getElementById("question-text").textContent =
-        questions[currentQuestion].text || "Loading question...";
+        questions[currentQuestion]?.text || "Loading question...";
       document.querySelectorAll(".option").forEach((option) => {
         const value = option.getAttribute("data-value");
         option.textContent = value;
@@ -80,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".option").forEach((option) => {
     option.addEventListener("click", () => {
       answers[currentQuestion] = {
-        id: questions[currentQuestion].id,
+        id: questions[currentQuestion]?.id,
         selected_option: option.getAttribute("data-value"),
       };
       document
@@ -139,8 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
         answersUrlInput.value = cdnUrl;
 
         // Update form action to Formsubmit endpoint
-        registrationForm.action =
-          "https://formsubmit.co/abdulahadchachar92@gmail.com"; // Replace with your Formsubmit email
+        registrationForm.action = "https://formsubmit.co/your_email"; // Replace with your Formsubmit email
         registrationForm.method = "POST";
 
         // Submit form to Formsubmit
@@ -168,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
           })
           .catch((error) => {
             alert(
-              "An error occurred. Please try again or email risingstars@gmail.com."
+              "An error occurred. Please try again or email risingstyles@gmail.com."
             );
           });
       })
