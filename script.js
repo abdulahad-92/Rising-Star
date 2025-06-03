@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Configure Uploadcare
   uploadcare.registerTab("file", uploadcare.files); // Ensure file tab is available
-  uploadcare.defaults.pubkey = "your_uploadcare_public_key"; // Replace with your Uploadcare public key
+  uploadcare.defaults.pubkey = "52a1bfb4563c9c1f7cfd"; // Replace with your Uploadcare public key
   uploadcare.defaults.multiple = false;
 
   // Show popup on load
