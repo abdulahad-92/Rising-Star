@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MUET Entry Test Performance Report</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f7fa;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      h1,
+      h2,
+      h3 {
+        color: #4a90e2;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .summary-box,
+      .section-box,
+      .topic-box,
+      .weak-areas,
+      .tips-box,
+      .motivation {
+        border: 1px solid #e0e6ed;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        background-color: #f9fafc;
+      }
+      .summary-box p,
+      .section-box p,
+      .topic-box p,
+      .weak-areas p,
+      .tips-box p {
+        margin: 5px 0;
+      }
+      .section-box table,
+      .topic-box table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      .section-box th,
+      .section-box td,
+      .topic-box th,
+      .topic-box td {
+        padding: 10px;
+        border: 1px solid #e0e6ed;
+        text-align: left;
+      }
+      .section-box th,
+      .topic-box th {
+        background-color: #e0f0ff;
+        color: #333;
+      }
+      .tips-box ul {
+        padding-left: 20px;
+      }
+      .chart-container {
+        margin-bottom: 20px;
+        max-width: 100%;
+      }
+      canvas {
+        max-width: 100%;
+        height: auto;
+      }
+      .motivation {
+        text-align: center;
+        font-style: italic;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>MUET Entry Test Performance Report</h1>
+      <p style="text-align: center; color: #666">
+        Test Date: April 11, 2025 | Report Generated: May 23, 2025
+      </p>
+
+      <div class="summary-box">
+        <h2>Overall Performance Summary</h2>
+        <p><strong>Total Questions:</strong> 100</p>
+        <p><strong>Attempted Questions:</strong> 76</p>
+        <p><strong>Correct Answers:</strong> 38</p>
+        <p><strong>Incorrect Answers:</strong> 38</p>
+        <p><strong>Skipped Questions:</strong> 24</p>
+        <p><strong>Score:</strong> 38 out of 100</p>
+        <p><strong>Percentage:</strong> 38.00%</p>
+      </div>
+
+      <div class="section-box">
+        <h2>Section-wise Performance</h2>
+        <table>
+          <tr>
+            <th>Section</th>
+            <th>Questions</th>
+            <th>Attempted</th>
+            <th>Correct</th>
+            <th>Incorrect</th>
+            <th>Skipped</th>
+            <th>Accuracy</th>
+          </tr>
+          <tr>
+            <td>Physics (Q1�25)</td>
+            <td>25</td>
+            <td>21</td>
+            <td>12</td>
+            <td>9</td>
+            <td>4</td>
+            <td>57.14% (12/21)</td>
+          </tr>
+          <tr>
+            <td>Mathematics (Q26�50)</td>
+            <td>25</td>
+            <td>20</td>
+            <td>10</td>
+            <td>10</td>
+            <td>5</td>
+            <td>50.00% (10/20)</td>
+          </tr>
+          <tr>
+            <td>Chemistry (Q51�75)</td>
+            <td>25</td>
+            <td>20</td>
+            <td>10</td>
+            <td>10</td>
+            <td>5</td>
+            <td>50.00% (10/20)</td>
+          </tr>
+          <tr>
+            <td>English (Q76�100)</td>
+            <td>25</td>
+            <td>20</td>
+            <td>10</td>
+            <td>10</td>
+            <td>5</td>
+            <td>50.00% (10/20)</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="topic-box">
+        <h2>Topic-wise Performance</h2>
+        <h3>Physics</h3>
+        <table>
+          <tr>
+            <th>Topic</th>
+            <th>Attempted</th>
+            <th>Correct</th>
+            <th>Incorrect</th>
+            <th>Skipped</th>
+            <th>Accuracy</th>
+          </tr>
+          <tr>
+            <td>Topic_1-5</td>
+            <td>5</td>
+            <td>3</td>
+            <td>2</td>
+            <td>0</td>
+            <td>60.00%</td>
+          </tr>
+          <tr>
+            <td>Topic_6-10</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>50.00%</td>
+          </tr>
+          <tr>
+            <td>Topic_11-15</td>
+            <td>4</td>
+            <td>3</td>
+            <td>1</td>
+            <td>1</td>
+            <td>75.00%</td>
+          </tr>
+          <tr>
+            <td>Topic_16-20</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>50.00%</td>
+          </tr>
+          <tr>
+            <td>Topic_21-25</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>50.00%</td>
+          </tr>
+        </table>
+        <h3>Mathematics</h3>
+        <table>
+          <tr>
+            <th>Topic</th>
+            <th>Attempted</th>
+            <th>Correct</th>
+            <th>Incorrect</th>
+            <th>Skipped</th>
+            <th>Accuracy</th>
+          </tr>
+          <tr>
+            <td>Topic_26-30</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>50.00%</td>
+          </tr>
+          <tr>
+            <td>Topic_31-35</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>50.00%</td>
+          </tr>
+          <tr>
+            <td>Topic_36-40</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>50.00%</td>
+          </tr>
+          <tr>
+            <td>Topic_41-45</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>50.00%</td>
+          </tr>
+          <tr>
+            <td>Topic_46-50</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>50.00%</td>
+          </tr>
+        </table>
+        <h3>Chemistry</h3>
+        <table>
+          <tr>
+            <th>Topic</th>
+            <th>Attempted</th>
+            <th>Correct</th>
+            <th>Incorrect</th>
+            <th>Skipped</th>
+            <th>Accuracy</th>
+          </tr>
+          <tr>
+            <td>Topic_51-55</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>50.00%</td>
+          </tr>
+          <tr>
+            <td>Topic_56-60</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>50.00%</td>
+          </tr>
+          <tr>
+            <td>Topic_61-65</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>50.00%</td>
+          </tr>
+          <tr>
+            <td>Topic_66-70</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>50.00%</td>
+          </tr>
+          <tr>
+            <td>Topic_71-75</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>50.00%</td>
+          </tr>
+        </table>
+        <h3>English</h3>
+        <table>
+          <tr>
+            <th>Topic</th>
+            <th>Attempted</th>
+            <th>Correct</th>
+            <th>Incorrect</th>
+            <th>Skipped</th>
+            <th>Accuracy</th>
+          </tr>
+          <tr>
+            <td>Topic_76-80</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>50.00%</td>
+          </tr>
+          <tr>
+            <td>Topic_81-85</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>50.00%</td>
+          </tr>
+          <tr>
+            <td>Topic_86-90</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>50.00%</td>
+          </tr>
+          <tr>
+            <td>Topic_91-95</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>50.00%</td>
+          </tr>
+          <tr>
+            <td>Topic_96-100</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>50.00%</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="weak-areas">
+        <h2>Weak Areas</h2>
+        <p>No significant weak areas identified. Keep up the good work!</p>
+      </div>
+
+      <div class="tips-box">
+        <h2>Tips for Improvement</h2>
+        <ul>
+          <li>
+            <strong>Overall Performance:</strong> Your score is below 40%. Focus
+            on consistent daily practice across all sections.
+          </li>
+        </ul>
+      </div>
+
+      <div class="infographics">
+        <h2>Performance Visualizations</h2>
+        <div class="chart-container">
+          <h3>Bar Chart: Section-wise Accuracy</h3>
+          <canvas id="sectionAccuracyChart"></canvas>
+        </div>
+        <div class="chart-container">
+          <h3>Pie Chart: Correct/Incorrect/Skipped Distribution</h3>
+          <canvas id="performanceDistributionChart"></canvas>
+        </div>
+        <div class="chart-container">
+          <h3>Bar Chart: Physics Topic-wise Accuracy</h3>
+          <canvas id="topicAccuracyChart_physics"></canvas>
+        </div>
+        <div class="chart-container">
+          <h3>Bar Chart: Mathematics Topic-wise Accuracy</h3>
+          <canvas id="topicAccuracyChart_mathematics"></canvas>
+        </div>
+        <div class="chart-container">
+          <h3>Bar Chart: Chemistry Topic-wise Accuracy</h3>
+          <canvas id="topicAccuracyChart_chemistry"></canvas>
+        </div>
+        <div class="chart-container">
+          <h3>Bar Chart: English Topic-wise Accuracy</h3>
+          <canvas id="topicAccuracyChart_english"></canvas>
+        </div>
+      </div>
+
+      <div class="motivation">
+        <h2>Keep Going!</h2>
+        <p>
+          You've taken the first step by attempting this test�great job! With
+          consistent practice and focus on your weak areas, you'll see
+          improvement in no time. Keep practicing�you're on the right track!
+        </p>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script>
+      const sectionAccuracyCtx = document
+        .getElementById("sectionAccuracyChart")
+        .getContext("2d");
+      new Chart(sectionAccuracyCtx, {
+        type: "bar",
+        data: {
+          labels: ["Physics", "Mathematics", "Chemistry", "English"],
+          datasets: [
+            {
+              label: "Accuracy (%)",
+              data: [57.14285714285714, 50.0, 50.0, 50.0],
+              backgroundColor: ["#4a90e2", "#ff6b6b", "#4ecdc4", "#ffcc5c"],
+              borderColor: ["#2a70c2", "#df4b4b", "#2eadb4", "#dfab3c"],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 100,
+              title: { display: true, text: "Accuracy (%)" },
+            },
+            x: { title: { display: true, text: "Section" } },
+          },
+          plugins: {
+            legend: { display: false },
+            title: { display: true, text: "Section-wise Accuracy (%)" },
+          },
+        },
+      });
+
+      const performanceDistributionCtx = document
+        .getElementById("performanceDistributionChart")
+        .getContext("2d");
+      new Chart(performanceDistributionCtx, {
+        type: "pie",
+        data: {
+          labels: ["Correct", "Incorrect", "Skipped"],
+          datasets: [
+            {
+              data: [38, 38, 24],
+              backgroundColor: ["#4a90e2", "#ff6b6b", "#e0e6ed"],
+              borderColor: ["#2a70c2", "#df4b4b", "#c0c6cd"],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          plugins: {
+            legend: { position: "right" },
+            title: { display: true, text: "Performance Distribution" },
+          },
+        },
+      });
+
+      const topicAccuracyCtx_physics = document
+        .getElementById("topicAccuracyChart_physics")
+        .getContext("2d");
+      new Chart(topicAccuracyCtx_physics, {
+        type: "bar",
+        data: {
+          labels: [
+            "Topic_1-5",
+            "Topic_6-10",
+            "Topic_11-15",
+            "Topic_16-20",
+            "Topic_21-25",
+          ],
+          datasets: [
+            {
+              label: "Accuracy (%)",
+              data: [60.0, 50.0, 75.0, 50.0, 50.0],
+              backgroundColor: [
+                "#4a90e2",
+                "#ff6b6b",
+                "#4ecdc4",
+                "#ffcc5c",
+                "#8e6e95",
+              ],
+              borderColor: [
+                "#2a70c2",
+                "#df4b4b",
+                "#2eadb4",
+                "#dfab3c",
+                "#6e4e75",
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 100,
+              title: { display: true, text: "Accuracy (%)" },
+            },
+            x: { title: { display: true, text: "Topic" } },
+          },
+          plugins: {
+            legend: { display: false },
+            title: { display: true, text: "Physics Topic-wise Accuracy (%)" },
+          },
+        },
+      });
+      const topicAccuracyCtx_mathematics = document
+        .getElementById("topicAccuracyChart_mathematics")
+        .getContext("2d");
+      new Chart(topicAccuracyCtx_mathematics, {
+        type: "bar",
+        data: {
+          labels: [
+            "Topic_26-30",
+            "Topic_31-35",
+            "Topic_36-40",
+            "Topic_41-45",
+            "Topic_46-50",
+          ],
+          datasets: [
+            {
+              label: "Accuracy (%)",
+              data: [50.0, 50.0, 50.0, 50.0, 50.0],
+              backgroundColor: [
+                "#4a90e2",
+                "#ff6b6b",
+                "#4ecdc4",
+                "#ffcc5c",
+                "#8e6e95",
+              ],
+              borderColor: [
+                "#2a70c2",
+                "#df4b4b",
+                "#2eadb4",
+                "#dfab3c",
+                "#6e4e75",
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 100,
+              title: { display: true, text: "Accuracy (%)" },
+            },
+            x: { title: { display: true, text: "Topic" } },
+          },
+          plugins: {
+            legend: { display: false },
+            title: {
+              display: true,
+              text: "Mathematics Topic-wise Accuracy (%)",
+            },
+          },
+        },
+      });
+      const topicAccuracyCtx_chemistry = document
+        .getElementById("topicAccuracyChart_chemistry")
+        .getContext("2d");
+      new Chart(topicAccuracyCtx_chemistry, {
+        type: "bar",
+        data: {
+          labels: [
+            "Topic_51-55",
+            "Topic_56-60",
+            "Topic_61-65",
+            "Topic_66-70",
+            "Topic_71-75",
+          ],
+          datasets: [
+            {
+              label: "Accuracy (%)",
+              data: [50.0, 50.0, 50.0, 50.0, 50.0],
+              backgroundColor: [
+                "#4a90e2",
+                "#ff6b6b",
+                "#4ecdc4",
+                "#ffcc5c",
+                "#8e6e95",
+              ],
+              borderColor: [
+                "#2a70c2",
+                "#df4b4b",
+                "#2eadb4",
+                "#dfab3c",
+                "#6e4e75",
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 100,
+              title: { display: true, text: "Accuracy (%)" },
+            },
+            x: { title: { display: true, text: "Topic" } },
+          },
+          plugins: {
+            legend: { display: false },
+            title: { display: true, text: "Chemistry Topic-wise Accuracy (%)" },
+          },
+        },
+      });
+      const topicAccuracyCtx_english = document
+        .getElementById("topicAccuracyChart_english")
+        .getContext("2d");
+      new Chart(topicAccuracyCtx_english, {
+        type: "bar",
+        data: {
+          labels: [
+            "Topic_76-80",
+            "Topic_81-85",
+            "Topic_86-90",
+            "Topic_91-95",
+            "Topic_96-100",
+          ],
+          datasets: [
+            {
+              label: "Accuracy (%)",
+              data: [50.0, 50.0, 50.0, 50.0, 50.0],
+              backgroundColor: [
+                "#4a90e2",
+                "#ff6b6b",
+                "#4ecdc4",
+                "#ffcc5c",
+                "#8e6e95",
+              ],
+              borderColor: [
+                "#2a70c2",
+                "#df4b4b",
+                "#2eadb4",
+                "#dfab3c",
+                "#6e4e75",
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 100,
+              title: { display: true, text: "Accuracy (%)" },
+            },
+            x: { title: { display: true, text: "Topic" } },
+          },
+          plugins: {
+            legend: { display: false },
+            title: { display: true, text: "English Topic-wise Accuracy (%)" },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

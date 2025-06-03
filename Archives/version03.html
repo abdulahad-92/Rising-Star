@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Test Organizer</title>
+    <style>
+        /* Academic-themed CSS */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            width: 50px;
+            height: 50px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #7f8c8d;
+            margin: 10px 0 20px;
+        }
+
+        .timer {
+            font-size: 1.5em;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+
+        .question-box {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            min-height: 150px;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+
+        .question-box.fade {
+            opacity: 0;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .option {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .option:hover {
+            background-color: #2980b9;
+        }
+
+        .option.selected {
+            background-color: #2ecc71;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        button:disabled {
+            background-color: #bdc3c7;
+            cursor: not-allowed;
+        }
+
+        .submit-btn {
+            background-color: #e74c3c;
+        }
+
+        .submit-btn:hover {
+            background-color: #c0392b;
+        }
+
+        .result {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .result.show {
+            display: block;
+        }
+
+        .result h2 {
+            color: #2c3e50;
+        }
+
+        .emoji {
+            font-size: 2em;
+        }
+
+        .error {
+            color: #e74c3c;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://via.placeholder.com/50" alt="Logo">
+            <h1 id="test-title">Math Mock Test 2025</h1>
+        </div>
+        <p class="quote">Believe in yourself and ace the test!</p>
+        <div class="timer" id="timer">60:00</div>
+        <div class="question-box" id="question-box">
+            <div id="question-text"></div>
+            <div class="options" id="options"></div>
+        </div>
+        <div class="navigation">
+            <button id="prev-btn" disabled>Previous</button>
+            <button id="next-btn">Next</button>
+        </div>
+        <button class="submit-btn" id="submit-btn" style="display: none;">Submit Test</button>
+        <div class="result" id="result">
+            <h2>Your Score: <span id="score"></span>/100</h2>
+            <p>Percentage: <span id="percentage"></span>%</p>
+            <p class="emoji" id="emoji"></p>
+            <p id="feedback"></p>
+        </div>
+        <div class="error" id="error" style="display: none;"></div>
+    </div>
+
+    <script>
+        // Test state
+        let questions = [];
+        let currentQuestion = 0;
+        let answers = []; // Stores selected option keys (e.g., 'A', 'B', or null)
+        let timeLeft = 60 * 60; // 60 minutes in seconds
+        let timerInterval = null;
+
+        // DOM elements
+        const timerEl = document.getElementById('timer');
+        const questionBox = document.getElementById('question-box');
+        const questionText = document.getElementById('question-text');
+        const optionsEl = document.getElementById('options');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const submitBtn = document.getElementById('submit-btn');
+        const resultEl = document.getElementById('result');
+        const scoreEl = document.getElementById('score');
+        const percentageEl = document.getElementById('percentage');
+        const emojiEl = document.getElementById('emoji');
+        const feedbackEl = document.getElementById('feedback');
+        const errorEl = document.getElementById('error');
+
+        // Load questions from JSON
+        async function loadQuestions() {
+            try {
+                const response = await fetch('questions.json');
+                if (!response.ok) throw new Error('Failed to load questions');
+                questions = await response.json();
+                if (questions.length === 0) throw new Error('No questions found');
+                answers = new Array(questions.length).fill(null);
+                startTimer();
+                displayQuestion();
+            } catch (error) {
+                errorEl.textContent = `Error: ${error.message}. Please check if questions.json exists.`;
+                errorEl.style.display = 'block';
+                questionBox.style.display = 'none';
+                prevBtn.style.display = 'none';
+                nextBtn.style.display = 'none';
+            }
+        }
+
+        // Start timer
+        function startTimer() {
+            timerInterval = setInterval(() => {
+                timeLeft--;
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                timerEl.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    showResults();
+                }
+            }, 1000);
+        }
+
+        // Calculate score (Ensures accurate scoring)
+        function calculateScore() {
+            let score = 0;
+            answers.forEach((answer, index) => {
+                if (answer && answer === questions[index].answer) {
+                    score++;
+                }
+            });
+            return score;
+        }
+
+        // Generate timestamp in YYYYMMDD_HHMMSS format (UTC)
+        function getTimestamp() {
+            const now = new Date();
+            const year = now.getUTCFullYear();
+            const month = String(now.getUTCMonth() + 1).padStart(2, '0');
+            const day = String(now.getUTCDate()).padStart(2, '0');
+            const hours = String(now.getUTCHours()).padStart(2, '0');
+            const minutes = String(now.getUTCMinutes()).padStart(2, '0');
+            const seconds = String(now.getUTCSeconds()).padStart(2, '0');
+            return `${year}${month}${day}_${hours}${minutes}${seconds}`;
+        }
+
+        // Generate and download answers JSON
+        function saveAnswers() {
+            try {
+                const score = calculateScore();
+                const totalQuestions = questions.length;
+                const attempted = answers.filter(answer => answer !== null).length;
+                const correct = score;
+                const incorrect = attempted - correct;
+                const skipped = totalQuestions - attempted;
+
+                // Create answers data
+                const answersData = {
+                    answers: questions.map((q, index) => ({
+                        id: q.id,
+                        selected_option: answers[index] || 'skipped',
+                        correctness: answers[index] ? (answers[index] === q.answer ? 'correct' : 'incorrect') : 'skipped'
+                    })),
+                    summary: {
+                        total_questions: totalQuestions,
+                        attempted: attempted,
+                        correct: correct,
+                        incorrect: incorrect,
+                        skipped: skipped
+                    }
+                };
+
+                // Create JSON file
+                const blob = new Blob([JSON.stringify(answersData, null, 2)], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                const timestamp = getTimestamp();
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = `student_answers_${timestamp}.json`;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                URL.revokeObjectURL(url);
+            } catch (error) {
+                errorEl.textContent = `Error saving answers: ${error.message}. Results still displayed.`;
+                errorEl.style.display = 'block';
+            }
+        }
+
+        // Display question
+        function displayQuestion() {
+            if (!questions.length) return;
+            const q = questions[currentQuestion];
+            questionBox.classList.add('fade');
+            setTimeout(() => {
+                questionText.textContent = `${q.id}. ${q.question}`;
+                optionsEl.innerHTML = '';
+                for (let key in q.options) {
+                    const div = document.createElement('div');
+                    div.className = `option ${answers[currentQuestion] === key ? 'selected' : ''}`;
+                    div.textContent = `${key}: ${q.options[key]}`;
+                    div.addEventListener('click', () => selectOption(key));
+                    optionsEl.appendChild(div);
+                }
+                questionBox.classList.remove('fade');
+            }, 300);
+
+            // Update buttons
+            prevBtn.disabled = currentQuestion === 0;
+            nextBtn.style.display = currentQuestion === questions.length - 1 ? 'none' : 'inline';
+            submitBtn.style.display = currentQuestion === questions.length - 1 ? 'inline' : 'none';
+        }
+
+        // Select or deselect option
+        function selectOption(key) {
+            // If clicking the selected option, deselect it
+            if (answers[currentQuestion] === key) {
+                answers[currentQuestion] = null;
+            } else {
+                answers[currentQuestion] = key;
+            }
+            displayQuestion();
+        }
+
+        // Navigation
+        prevBtn.addEventListener('click', () => {
+            if (currentQuestion > 0) {
+                currentQuestion--;
+                displayQuestion();
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentQuestion < questions.length - 1) {
+                currentQuestion++;
+                displayQuestion();
+            }
+        });
+
+        // Submit test
+        submitBtn.addEventListener('click', showResults);
+
+        // Show results
+        function showResults() {
+            clearInterval(timerInterval);
+            questionBox.style.display = 'none';
+            prevBtn.style.display = 'none';
+            nextBtn.style.display = 'none';
+            submitBtn.style.display = 'none';
+            resultEl.classList.add('show');
+
+            // Calculate final score
+            const score = calculateScore();
+            const percentage = (score / questions.length) * 100;
+            scoreEl.textContent = score;
+            percentageEl.textContent = percentage.toFixed(2);
+
+            let feedback = '';
+            let emoji = '';
+            if (percentage >= 90) {
+                feedback = 'Best: Outstanding performance!';
+                emoji = '🎉';
+            } else if (percentage >= 80) {
+                feedback = 'Good: Great job!';
+                emoji = '😊';
+            } else if (percentage >= 70) {
+                feedback = 'Normal: Solid effort!';
+                emoji = '👍';
+            } else if (percentage >= 60) {
+                feedback = 'Average: Keep practicing!';
+                emoji = '🙂';
+            } else {
+                feedback = 'Poor: Time to review and try again!';
+                emoji = '😔';
+            }
+
+            emojiEl.textContent = emoji;
+            feedbackEl.textContent = feedback;
+
+            // Save answers to JSON file
+            saveAnswers();
+        }
+
+        // Initialize
+        loadQuestions();
+    </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MUET Entry Test Performance Report</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <style>
+            body { font-family: Arial, sans-serif; background-color: #f4f7fa; color: #333; margin: 0; padding: 20px; line-height: 1.6; }
+            .container { max-width: 900px; margin: 0 auto; background-color: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); }
+            h1, h2, h3 { color: #4a90e2; }
+            h1 { text-align: center; margin-bottom: 20px; }
+            .summary-box, .section-box, .topic-box, .weak-areas, .tips-box, .motivation { border: 1px solid #e0e6ed; padding: 15px; border-radius: 5px; margin-bottom: 20px; background-color: #f9fafc; }
+            .summary-box p, .section-box p, .topic-box p, .weak-areas p, .tips-box p { margin: 5px 0; }
+            .section-box table, .topic-box table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+            .section-box th, .section-box td, .topic-box th, .topic-box td { padding: 10px; border: 1px solid #e0e6ed; text-align: left; }
+            .section-box th, .topic-box th { background-color: #e0f0ff; color: #333; }
+            .tips-box ul { padding-left: 20px; }
+            .chart-container { margin-bottom: 20px; max-width: 100%; }
+            canvas { max-width: 100%; height: auto; }
+            .motivation { text-align: center; font-style: italic; color: #666; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>MUET Entry Test Performance Report</h1>
+            <p style="text-align: center; color: #666;">Test Date: May 23, 2025 | Report Generated: May 23, 2025</p>
+
+            <div class="summary-box">
+                <h2>Overall Performance Summary</h2>
+                <p><strong>Total Questions:</strong> 100</p>
+                <p><strong>Attempted Questions:</strong> 99</p>
+                <p><strong>Correct Answers:</strong> 5</p>
+                <p><strong>Incorrect Answers:</strong> 94</p>
+                <p><strong>Skipped Questions:</strong> 1</p>
+                <p><strong>Score:</strong> 5 out of 100</p>
+                <p><strong>Percentage:</strong> 5.00%</p>
+                <div class="chart-container">
+                    <canvas id="overallChart"></canvas>
+                </div>
+            </div>
+
+            <div class="section-box">
+                <h2>Section-wise Performance</h2>
+                <div class="chart-container">
+                    <canvas id="sectionChart"></canvas>
+                </div>
+                <table>
+                    <tr>
+                        <th>Section</th>
+                        <th>Questions</th>
+                        <th>Attempted</th>
+                        <th>Correct</th>
+                        <th>Incorrect</th>
+                        <th>Skipped</th>
+                        <th>Accuracy</th>
+                    </tr>
+                    <tr><td>Mathematics (Q1–25)</td><td>25</td><td>25</td><td>1</td><td>24</td><td>0</td><td>4.00% (1/25)</td></tr><tr><td>Physics (Q26–50)</td><td>25</td><td>24</td><td>4</td><td>20</td><td>1</td><td>16.67% (4/24)</td></tr><tr><td>Chemistry (Q51–75)</td><td>25</td><td>25</td><td>0</td><td>25</td><td>0</td><td>0.00% (0/25)</td></tr><tr><td>English (Q76–100)</td><td>25</td><td>25</td><td>0</td><td>25</td><td>0</td><td>0.00% (0/25)</td></tr>
+                </table>
+            </div>
+
+            <div class="topic-box">
+                <h2>Topic-wise Performance</h2>
+                <h3>Mathematics</h3><table><tr><th>Topic</th><th>Attempted</th><th>Correct</th><th>Incorrect</th><th>Skipped</th><th>Accuracy</th></tr><tr><td>Trigonometry</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Algebra</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Combinatorics</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Sequences and Series</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Complex Numbers</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Logarithms</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Calculus</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Probability</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Set Theory</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Conic Sections</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Functions</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Vectors</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Exponents</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Geometry</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Statistics</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Matrices</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr></table><h3>Physics</h3><table><tr><th>Topic</th><th>Attempted</th><th>Correct</th><th>Incorrect</th><th>Skipped</th><th>Accuracy</th></tr><tr><td>Mechanics</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Quantum Mechanics</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Dimensional Analysis</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Optics</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Electromagnetism</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Waves</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Thermodynamics</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Nuclear Physics</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr></table><h3>Chemistry</h3><table><tr><th>Topic</th><th>Attempted</th><th>Correct</th><th>Incorrect</th><th>Skipped</th><th>Accuracy</th></tr><tr><td>Atomic Structure</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Organic Chemistry</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Acids and Bases</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Chemical Bonding</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Stoichiometry</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Industrial Chemistry</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Periodic Table</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Thermodynamics</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Physical Chemistry</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr><tr><td>Inorganic Chemistry</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0.00%</td></tr></table><h3>English</h3><table><tr><th>Topic</th><th>Attempted</th><th>Correct</th><th>Incorrect</th><th>Skipped</th><th>Accuracy</th></tr><tr><td>Vocabulary</td><td>5</td><td>0</td><td>5</td><td>0</td><td>0.00%</td></tr><tr><td>Grammar</td><td>11</td><td>0</td><td>11</td><td>0</td><td>0.00%</td></tr><tr><td>Sentence Correction</td><td>5</td><td>0</td><td>5</td><td>0</td><td>0.00%</td></tr></table>
+            </div>
+
+            <div class="weak-areas">
+                <h2>Weak Areas</h2>
+                <p><strong>Mathematics - Trigonometry:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Mathematics - Algebra:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Mathematics - Combinatorics:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Mathematics - Sequences and Series:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Mathematics - Complex Numbers:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Mathematics - Logarithms:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Mathematics - Calculus:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Mathematics - Probability:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Mathematics - Set Theory:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Mathematics - Conic Sections:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Mathematics - Functions:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Mathematics - Vectors:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Mathematics - Exponents:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Mathematics - Geometry:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Mathematics - Statistics:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Mathematics - Matrices:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Physics - Mechanics:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Physics - Quantum Mechanics:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Physics - Dimensional Analysis:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Physics - Optics:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Physics - Electromagnetism:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Physics - Waves:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Physics - Thermodynamics:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Physics - Nuclear Physics:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Chemistry - Atomic Structure:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Chemistry - Organic Chemistry:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Chemistry - Acids and Bases:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Chemistry - Chemical Bonding:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Chemistry - Stoichiometry:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Chemistry - Industrial Chemistry:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Chemistry - Periodic Table:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Chemistry - Thermodynamics:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Chemistry - Physical Chemistry:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>Chemistry - Inorganic Chemistry:</strong> Attempted: 1, Correct: 0, Incorrect: 1, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>English - Vocabulary:</strong> Attempted: 5, Correct: 0, Incorrect: 5, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>English - Grammar:</strong> Attempted: 11, Correct: 0, Incorrect: 11, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p><p><strong>English - Sentence Correction:</strong> Attempted: 5, Correct: 0, Incorrect: 5, Skipped: 0, Accuracy: 0.00%. Recommendation: Focus on this topic due to low accuracy or incorrect answers.</p>
+            </div>
+
+            <div class="tips-box">
+                <h2>Tips for Improvement</h2>
+                <ul>
+                    <li><strong>Overall Performance:</strong> Your score is below 40%. Focus on consistent daily practice across all sections.</li><li><strong>Mathematics:</strong> Weak in Trigonometry or Calculus? Practice 15 problems per topic daily.</li><li><strong>Physics:</strong> Struggling with Mechanics or Electromagnetism? Solve 10 numerical problems daily.</li><li><strong>Chemistry:</strong> Review Organic Chemistry or Acids and Bases with flashcards.</li><li><strong>English:</strong> Improve vocabulary and grammar. Read articles and practice writing daily.</li>
+                </ul>
+            </div>
+
+            <div class="motivation">
+                <h2>Keep Going!</h2>
+                <p>You've taken the first step by attempting this test—great job! With consistent practice and focus on your weak areas, you'll see improvement in no time. Keep practicing—you're on the right track!</p>
+            </div>
+        </div>
+
+        <script>
+            // Pie Chart for Overall Performance
+            const overallCtx = document.getElementById('overallChart').getContext('2d');
+            new Chart(overallCtx, {
+                type: 'pie',
+                data: {
+                    labels: ['Correct', 'Incorrect', 'Skipped'],
+                    datasets: [{
+                        data: [5, 94, 1],
+                        backgroundColor: ['#36a2eb', '#ff6384', '#c9cbcf'],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { position: 'top' },
+                        title: { display: true, text: 'Overall Performance Distribution' }
+                    }
+                }
+            });
+
+            // Bar Chart for Section-wise Performance
+            const sectionCtx = document.getElementById('sectionChart').getContext('2d');
+            new Chart(sectionCtx, {
+                type: 'bar',
+                data: {
+                    labels: ["Mathematics", "Physics", "Chemistry", "English"],
+                    datasets: [{
+                        label: 'Correct Answers',
+                        data: [1, 4, 0, 0],
+                        backgroundColor: '#4a90e2',
+                        borderColor: '#2b6cb0',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: { beginAtZero: true, title: { display: true, text: 'Number of Correct Answers' } },
+                        x: { title: { display: true, text: 'Section' } }
+                    },
+                    plugins: {
+                        legend: { display: false },
+                        title: { display: true, text: 'Section-wise Correct Answers' }
+                    }
+                }
+            });
+        </script>
+    </body>
+    </html>
+    
