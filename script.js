@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Handle form submission (local storage)
   registrationForm.addEventListener("submit", (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Prevent form submission and redirect
     const formData = new FormData(registrationForm);
     const studentInfo = Object.fromEntries(formData);
     sessionStorage.setItem("studentInfo", JSON.stringify(studentInfo));
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Update form action to Formsubmit endpoint
         registrationForm.action =
-          "https://formsubmit.co/abdulahadchachar92@gmail.com.com"; // Replace with your Formsubmit email
+          "https://formsubmit.co/abdulahadchachar92@gmail.com"; // Replace with your Formsubmit email
         registrationForm.method = "POST";
 
         // Submit form to Formsubmit
