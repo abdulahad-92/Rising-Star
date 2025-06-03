@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   const registrationForm = document.getElementById("registration-form");
   const submitTestBtn = document.getElementById("submit-test-btn");
   const answersUrlInput = document.getElementById("answers_url");
+  const prevBtn = document.getElementById("prev-btn");
+  const nextBtn = document.getElementById("next-btn");
+  const questionCounter = document.getElementById("question-counter");
   let timerInterval;
   let timeLeft = 3600; // 60 minutes in seconds
   let currentQuestion = 0;
@@ -21,12 +24,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     console.error("Error loading questions:", e);
     document.getElementById("question-text").textContent =
       "Error loading questions. Contact support.";
-    return; // Stop execution if questions fail to load
+    return;
   }
 
   // Configure Uploadcare
-  uploadcare.registerTab("file", uploadcare.files);
-  uploadcare.defaults.pubkey = "your_uploadcare_public_key"; // Replace with your Uploadcare public key
+  uploadcare.registerTab("file", uploadcare.files); // Register 'file' tab
+  uploadcare.defaults.pubkey = "52a1bfb4563c9c1f7cfd"; // Replace with your Uploadcare public key
   uploadcare.defaults.multiple = false;
 
   // Show popup on load
@@ -61,7 +64,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }, 1000);
   }
 
-  // Load question with smooth transition
+  // Load question with smooth transition and counter
   function loadQuestion() {
     if (currentQuestion >= questions.length) {
       document.getElementById("question-section").classList.add("hidden");
@@ -76,7 +79,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       document.querySelectorAll(".option").forEach((option) => {
         const value = option.getAttribute("data-value");
         option.textContent =
-          questions[currentQuestion]?.options[value] || value; // Display actual option text
+          questions[currentQuestion]?.options[value] || value;
         option.classList.remove("selected");
         if (
           answers[currentQuestion] &&
@@ -85,8 +88,32 @@ document.addEventListener("DOMContentLoaded", async () => {
           option.classList.add("selected");
         }
       });
+      questionCounter.textContent = `Question ${currentQuestion + 1} of ${
+        questions.length
+      }`;
+      updateButtonStates();
       questionSection.style.opacity = "1";
     }, 300);
+  }
+
+  // Update button states based on current question
+  function updateButtonStates() {
+    if (currentQuestion === 0) {
+      prevBtn.classList.add("disabled");
+      prevBtn.disabled = true;
+    } else {
+      prevBtn.classList.remove("disabled");
+      prevBtn.disabled = false;
+    }
+    if (currentQuestion === questions.length - 1) {
+      nextBtn.classList.add("disabled");
+      nextBtn.disabled = true;
+      submitTestBtn.classList.remove("hidden");
+    } else {
+      nextBtn.classList.remove("disabled");
+      nextBtn.disabled = false;
+      submitTestBtn.classList.add("hidden");
+    }
   }
 
   // Handle option selection
@@ -104,14 +131,14 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 
   // Navigation
-  document.getElementById("prev-btn").addEventListener("click", () => {
+  prevBtn.addEventListener("click", () => {
     if (currentQuestion > 0) {
       currentQuestion--;
       loadQuestion();
     }
   });
 
-  document.getElementById("next-btn").addEventListener("click", () => {
+  nextBtn.addEventListener("click", () => {
     if (currentQuestion < questions.length - 1) {
       currentQuestion++;
       loadQuestion();
@@ -147,16 +174,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       file
         .done((uploadedFile) => {
           const cdnUrl = uploadedFile.cdnUrl;
-
-          // Update hidden input with CDN URL
           answersUrlInput.value = cdnUrl;
-
-          // Update form action to Formsubmit endpoint
           registrationForm.action =
             "https://formsubmit.co/abdulahadchachar92@gmail.com";
           registrationForm.method = "POST";
-
-          // Submit form to Formsubmit
           fetch(registrationForm.action, {
             method: "POST",
             body: new FormData(registrationForm),
