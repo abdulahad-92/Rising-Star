@@ -12,14 +12,23 @@ document.addEventListener("DOMContentLoaded", () => {
   // Load questions from JSON with fallback
   let questions = [];
   try {
-    questions =
-      JSON.parse(document.getElementById("questions-data").textContent) || [];
+    const questionsData = document
+      .getElementById("questions-data")
+      .textContent.trim();
+    questions = questionsData ? JSON.parse(questionsData) : [];
+    if (questions.length === 0) {
+      console.warn("No questions found in questions.json");
+      document.getElementById("question-text").textContent =
+        "No questions available. Contact support.";
+    }
   } catch (e) {
     console.error("Error parsing questions.json:", e);
-    alert("Questions failed to load. Please contact support.");
+    document.getElementById("question-text").textContent =
+      "Error loading questions. Contact support.";
   }
 
   // Configure Uploadcare
+  uploadcare.registerTab("file", uploadcare.files); // Ensure file tab is available
   uploadcare.defaults.pubkey = "your_uploadcare_public_key"; // Replace with your Uploadcare public key
   uploadcare.defaults.multiple = false;
 
@@ -135,52 +144,55 @@ document.addEventListener("DOMContentLoaded", () => {
       `student_answers_${Date.now()}.json`
     );
 
-    // Upload to Uploadcare
-    uploadcare
-      .uploadDirect(answersFile)
-      .then((file) => {
-        const cdnUrl = file.cdnUrl;
+    // Use Uploadcare widget to upload file
+    const uploadcareWidget = uploadcare.Widget("[name=answers_url]");
+    uploadcareWidget.openDialog().done((file) => {
+      file
+        .done((uploadedFile) => {
+          const cdnUrl = uploadedFile.cdnUrl;
 
-        // Update hidden input with CDN URL
-        answersUrlInput.value = cdnUrl;
+          // Update hidden input with CDN URL
+          answersUrlInput.value = cdnUrl;
 
-        // Update form action to Formsubmit endpoint
-        registrationForm.action = "https://formsubmit.co/your_email"; // Replace with your Formsubmit email
-        registrationForm.method = "POST";
+          // Update form action to Formsubmit endpoint
+          registrationForm.action =
+            "https://formsubmit.co/abdulahadchachar92@gmail.com"; // Your email
+          registrationForm.method = "POST";
 
-        // Submit form to Formsubmit
-        fetch(registrationForm.action, {
-          method: "POST",
-          body: new FormData(registrationForm),
-          headers: { Accept: "application/json" },
-        })
-          .then((response) => {
-            if (response.ok) {
-              document.getElementById("results").classList.remove("hidden");
-              document.getElementById(
-                "result-text"
-              ).textContent = `Thank you, ${studentInfo.name}! Your report will be shared soon via WhatsApp.`;
-              document
-                .getElementById("question-section")
-                .classList.add("hidden");
-              document.getElementById("navigation").classList.add("hidden");
-              submitTestBtn.classList.add("hidden");
-            } else {
-              alert(
-                "Submission failed. Please email your answers to risingstars@gmail.com."
-              );
-            }
+          // Submit form to Formsubmit
+          fetch(registrationForm.action, {
+            method: "POST",
+            body: new FormData(registrationForm),
+            headers: { Accept: "application/json" },
           })
-          .catch((error) => {
-            alert(
-              "An error occurred. Please try again or email risingstyles@gmail.com."
-            );
-          });
-      })
-      .catch((error) => {
-        alert(
-          "File upload failed. Please email your answers to risingstars@gmail.com."
-        );
-      });
+            .then((response) => {
+              if (response.ok) {
+                document.getElementById("results").classList.remove("hidden");
+                document.getElementById(
+                  "result-text"
+                ).textContent = `Thank you, ${studentInfo.name}! Your report will be shared soon via WhatsApp.`;
+                document
+                  .getElementById("question-section")
+                  .classList.add("hidden");
+                document.getElementById("navigation").classList.add("hidden");
+                submitTestBtn.classList.add("hidden");
+              } else {
+                alert(
+                  "Submission failed. Please email your answers to abdulahadchachar92@gmail.com."
+                );
+              }
+            })
+            .catch((error) => {
+              alert(
+                "An error occurred. Please try again or email abdulahadchachar92@gmail.com."
+              );
+            });
+        })
+        .fail((error) => {
+          alert(
+            "File upload failed. Please email your answers to abdulahadchachar92@gmail.com."
+          );
+        });
+    });
   });
 });
