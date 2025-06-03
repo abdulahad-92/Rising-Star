@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   const popup = document.getElementById("registration-popup");
   const testContainer = document.getElementById("test-container");
   const registrationForm = document.getElementById("registration-form");
@@ -9,31 +9,23 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentQuestion = 0;
   let answers = {};
 
-  // Load questions from JSON with enhanced fallback
+  // Load questions from JSON dynamically
   let questions = [];
-  const questionsDataElement = document.getElementById("questions-data");
-  if (questionsDataElement) {
-    try {
-      const questionsData = questionsDataElement.textContent.trim();
-      questions = questionsData ? JSON.parse(questionsData) : [];
-      if (questions.length === 0) {
-        console.warn("No questions found in questions.json");
-        document.getElementById("question-text").textContent =
-          "No questions available. Contact support.";
-      }
-    } catch (e) {
-      console.error("Error parsing questions.json:", e);
-      document.getElementById("question-text").textContent =
-        "Error loading questions. Contact support.";
-    }
-  } else {
-    console.error("questions-data element not found");
+  try {
+    const response = await fetch("questions.json");
+    if (!response.ok) throw new Error("Failed to fetch questions.json");
+    questions = await response.json();
+    if (!questions.length)
+      throw new Error("No questions found in questions.json");
+  } catch (e) {
+    console.error("Error loading questions:", e);
     document.getElementById("question-text").textContent =
-      "Questions data not loaded. Contact support.";
+      "Error loading questions. Contact support.";
+    return; // Stop execution if questions fail to load
   }
 
   // Configure Uploadcare
-  uploadcare.registerTab("file", uploadcare.files); // Ensure file tab is available
+  uploadcare.registerTab("file", uploadcare.files);
   uploadcare.defaults.pubkey = "52a1bfb4563c9c1f7cfd"; // Replace with your Uploadcare public key
   uploadcare.defaults.multiple = false;
 
@@ -42,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Handle form submission (local storage)
   registrationForm.addEventListener("submit", (e) => {
-    e.preventDefault(); // Prevent default form submission
+    e.preventDefault();
     const formData = new FormData(registrationForm);
     const studentInfo = Object.fromEntries(formData);
     sessionStorage.setItem("studentInfo", JSON.stringify(studentInfo));
@@ -80,10 +72,11 @@ document.addEventListener("DOMContentLoaded", () => {
     questionSection.style.opacity = "0";
     setTimeout(() => {
       document.getElementById("question-text").textContent =
-        questions[currentQuestion]?.text || "Loading question...";
+        questions[currentQuestion]?.question || "Loading question...";
       document.querySelectorAll(".option").forEach((option) => {
         const value = option.getAttribute("data-value");
-        option.textContent = value;
+        option.textContent =
+          questions[currentQuestion]?.options[value] || value; // Display actual option text
         option.classList.remove("selected");
         if (
           answers[currentQuestion] &&
@@ -149,7 +142,6 @@ document.addEventListener("DOMContentLoaded", () => {
       `student_answers_${Date.now()}.json`
     );
 
-    // Use Uploadcare widget to upload file
     const uploadcareWidget = uploadcare.Widget("[name=answers_url]");
     uploadcareWidget.openDialog().done((file) => {
       file
@@ -161,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           // Update form action to Formsubmit endpoint
           registrationForm.action =
-            "https://formsubmit.co/abdulahadchachar92@gmail.com"; // Your email
+            "https://formsubmit.co/abdulahadchachar92@gmail.com";
           registrationForm.method = "POST";
 
           // Submit form to Formsubmit
