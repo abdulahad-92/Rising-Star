@@ -9,22 +9,27 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentQuestion = 0;
   let answers = {};
 
-  // Load questions from JSON with fallback
+  // Load questions from JSON with enhanced fallback
   let questions = [];
-  try {
-    const questionsData = document
-      .getElementById("questions-data")
-      .textContent.trim();
-    questions = questionsData ? JSON.parse(questionsData) : [];
-    if (questions.length === 0) {
-      console.warn("No questions found in questions.json");
+  const questionsDataElement = document.getElementById("questions-data");
+  if (questionsDataElement) {
+    try {
+      const questionsData = questionsDataElement.textContent.trim();
+      questions = questionsData ? JSON.parse(questionsData) : [];
+      if (questions.length === 0) {
+        console.warn("No questions found in questions.json");
+        document.getElementById("question-text").textContent =
+          "No questions available. Contact support.";
+      }
+    } catch (e) {
+      console.error("Error parsing questions.json:", e);
       document.getElementById("question-text").textContent =
-        "No questions available. Contact support.";
+        "Error loading questions. Contact support.";
     }
-  } catch (e) {
-    console.error("Error parsing questions.json:", e);
+  } else {
+    console.error("questions-data element not found");
     document.getElementById("question-text").textContent =
-      "Error loading questions. Contact support.";
+      "Questions data not loaded. Contact support.";
   }
 
   // Configure Uploadcare
