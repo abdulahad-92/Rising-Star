@@ -12,6 +12,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   let currentQuestion = 0;
   let answers = {};
 
+  // Uploadcare keys (replace with your keys)
+  const UPLOADCARE_PUBLIC_KEY = "52a1bfb4563c9c1f7cfd";
+  const UPLOADCARE_SECRET_KEY = "b27f3fb079938c3d3198"; // Add your secret key here
+
   // Load questions from JSON dynamically
   let questions = [];
   try {
@@ -26,11 +30,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       "Error loading questions. Contact support.";
     return;
   }
-
-  // Configure Uploadcare
-  uploadcare.registerTab("file", uploadcare.files); // Register 'file' tab
-  uploadcare.defaults.pubkey = "52a1bfb4563c9c1f7cfd"; // Replace with your Uploadcare public key
-  uploadcare.defaults.multiple = false;
 
   // Show popup on load
   popup.classList.remove("hidden");
@@ -145,8 +144,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   });
 
-  // Submit test with Uploadcare and Formsubmit
-  submitTestBtn.addEventListener("click", () => {
+  // Submit test with Uploadcare REST API and Formsubmit
+  submitTestBtn.addEventListener("click", async () => {
     clearInterval(timerInterval);
     const studentInfo = JSON.parse(
       sessionStorage.getItem("studentInfo") || "{}"
@@ -169,48 +168,60 @@ document.addEventListener("DOMContentLoaded", async () => {
       `student_answers_${Date.now()}.json`
     );
 
-    const uploadcareWidget = uploadcare.Widget("[name=answers_url]");
-    uploadcareWidget.openDialog().done((file) => {
-      file
-        .done((uploadedFile) => {
-          const cdnUrl = uploadedFile.cdnUrl;
-          answersUrlInput.value = cdnUrl;
-          registrationForm.action =
-            "https://formsubmit.co/abdulahadchachar92@gmail.com";
-          registrationForm.method = "POST";
-          fetch(registrationForm.action, {
-            method: "POST",
-            body: new FormData(registrationForm),
-            headers: { Accept: "application/json" },
-          })
-            .then((response) => {
-              if (response.ok) {
-                document.getElementById("results").classList.remove("hidden");
-                document.getElementById(
-                  "result-text"
-                ).textContent = `Thank you, ${studentInfo.name}! Your report will be shared soon via WhatsApp.`;
-                document
-                  .getElementById("question-section")
-                  .classList.add("hidden");
-                document.getElementById("navigation").classList.add("hidden");
-                submitTestBtn.classList.add("hidden");
-              } else {
-                alert(
-                  "Submission failed. Please email your answers to abdulahadchachar92@gmail.com."
-                );
-              }
-            })
-            .catch((error) => {
-              alert(
-                "An error occurred. Please try again or email abdulahadchachar92@gmail.com."
-              );
-            });
-        })
-        .fail((error) => {
-          alert(
-            "File upload failed. Please email your answers to abdulahadchachar92@gmail.com."
-          );
-        });
-    });
+    try {
+      // Step 1: Get upload URL from Uploadcare
+      const formData = new FormData();
+      formData.append("UPLOADCARE_PUB_KEY", UPLOADCARE_PUBLIC_KEY);
+      formData.append("UPLOADCARE_STORE", "1"); // Auto-store the file
+      formData.append("file", answersFile);
+
+      const uploadResponse = await fetch(
+        "https://upload.uploadcare.com/base/",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+
+      if (!uploadResponse.ok) throw new Error("Uploadcare upload failed");
+      const uploadResult = await uploadResponse.json();
+      const fileId = uploadResult.file;
+
+      // Step 2: Get CDN URL
+      const cdnUrl = `https://ucarecdn.com/${fileId}/`;
+
+      // Step 3: Update hidden input with CDN URL
+      answersUrlInput.value = cdnUrl;
+
+      // Step 4: Submit form to Formsubmit
+      registrationForm.action =
+        "https://formsubmit.co/abdulahadchachar92@gmail.com";
+      registrationForm.method = "POST";
+
+      const formResponse = await fetch(registrationForm.action, {
+        method: "POST",
+        body: new FormData(registrationForm),
+        headers: { Accept: "application/json" },
+      });
+
+      if (formResponse.ok) {
+        document.getElementById("results").classList.remove("hidden");
+        document.getElementById(
+          "result-text"
+        ).textContent = `Thank you, ${studentInfo.name}! Your report will be shared soon via WhatsApp.`;
+        document.getElementById("question-section").classList.add("hidden");
+        document.getElementById("navigation").classList.add("hidden");
+        submitTestBtn.classList.add("hidden");
+      } else {
+        alert(
+          "Submission failed. Please email your answers to abdulahadchachar92@gmail.com."
+        );
+      }
+    } catch (error) {
+      console.error("Error during submission:", error);
+      alert(
+        "An error occurred. Please email your answers to abdulahadchachar92@gmail.com."
+      );
+    }
   });
 });
