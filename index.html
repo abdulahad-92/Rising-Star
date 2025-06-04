@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rising Stars - MUET Entry Test Preparation</title>
     <link rel="stylesheet" href="styles.css" />
-    <script>
-      UPLOADCARE_PUBLIC_KEY = "52a1bfb4563c9c1f7cfd";
-    </script>
   </head>
   <body>
-    <!-- Popup Form for Student Registration -->
+    <!-- Popup Form for Student Info -->
     <div id="registration-popup" class="popup">
       <div class="popup-content">
         <h2>Welcome to Rising Stars</h2>
-        <p>Please register to start your MUET Entry Test preparation.</p>
+        <p>
+          Thank you for registering via Google Form and completing your payment.
+          Please enter your details to start your MUET Entry Test.
+        </p>
         <form id="registration-form">
           <div class="form-group">
             <label for="name">Full Name:</label>
@@ -85,6 +85,9 @@
         <button id="submit-test-btn" class="submit-btn hidden">
           Submit Test
         </button>
+        <div id="loading" class="loading hidden">
+          Submitting your test... Please wait.
+        </div>
       </section>
 
       <div id="results" class="results hidden">
