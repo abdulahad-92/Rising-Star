@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   let answers = {};
 
   // Uploadcare keys (replace with your keys)
-  const UPLOADCARE_PUBLIC_KEY = "52a1bfb4563c9c1f7cfd";
-  const UPLOADCARE_SECRET_KEY = "52a1bfb4563c9c1f7cfd";
+  const UPLOADCARE_PUBLIC_KEY = "your_uploadcare_public_key";
+  const UPLOADCARE_SECRET_KEY = "your_uploadcare_secret_key";
 
   // Load questions from JSON dynamically
   let questions = [];
@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
     }
 
-    // Generate JSON file with timestamp
+    // Generate JSON file with student details
     const timestamp = new Date()
       .toISOString()
       .replace(/[-:]/g, "")
@@ -182,6 +182,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     const filename = `student_answers_${timestamp}.json`;
     const answersData = {
       student_id: studentInfo.phone || Date.now(),
+      name: studentInfo.name || "N/A",
+      phone: studentInfo.phone || "N/A",
       answers: answersArray,
     };
     const answersBlob = new Blob([JSON.stringify(answersData, null, 2)], {
@@ -224,7 +226,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       // Step 4: Submit to FormSubmit
       registrationForm.action =
-        "https://formsubmit.co/9078a2a259a95ed3de5512f08d489be6";
+        "https://formsubmit.co/abdulahadchachar92@gmail.com";
       registrationForm.method = "POST";
 
       const formResponse = await fetch(registrationForm.action, {
