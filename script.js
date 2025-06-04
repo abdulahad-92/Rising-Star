@@ -224,7 +224,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       // Step 4: Submit to FormSubmit
       registrationForm.action =
-        "https://formsubmit.co/abdulahadchachar92@gmail.com";
+        "https://formsubmit.co/9078a2a259a95ed3de5512f08d489be6";
       registrationForm.method = "POST";
 
       const formResponse = await fetch(registrationForm.action, {
