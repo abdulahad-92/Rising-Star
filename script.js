@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   let answers = {};
 
   // Uploadcare keys (replace with your keys)
-  const UPLOADCARE_PUBLIC_KEY = "your_uploadcare_public_key";
-  const UPLOADCARE_SECRET_KEY = "your_uploadcare_secret_key";
+  const UPLOADCARE_PUBLIC_KEY = "52a1bfb4563c9c1f7cfd";
+  const UPLOADCARE_SECRET_KEY = "b27f3fb079938c3d3198";
 
   // Load questions from JSON dynamically
   let questions = [];
