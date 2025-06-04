@@ -14,6 +14,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   let currentQuestion = 0;
   let answers = {};
 
+  // Uploadcare keys (replace with your keys)
+  const UPLOADCARE_PUBLIC_KEY = "52a1bfb4563c9c1f7cfd";
+  const UPLOADCARE_SECRET_KEY = "52a1bfb4563c9c1f7cfd";
+
   // Load questions from JSON dynamically
   let questions = [];
   try {
@@ -142,7 +146,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   });
 
-  // Submit test with file download
+  // Submit test with Uploadcare REST API and FormSubmit
   submitTestBtn.addEventListener("click", async () => {
     clearInterval(timerInterval);
     loading.classList.remove("hidden");
@@ -159,7 +163,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         answersArray.push({
           id: questions[i].id,
           selected_option: answers[i].selected_option,
-          correctness: answers[i].correctness || "pending", // Placeholder if not pre-assigned
+          correctness: answers[i].correctness || "pending",
         });
       } else {
         answersArray.push({
@@ -170,40 +174,85 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
     }
 
-    const answersBlob = new Blob(
-      [
-        JSON.stringify(
-          {
-            student_id: studentInfo.phone || Date.now(),
-            answers: answersArray,
-          },
-          null,
-          2
-        ),
-      ],
-      { type: "application/json" }
-    );
-
+    // Generate JSON file with timestamp
     const timestamp = new Date()
       .toISOString()
       .replace(/[-:]/g, "")
       .slice(0, 15);
     const filename = `student_answers_${timestamp}.json`;
-    const url = window.URL.createObjectURL(answersBlob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = filename;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    window.URL.revokeObjectURL(url);
+    const answersData = {
+      student_id: studentInfo.phone || Date.now(),
+      answers: answersArray,
+    };
+    const answersBlob = new Blob([JSON.stringify(answersData, null, 2)], {
+      type: "application/json",
+    });
+    const answersFile = new File([answersBlob], filename);
 
-    // Simulate loading delay and show results
-    setTimeout(() => {
+    try {
+      // Step 1: Upload to Uploadcare
+      const formData = new FormData();
+      formData.append("UPLOADCARE_PUB_KEY", UPLOADCARE_PUBLIC_KEY);
+      formData.append("UPLOADCARE_STORE", "1");
+      formData.append("file", answersFile);
+
+      const uploadResponse = await fetch(
+        "https://upload.uploadcare.com/base/",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+
+      if (!uploadResponse.ok)
+        throw new Error(
+          `Uploadcare upload failed: ${uploadResponse.statusText}`
+        );
+      const uploadResult = await uploadResponse.json();
+      const fileId = uploadResult.file;
+
+      // Step 2: Get CDN URL
+      const cdnUrl = `https://ucarecdn.com/${fileId}/`;
+      answersUrlInput.value = cdnUrl;
+
+      // Step 3: Add filename to form data for FormSubmit
+      const hiddenFilenameInput = document.createElement("input");
+      hiddenFilenameInput.type = "hidden";
+      hiddenFilenameInput.name = "json_filename";
+      hiddenFilenameInput.value = filename;
+      registrationForm.appendChild(hiddenFilenameInput);
+
+      // Step 4: Submit to FormSubmit
+      registrationForm.action =
+        "https://formsubmit.co/abdulahadchachar92@gmail.com";
+      registrationForm.method = "POST";
+
+      const formResponse = await fetch(registrationForm.action, {
+        method: "POST",
+        body: new FormData(registrationForm),
+        headers: { Accept: "application/json" },
+      });
+
+      if (formResponse.ok) {
+        console.log("FormSubmit email sent successfully");
+        results.classList.remove("hidden");
+        document.getElementById(
+          "result-text"
+        ).textContent = `Thank you, ${studentInfo.name}! Your report will be shared soon via WhatsApp.`;
+        document.getElementById("question-section").classList.add("hidden");
+        document.getElementById("navigation").classList.add("hidden");
+      } else {
+        throw new Error(
+          `FormSubmit submission failed: ${formResponse.statusText}`
+        );
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
+      alert(
+        "An error occurred during submission. Please email your answers to abdulahadchachar92@gmail.com."
+      );
+    } finally {
       loading.classList.add("hidden");
-      results.classList.remove("hidden");
-      document.getElementById("question-section").classList.add("hidden");
-      document.getElementById("navigation").classList.add("hidden");
-    }, 2000); // 2-second loading delay
+    }
   });
 });
