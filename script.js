@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   let answers = {};
 
   // Uploadcare keys (replace with your keys)
-  const UPLOADCARE_PUBLIC_KEY = "52a1bfb4563c9c1f7cfd";
-  const UPLOADCARE_SECRET_KEY = "b27f3fb079938c3d3198";
+  const UPLOADCARE_PUBLIC_KEY = "your_uploadcare_public_key";
+  const UPLOADCARE_SECRET_KEY = "your_uploadcare_secret_key";
 
   // Load questions from JSON dynamically
   let questions = [];
@@ -191,8 +191,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
     const answersFile = new File([answersBlob], filename);
 
+    let cdnUrl = "";
+    let uploadFailed = false;
+
     try {
-      // Step 1: Upload to Uploadcare
+      // Step 1: Attempt Upload to Uploadcare
       const formData = new FormData();
       formData.append("UPLOADCARE_PUB_KEY", UPLOADCARE_PUBLIC_KEY);
       formData.append("UPLOADCARE_STORE", "1");
@@ -206,25 +209,43 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
       );
 
-      if (!uploadResponse.ok)
+      if (!uploadResponse.ok) {
         throw new Error(
           `Uploadcare upload failed: ${uploadResponse.statusText}`
         );
+      }
+
       const uploadResult = await uploadResponse.json();
       const fileId = uploadResult.file;
+      cdnUrl = `https://ucarecdn.com/${fileId}/`;
+      console.log("Uploadcare upload successful:", cdnUrl);
+    } catch (error) {
+      console.error("Uploadcare upload failed:", error);
+      uploadFailed = true;
+    }
 
-      // Step 2: Get CDN URL
-      const cdnUrl = `https://ucarecdn.com/${fileId}/`;
-      answersUrlInput.value = cdnUrl;
+    // Step 2: Prepare FormSubmit data
+    answersUrlInput.value = cdnUrl;
 
-      // Step 3: Add filename to form data for FormSubmit
-      const hiddenFilenameInput = document.createElement("input");
-      hiddenFilenameInput.type = "hidden";
-      hiddenFilenameInput.name = "json_filename";
-      hiddenFilenameInput.value = filename;
-      registrationForm.appendChild(hiddenFilenameInput);
+    // Add filename to form data
+    const hiddenFilenameInput = document.createElement("input");
+    hiddenFilenameInput.type = "hidden";
+    hiddenFilenameInput.name = "json_filename";
+    hiddenFilenameInput.value = filename;
+    registrationForm.appendChild(hiddenFilenameInput);
 
-      // Step 4: Submit to FormSubmit
+    // If Uploadcare failed, include raw JSON in FormSubmit
+    if (uploadFailed) {
+      const hiddenJsonInput = document.createElement("input");
+      hiddenJsonInput.type = "hidden";
+      hiddenJsonInput.name = "raw_json";
+      hiddenJsonInput.value = JSON.stringify(answersData, null, 2);
+      registrationForm.appendChild(hiddenJsonInput);
+      console.log("Added raw JSON to FormSubmit as backup");
+    }
+
+    // Step 3: Submit to FormSubmit
+    try {
       registrationForm.action =
         "https://formsubmit.co/abdulahadchachar92@gmail.com";
       registrationForm.method = "POST";
@@ -249,7 +270,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         );
       }
     } catch (error) {
-      console.error("Submission error:", error);
+      console.error("FormSubmit submission error:", error);
       alert(
         "An error occurred during submission. Please email your answers to abdulahadchachar92@gmail.com."
       );
