@@ -1,3 +1,4 @@
+import glob
 import json
 import os
 import re
@@ -239,7 +240,7 @@ def load_json_data(file_path, default_data=None):
             return json.load(f)
     except FileNotFoundError:
         return default_data if default_data is not None else {}
-
+    print(questions)
 def generate_html_report(student_data, questions, metadata, output_dir='reports'):
     performance = assess_performance(student_data, questions, metadata)
     section_stats, topic_stats = generate_stats(performance, metadata)
@@ -269,7 +270,7 @@ def generate_html_report(student_data, questions, metadata, output_dir='reports'
 
     # Load tips from JSON
     # Load tips from JSON
-    tips_data = load_json_data('tips.json', {
+    tips_data = load_json_data(os.path.join('config', 'tips.json'), {
         "score_ranges": [
             {"min": 0, "max": 40,
              "tips": ["Focus on daily practice across all sections.", "Review basic concepts to improve your score."],
@@ -328,8 +329,8 @@ def generate_html_report(student_data, questions, metadata, output_dir='reports'
     tips_list = "".join(
         [f'<li class="tip-{category}">{tip}</li>' for tip, category in tips])  # Use category for styling
 
-    print(tips_list)
-    print(topic_stats)
+
+
 
     # Load quotes and limit to 1-2
     quotes = load_quotes(QUOTES_PATH)
@@ -401,7 +402,7 @@ def generate_html_report(student_data, questions, metadata, output_dir='reports'
     rank_display = ""
 
     # Load badges from JSON
-    badges_data = load_json_data('badges.json', [])
+    badges_data = load_json_data(os.path.join('config', 'badges.json'), [])
 
     if rank_info:
         rank = rank_info['rank']
@@ -422,13 +423,13 @@ def generate_html_report(student_data, questions, metadata, output_dir='reports'
             rank_display = f'<div class="rank-badge" style="background-color: {badge_color}; color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold; margin-left: 10px; display: inline-block;" title="{badge_description}">Rank: {badge_text} (out of {total_students})</div>'
 
     # Load instructor notes
-    notes_data = load_json_data('instructor_notes.json', {"notes": []})
+    notes_data = load_json_data(os.path.join('config', 'instructor_notes.json'), {"notes": []})
     note_display = ""
-    for note in notes_data.get('notes', []):
-        if note['student_id'] == student_data.get('student_id', 'Unknown'):
+    for note in notes_data:
+        if note['student_id'] == student_data['student_id']:
             note_display = f'<p class="summary-text">{note["message"]}</p>'
-            print(note_display)
             break
+
     has_weaknesses = len(weak_series) > 0 and sum(weak_series) > 0
     weak_content = '''
         <div class="chart-container strength-weakness-container" id="weakDonutChart"></div>
@@ -437,7 +438,9 @@ def generate_html_report(student_data, questions, metadata, output_dir='reports'
             <p class="no-weakness-text">Congratulations! No weaknesses identified. Keep up the excellent work!</p>
         </div>
     '''
-
+    print(1,strength_series)
+    print(2,topic_stats)
+    print(3,topic_labels)
     html_content = f"""
     <!DOCTYPE html>
     <html lang="en">
@@ -1362,16 +1365,27 @@ def generate_html_report(student_data, questions, metadata, output_dir='reports'
     print(f"Generated HTML report for {json_file}: {html_path}")
     return html_path
 
-metadata = load_metadata(METADATA_PATH)
-questions = load_questions(QUESTIONS_PATH)
+# Define directories
+student_data_dir = os.getenv('STUDENT_DATA_DIR', 'student_data')  # Directory for student answers
+config_dir = os.getenv('CONFIG_DIR', 'config')  # Directory for config files
+output_dir = os.getenv('OUTPUT_DIR', 'reports')
 
-metadata_filename = os.path.basename(METADATA_PATH)
-questions_filename = os.path.basename(QUESTIONS_PATH)
+# Load metadata and questions
+with open(os.path.join(config_dir, 'metadata_mock_test_16.json'), 'r', encoding='utf-8') as f:
+    metadata = json.load(f)
 
-json_files = [f for f in os.listdir('.') if f.endswith('.json') and f != metadata_filename and f != questions_filename]
+with open(os.path.join(config_dir, 'questions.json'), 'r', encoding='utf-8') as f:
+    questions = {str(q['id']): q for q in json.load(f)}
 
-for json_file in json_files:
+print(1,config_dir)
+print(2,student_data_dir)
+print(3,questions)
+print(4,metadata)
+# Process student answers files
+for json_file in glob.glob(os.path.join(student_data_dir, 'student_answers_*.json')):
     with open(json_file, 'r', encoding='utf-8') as f:
         student_data = json.load(f)
-    report_path = generate_html_report(student_data, questions, metadata)
-    print(f"Generated report for {json_file}: {report_path}")
+    print(5,student_data)
+
+    html_path = generate_html_report(student_data, questions, metadata, output_dir)
+    print(f"Generated report for {os.path.basename(json_file)}: {html_path}")
