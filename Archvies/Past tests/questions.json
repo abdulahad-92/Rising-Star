@@ -1,0 +1,812 @@
+[
+  {
+    "id": 1,
+    "question": "The value of tan 60° is:",
+    "options": { "A": "1/√3", "B": "√3", "C": "1/2", "D": "1" },
+    "answer": "B"
+  },
+  {
+    "id": 2,
+    "question": "If cos θ = 5/13 and θ is in the first quadrant, then sin θ =:",
+    "options": { "A": "12/13", "B": "5/12", "C": "13/12", "D": "12/5" },
+    "answer": "A"
+  },
+  {
+    "id": 3,
+    "question": "The solution to the system 3x + 2y = 12 and x − y = 1 is:",
+    "options": { "A": "(2,1)", "B": "(1,2)", "C": "(3,1)", "D": "(2,3)" },
+    "answer": "A"
+  },
+  {
+    "id": 4,
+    "question": "The number of permutations of 4 distinct objects taken 2 at a time is:",
+    "options": { "A": "6", "B": "12", "C": "16", "D": "24" },
+    "answer": "B"
+  },
+  {
+    "id": 5,
+    "question": "The 5th term of the geometric sequence with first term 2 and common ratio 3 is:",
+    "options": { "A": "54", "B": "162", "C": "486", "D": "18" },
+    "answer": "B"
+  },
+  {
+    "id": 6,
+    "question": "If z = 3 − 4i, then |z| =:",
+    "options": { "A": "5", "B": "7", "C": "9", "D": "12" },
+    "answer": "A"
+  },
+  {
+    "id": 7,
+    "question": "The equation of the line parallel to y = −3x + 4 and passing through (1,2) is:",
+    "options": {
+      "A": "y = −3x + 5",
+      "B": "y = −3x + 2",
+      "C": "y = 3x − 1",
+      "D": "y = −3x + 1"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 8,
+    "question": "If log₅ 25 = x, then x =:",
+    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
+    "answer": "B"
+  },
+  {
+    "id": 9,
+    "question": "The derivative of sin(2x) with respect to x is:",
+    "options": {
+      "A": "2cos(2x)",
+      "B": "cos(2x)",
+      "C": "2sin(2x)",
+      "D": "−cos(2x)"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 10,
+    "question": "The probability of drawing a red card from a standard deck of 52 cards is:",
+    "options": { "A": "1/2", "B": "1/4", "C": "1/3", "D": "2/3" },
+    "answer": "A"
+  },
+  {
+    "id": 11,
+    "question": "If A = {1,3,5} and B = {2,3,4}, then A − B =:",
+    "options": { "A": "{1,5}", "B": "{3}", "C": "{2,4}", "D": "∅" },
+    "answer": "A"
+  },
+  {
+    "id": 12,
+    "question": "The focus of the parabola y² = 8x is:",
+    "options": { "A": "(2,0)", "B": "(0,2)", "C": "(4,0)", "D": "(0,4)" },
+    "answer": "A"
+  },
+  {
+    "id": 13,
+    "question": "The value of sin⁻¹(1) is:",
+    "options": { "A": "π/6", "B": "π/4", "C": "π/3", "D": "π/2" },
+    "answer": "D"
+  },
+  {
+    "id": 14,
+    "question": "If f(x) = 3x − 2, then f⁻¹(x) =:",
+    "options": {
+      "A": "(x + 2)/3",
+      "B": "(x − 2)/3",
+      "C": "3x + 2",
+      "D": "3/(x + 2)"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 15,
+    "question": "The sum of an infinite geometric series with first term 4 and common ratio 1/2 is:",
+    "options": { "A": "6", "B": "8", "C": "12", "D": "16" },
+    "answer": "B"
+  },
+  {
+    "id": 16,
+    "question": "If tan(2θ) = 1, then θ = (in the first quadrant):",
+    "options": { "A": "30°", "B": "45°", "C": "60°", "D": "90°" },
+    "answer": "B"
+  },
+  {
+    "id": 17,
+    "question": "The number of solutions to x² − 5x + 6 = 0 is:",
+    "options": { "A": "0", "B": "1", "C": "2", "D": "3" },
+    "answer": "C"
+  },
+  {
+    "id": 18,
+    "question": "The magnitude of the vector (−3,4) is:",
+    "options": { "A": "5", "B": "7", "C": "9", "D": "12" },
+    "answer": "A"
+  },
+  {
+    "id": 19,
+    "question": "If 3^x = 9, then x =:",
+    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
+    "answer": "B"
+  },
+  {
+    "id": 20,
+    "question": "The angle between vectors (1,1) and (1,−1) is:",
+    "options": { "A": "30°", "B": "45°", "C": "90°", "D": "180°" },
+    "answer": "C"
+  },
+  {
+    "id": 21,
+    "question": "The perimeter of a rectangle with length 10 cm and width 6 cm is:",
+    "options": { "A": "16 cm", "B": "32 cm", "C": "60 cm", "D": "80 cm" },
+    "answer": "B"
+  },
+  {
+    "id": 22,
+    "question": "The integral ∫(2x² + 1)dx is:",
+    "options": {
+      "A": "(2x³)/3 + x + C",
+      "B": "(x³)/3 + x + C",
+      "C": "2x³ + x + C",
+      "D": "(2x²)/3 + x + C"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 23,
+    "question": "The mode of the data set 3,5,5,7,9 is:",
+    "options": { "A": "3", "B": "5", "C": "7", "D": "9" },
+    "answer": "B"
+  },
+  {
+    "id": 24,
+    "question": "If A = [[4,1],[2,3]], then adj(A) =:",
+    "options": {
+      "A": "[[3,-1],[-2,4]]",
+      "B": "[[4,-1],[-2,3]]",
+      "C": "[[3,1],[2,4]]",
+      "D": "[[4,1],[2,3]]"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 25,
+    "question": "The sum of the first 5 terms of the sequence 1,4,9,16,... is:",
+    "options": { "A": "45", "B": "55", "C": "65", "D": "75" },
+    "answer": "B"
+  },
+  {
+    "id": 26,
+    "question": "The SI unit of torque is:",
+    "options": { "A": "N·m", "B": "Joule", "C": "Watt", "D": "N/m" },
+    "answer": "A"
+  },
+  {
+    "id": 27,
+    "question": "The uncertainty principle is associated with:",
+    "options": {
+      "A": "Newton",
+      "B": "Einstein",
+      "C": "Heisenberg",
+      "D": "Bohr"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 28,
+    "question": "The angular momentum of a particle is given by:",
+    "options": { "A": "mvr", "B": "mv/r", "C": "mv²r", "D": "mvr²" },
+    "answer": "A"
+  },
+  {
+    "id": 29,
+    "question": "The dimensional formula of pressure is:",
+    "options": { "A": "ML⁻¹T⁻²", "B": "MLT⁻²", "C": "ML²T⁻²", "D": "M⁻¹LT⁻²" },
+    "answer": "A"
+  },
+  {
+    "id": 30,
+    "question": "The time period of a simple pendulum is proportional to:",
+    "options": {
+      "A": "Mass of bob",
+      "B": "√length",
+      "C": "Amplitude",
+      "D": "Gravity"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 31,
+    "question": "The critical angle depends on:",
+    "options": {
+      "A": "Wavelength",
+      "B": "Refractive index",
+      "C": "Temperature",
+      "D": "All of these"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 32,
+    "question": "The SI unit of magnetic flux is:",
+    "options": { "A": "Tesla", "B": "Weber", "C": "Henry", "D": "Ampere" },
+    "answer": "B"
+  },
+  {
+    "id": 33,
+    "question": "The terminal velocity of a falling object occurs when:",
+    "options": {
+      "A": "Acceleration is maximum",
+      "B": "Net force is zero",
+      "C": "Velocity is zero",
+      "D": "Drag force is zero"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 34,
+    "question": "The formula for capacitance is:",
+    "options": { "A": "Q/V", "B": "V/Q", "C": "QV", "D": "Q²/V" },
+    "answer": "A"
+  },
+  {
+    "id": 35,
+    "question": "The frequency of a wave is:",
+    "options": {
+      "A": "Number of waves per second",
+      "B": "Distance between waves",
+      "C": "Height of wave",
+      "D": "Speed of wave"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 36,
+    "question": "The energy of a photon is given by:",
+    "options": {
+      "A": "E = mc²",
+      "B": "E = hf",
+      "C": "E = hc/λ",
+      "D": "Both B and C"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 37,
+    "question": "The unit of specific heat capacity is:",
+    "options": { "A": "J/kg·K", "B": "J/K", "C": "W/m·K", "D": "J/m²" },
+    "answer": "A"
+  },
+  {
+    "id": 38,
+    "question": "The potential difference across a resistor is measured by:",
+    "options": {
+      "A": "Ammeter",
+      "B": "Voltmeter",
+      "C": "Galvanometer",
+      "D": "Ohmmeter"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 39,
+    "question": "The binding energy of a nucleus is:",
+    "options": {
+      "A": "Energy to split nucleus",
+      "B": "Energy to form nucleus",
+      "C": "Energy of protons",
+      "D": "Energy of neutrons"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 40,
+    "question": "The formula for centripetal force is:",
+    "options": { "A": "mv²/r", "B": "mv²r", "C": "mv/r", "D": "mvr" },
+    "answer": "A"
+  },
+  {
+    "id": 41,
+    "question": "The polarization of light proves its:",
+    "options": {
+      "A": "Particle nature",
+      "B": "Wave nature",
+      "C": "Dual nature",
+      "D": "Quantum nature"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 42,
+    "question": "The Heisenberg uncertainty principle applies to:",
+    "options": {
+      "A": "Position and momentum",
+      "B": "Energy and time",
+      "C": "Both A and B",
+      "D": "Velocity and mass"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 43,
+    "question": "The work done by a gas during isothermal expansion depends on:",
+    "options": {
+      "A": "Pressure",
+      "B": "Volume change",
+      "C": "Temperature",
+      "D": "All of these"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 44,
+    "question": "The magnetic field due to a current-carrying wire is given by:",
+    "options": {
+      "A": "µ₀I/(2πr)",
+      "B": "µ₀I/(2r)",
+      "C": "µ₀I/(πr)",
+      "D": "µ₀I/r"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 45,
+    "question": "The formula for electrical power is:",
+    "options": { "A": "V²/R", "B": "I²R", "C": "VI", "D": "All of these" },
+    "answer": "D"
+  },
+  {
+    "id": 46,
+    "question": "The principle of superposition applies to:",
+    "options": {
+      "A": "Waves",
+      "B": "Particles",
+      "C": "Charges",
+      "D": "Magnets"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 47,
+    "question": "The speed of electromagnetic waves in vacuum is:",
+    "options": {
+      "A": "3×10⁶ m/s",
+      "B": "3×10⁸ m/s",
+      "C": "3×10¹⁰ m/s",
+      "D": "3×10⁴ m/s"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 48,
+    "question": "The third law of thermodynamics states that entropy:",
+    "options": {
+      "A": "Increases with temperature",
+      "B": "Approaches zero at absolute zero",
+      "C": "Is constant",
+      "D": "Is infinite"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 49,
+    "question": "The chromatic aberration in lenses is due to:",
+    "options": {
+      "A": "Reflection",
+      "B": "Dispersion",
+      "C": "Interference",
+      "D": "Diffraction"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 50,
+    "question": "The unit of angular velocity is:",
+    "options": { "A": "rad/s", "B": "m/s", "C": "rad/s²", "D": "m/s²" },
+    "answer": "A"
+  },
+  {
+    "id": 51,
+    "question": "The chemical symbol for potassium is:",
+    "options": { "A": "P", "B": "K", "C": "Pt", "D": "Po" },
+    "answer": "B"
+  },
+  {
+    "id": 52,
+    "question": "The number of protons in Mg²⁺ ion is:",
+    "options": { "A": "10", "B": "12", "C": "14", "D": "24" },
+    "answer": "B"
+  },
+  {
+    "id": 53,
+    "question": "The number of electrons in F⁻ ion is:",
+    "options": { "A": "8", "B": "9", "C": "10", "D": "11" },
+    "answer": "C"
+  },
+  {
+    "id": 54,
+    "question": "The bond in NH₄⁺ ion is:",
+    "options": {
+      "A": "Ionic",
+      "B": "Covalent",
+      "C": "Coordinate",
+      "D": "Metallic"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 55,
+    "question": "The structural formula of ethanol is:",
+    "options": { "A": "CH₃OH", "B": "C₂H₅OH", "C": "C₆H₅OH", "D": "CH₃COOH" },
+    "answer": "B"
+  },
+  {
+    "id": 56,
+    "question": "The structural formula of methanol is:",
+    "options": { "A": "CH₃OH", "B": "C₂H₅OH", "C": "CH₃CHO", "D": "CH₃COOH" },
+    "answer": "A"
+  },
+  {
+    "id": 57,
+    "question": "The structural formula of phenol is:",
+    "options": { "A": "C₆H₅OH", "B": "C₆H₆", "C": "C₆H₅CH₃", "D": "C₆H₅COOH" },
+    "answer": "A"
+  },
+  {
+    "id": 58,
+    "question": "Which of the following is a strong acid?",
+    "options": { "A": "CH₃COOH", "B": "HNO₃", "C": "H₂CO₃", "D": "HF" },
+    "answer": "B"
+  },
+  {
+    "id": 59,
+    "question": "The conjugate base of H₂SO₄ is:",
+    "options": { "A": "SO₄²⁻", "B": "HSO₄⁻", "C": "H₃SO₄⁺", "D": "OH⁻" },
+    "answer": "B"
+  },
+  {
+    "id": 60,
+    "question": "The product of oxidation of methanol with K₂Cr₂O₇ is:",
+    "options": {
+      "A": "Methanal",
+      "B": "Methanoic acid",
+      "C": "Methane",
+      "D": "Methanol"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 61,
+    "question": "The bond type in NaCl is:",
+    "options": {
+      "A": "Covalent",
+      "B": "Ionic",
+      "C": "Coordinate",
+      "D": "Metallic"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 62,
+    "question": "The number of neutrons in C¹² is:",
+    "options": { "A": "6", "B": "7", "C": "8", "D": "12" },
+    "answer": "A"
+  },
+  {
+    "id": 63,
+    "question": "Which acid is classified as weak?",
+    "options": { "A": "HCl", "B": "H₂SO₄", "C": "CH₃COOH", "D": "HNO₃" },
+    "answer": "C"
+  },
+  {
+    "id": 64,
+    "question": "The functional group in phenol is:",
+    "options": {
+      "A": "−OH (alcoholic)",
+      "B": "−OH (phenolic)",
+      "C": "−COOH",
+      "D": "−CHO"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 65,
+    "question": "The number of moles in 32 g of O₂ is:",
+    "options": { "A": "0.5", "B": "1", "C": "2", "D": "4" },
+    "answer": "B"
+  },
+  {
+    "id": 66,
+    "question": "The hybridization of carbon in ethanol (C₂H₅OH) at the carbon attached to OH is:",
+    "options": { "A": "sp³", "B": "sp²", "C": "sp", "D": "sp³d" },
+    "answer": "A"
+  },
+  {
+    "id": 67,
+    "question": "The catalyst used in the manufacture of sulfuric acid is:",
+    "options": {
+      "A": "Iron",
+      "B": "Vanadium pentoxide",
+      "C": "Nickel",
+      "D": "Platinum"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 68,
+    "question": "The first ionization energy of elements in a period:",
+    "options": {
+      "A": "Decreases",
+      "B": "Increases",
+      "C": "Remains constant",
+      "D": "Varies randomly"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 69,
+    "question": "The shape of CO₂ molecule is:",
+    "options": {
+      "A": "Linear",
+      "B": "Bent",
+      "C": "Trigonal planar",
+      "D": "Tetrahedral"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 70,
+    "question": "The standard enthalpy of formation is defined at:",
+    "options": { "A": "0 K", "B": "298 K", "C": "373 K", "D": "100 K" },
+    "answer": "B"
+  },
+  {
+    "id": 71,
+    "question": "The molecular formula of propanol is:",
+    "options": { "A": "C₃H₇OH", "B": "C₃H₆OH", "C": "C₂H₅OH", "D": "C₄H₉OH" },
+    "answer": "A"
+  },
+  {
+    "id": 72,
+    "question": "The SI unit of molality is:",
+    "options": { "A": "mol/L", "B": "mol/kg", "C": "g/L", "D": "g/mol" },
+    "answer": "B"
+  },
+  {
+    "id": 73,
+    "question": "The ore of aluminum is:",
+    "options": {
+      "A": "Bauxite",
+      "B": "Hematite",
+      "C": "Sphalerite",
+      "D": "Malachite"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 74,
+    "question": "The boiling point of a liquid increases with:",
+    "options": {
+      "A": "Decrease in pressure",
+      "B": "Increase in pressure",
+      "C": "Decrease in temperature",
+      "D": "Increase in volume"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 75,
+    "question": "The reaction of ethanol with acetic acid produces:",
+    "options": {
+      "A": "Ethyl acetate",
+      "B": "Ethanal",
+      "C": "Ethene",
+      "D": "Ether"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 76,
+    "question": "Synonym of 'diligent' is:",
+    "options": {
+      "A": "Lazy",
+      "B": "Hardworking",
+      "C": "Careless",
+      "D": "Slow"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 77,
+    "question": "Convert to indirect speech: He said, 'I am studying now.'",
+    "options": {
+      "A": "He said he was studying then.",
+      "B": "He said he is studying now.",
+      "C": "He said he studied then.",
+      "D": "He said he will study now."
+    },
+    "answer": "A"
+  },
+  {
+    "id": 78,
+    "question": "The correct preposition in 'She is interested ___ learning' is:",
+    "options": { "A": "at", "B": "in", "C": "on", "D": "with" },
+    "answer": "B"
+  },
+  {
+    "id": 79,
+    "question": "Antonym of 'vague' is:",
+    "options": {
+      "A": "Unclear",
+      "B": "Precise",
+      "C": "Ambiguous",
+      "D": "Obscure"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 80,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "They doesn’t play football.",
+      "B": "They don’t play football.",
+      "C": "They doesn’t plays football.",
+      "D": "They don’t plays football."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 81,
+    "question": "Synonym of 'authentic' is:",
+    "options": { "A": "Fake", "B": "Genuine", "C": "Copied", "D": "False" },
+    "answer": "B"
+  },
+  {
+    "id": 82,
+    "question": "The correct spelling is:",
+    "options": {
+      "A": "Seperate",
+      "B": "Separate",
+      "C": "Separete",
+      "D": "Seperete"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 83,
+    "question": "Fill in the blank: '___ sun rises in the east.'",
+    "options": { "A": "A", "B": "An", "C": "The", "D": "None" },
+    "answer": "C"
+  },
+  {
+    "id": 84,
+    "question": "The passive voice of 'She writes a letter' is:",
+    "options": {
+      "A": "A letter is written by her.",
+      "B": "A letter was written by her.",
+      "C": "A letter is being written by her.",
+      "D": "A letter has been written by her."
+    },
+    "answer": "A"
+  },
+  {
+    "id": 85,
+    "question": "Antonym of 'expand' is:",
+    "options": { "A": "Grow", "B": "Shrink", "C": "Increase", "D": "Extend" },
+    "answer": "B"
+  },
+  {
+    "id": 86,
+    "question": "Choose the correct word: 'Their house is ___ than ours.'",
+    "options": { "A": "bigger", "B": "big", "C": "more big", "D": "biggest" },
+    "answer": "A"
+  },
+  {
+    "id": 87,
+    "question": "Synonym of 'tranquil' is:",
+    "options": {
+      "A": "Restless",
+      "B": "Peaceful",
+      "C": "Noisy",
+      "D": "Chaotic"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 88,
+    "question": "The correct form of the verb in 'If she ___ here, we would celebrate' is:",
+    "options": { "A": "is", "B": "was", "C": "were", "D": "be" },
+    "answer": "C"
+  },
+  {
+    "id": 89,
+    "question": "The plural of 'child' is:",
+    "options": { "A": "Childs", "B": "Children", "C": "Childes", "D": "Child" },
+    "answer": "B"
+  },
+  {
+    "id": 90,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "Me and him are going.",
+      "B": "He and I are going.",
+      "C": "I and he are going.",
+      "D": "Him and me are going."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 91,
+    "question": "She ___ to dance.",
+    "options": { "A": "likes", "B": "liking", "C": "liked", "D": "No error" },
+    "answer": "A"
+  },
+  {
+    "id": 92,
+    "question": "This is ___ expensive than that.",
+    "options": {
+      "A": "more expensive",
+      "B": "expensiver",
+      "C": "expensive",
+      "D": "No error"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 93,
+    "question": "He ___ two cats.",
+    "options": { "A": "has", "B": "had", "C": "having", "D": "No error" },
+    "answer": "A"
+  },
+  {
+    "id": 94,
+    "question": "The boys ___ running fast.",
+    "options": { "A": "are", "B": "was", "C": "be", "D": "No error" },
+    "answer": "A"
+  },
+  {
+    "id": 95,
+    "question": "I saw the movie ___ tomorrow.",
+    "options": { "A": "see", "B": "will see", "C": "seeing", "D": "No error" },
+    "answer": "B"
+  },
+  {
+    "id": 96,
+    "question": "Synonym of 'cautious' is:",
+    "options": { "A": "Reckless", "B": "Careful", "C": "Bold", "D": "Hasty" },
+    "answer": "B"
+  },
+  {
+    "id": 97,
+    "question": "The correct preposition in 'He is afraid ___ heights' is:",
+    "options": { "A": "of", "B": "in", "C": "at", "D": "with" },
+    "answer": "A"
+  },
+  {
+    "id": 98,
+    "question": "Antonym of 'abundant' is:",
+    "options": { "A": "Plentiful", "B": "Scarce", "C": "Rich", "D": "Full" },
+    "answer": "B"
+  },
+  {
+    "id": 99,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "We has finished our work.",
+      "B": "We have finished our work.",
+      "C": "We having finished our work.",
+      "D": "We has finish our work."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 100,
+    "question": "The phrasal verb 'turn down' means:",
+    "options": {
+      "A": "To accept",
+      "B": "To reject",
+      "C": "To increase",
+      "D": "To continue"
+    },
+    "answer": "B"
+  }
+]
