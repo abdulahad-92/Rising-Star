@@ -367,7 +367,7 @@
   },
   {
     "id": 62,
-    "question": "If tan θ = 1, then θ is:",
+    "question": "If tan x = 1, then x is:",
     "options": { "A": "0°", "B": "30°", "C": "45°", "D": "90°" },
     "answer": "C"
   },
@@ -571,7 +571,7 @@
   },
   {
     "id": 96,
-    "question": "What is the main idea of the passage?",
+    "question": "Read the passage and answer the questions. “Education is the key to success. It opens doors to opportunities and empowers individuals to achieve their goals. A good education system focuses on critical thinking, creativity, and practical skills.” What is the main idea of the passage?",
     "options": { "A": "Education is unimportant", "B": "Education leads to success", "C": "Creativity is not part of education", "D": "Skills are irrelevant" },
     "answer": "B"
   },
