@@ -1,602 +1,418 @@
 [
   {
     "id": 1,
-    "question": "The value of cos 45° is:",
-    "options": { "A": "1/2", "B": "√2/2", "C": "1/√2", "D": "1" },
-    "answer": "C"
-  },
-  {
-    "id": 2,
-    "question": "If sin θ = 3/5 and θ is acute, then tan θ =:",
-    "options": { "A": "3/4", "B": "4/3", "C": "3/5", "D": "5/4" },
+    "question": "The dimension of impulse is:",
+    "options": { "A": "MLT^-1", "B": "MLT^-2", "C": "ML^2T^-1", "D": "ML^2T^-2" },
     "answer": "A"
   },
   {
+    "id": 2,
+    "question": "The dimension of power is:",
+    "options": { "A": "ML^2T^-2", "B": "ML^2T^-3", "C": "MLT^-2", "D": "MLT^-3" },
+    "answer": "B"
+  },
+  {
     "id": 3,
-    "question": "The solution to the inequality 2x - 3 < 7 is:",
-    "options": { "A": "x < 5", "B": "x > 5", "C": "x < 2", "D": "x > 2" },
+    "question": "The dimensional formula of angular momentum is:",
+    "options": { "A": "ML^2T^-1", "B": "MLT^-1", "C": "ML^2T^-2", "D": "MLT^-2" },
     "answer": "A"
   },
   {
     "id": 4,
-    "question": "The number of ways to choose 2 students from 5 is:",
-    "options": { "A": "5", "B": "10", "C": "15", "D": "20" },
+    "question": "The Bohr model explains the:",
+    "options": { "A": "Nuclear structure", "B": "Electron orbits", "C": "Wave nature of electrons", "D": "Heisenberg principle" },
     "answer": "B"
   },
   {
     "id": 5,
-    "question": "The 4th term of the arithmetic sequence with first term 3 and common difference 5 is:",
-    "options": { "A": "13", "B": "15", "C": "18", "D": "23" },
-    "answer": "C"
+    "question": "A wire’s resistance decreases if its:",
+    "options": { "A": "Length increases", "B": "Area increases", "C": "Temperature increases", "D": "Material changes to iron" },
+    "answer": "B"
   },
   {
     "id": 6,
-    "question": "If z = 2 + 3i, then Im(z) =:",
-    "options": { "A": "2", "B": "3", "C": "5", "D": "-3" },
+    "question": "The Compton effect demonstrates:",
+    "options": { "A": "Wave nature of light", "B": "Particle nature of light", "C": "Dual nature of light", "D": "Quantum entanglement" },
     "answer": "B"
   },
   {
     "id": 7,
-    "question": "The slope of the line perpendicular to y = 2x + 1 is:",
-    "options": { "A": "2", "B": "-2", "C": "1/2", "D": "-1/2" },
-    "answer": "D"
+    "question": "The principle behind a transformer is:",
+    "options": { "A": "Ohm’s law", "B": "Faraday’s law", "C": "Coulomb’s law", "D": "Newton’s law" },
+    "answer": "B"
   },
   {
     "id": 8,
-    "question": "If log₃ 27 = x, then x =:",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "9" },
+    "question": "The work done by friction is:",
+    "options": { "A": "Always positive", "B": "Always negative", "C": "Zero", "D": "Depends on direction" },
     "answer": "B"
   },
   {
     "id": 9,
-    "question": "The limit lim_{x→2} (x² - 3)/(x - 3) is:",
-    "options": { "A": "0", "B": "2", "C": "4", "D": "Undefined" },
-    "answer": "C"
+    "question": "Beta particles are:",
+    "options": { "A": "Helium nuclei", "B": "High-energy electrons", "C": "Photons", "D": "Protons" },
+    "answer": "B"
   },
   {
     "id": 10,
-    "question": "The probability of rolling an even number on a fair die is:",
-    "options": { "A": "1/6", "B": "1/3", "C": "1/2", "D": "2/3" },
-    "answer": "C"
+    "question": "In SHM, acceleration is maximum at:",
+    "options": { "A": "Mean position", "B": "Extreme position", "C": "Halfway point", "D": "Rest position" },
+    "answer": "B"
   },
   {
     "id": 11,
-    "question": "If A = {2,3,5} and B = {3,4,5}, then A ∩ B =:",
-    "options": { "A": "{2,4}", "B": "{3,5}", "C": "{2,3,4,5}", "D": "∅" },
-    "answer": "B"
-  },
-  {
-    "id": 12,
-    "question": "The radius of the circle x² + y² + 2x - 2y - 7 = 0 is:",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "B"
-  },
-  {
-    "id": 13,
-    "question": "The value of cos⁻¹(-1/2) is:",
-    "options": { "A": "π/6", "B": "π/3", "C": "2π/3", "D": "π/2" },
-    "answer": "C"
-  },
-  {
-    "id": 14,
-    "question": "If f(x) = x² - 3, then f(2) =:",
-    "options": { "A": "1", "B": "4", "C": "7", "D": "-1" },
+    "question": "The unit of Planck’s constant is:",
+    "options": { "A": "J·s", "B": "J/s", "C": "N·m", "D": "kg·m^2/s^2" },
     "answer": "A"
   },
   {
+    "id": 12,
+    "question": "The unit of viscosity is:",
+    "options": { "A": "N·s/m^2", "B": "N/m", "C": "kg/s", "D": "m/s^2" },
+    "answer": "A"
+  },
+  {
+    "id": 13,
+    "question": "The SI unit of inductance is:",
+    "options": { "A": "Ohm", "B": "Henry", "C": "Farad", "D": "Volt" },
+    "answer": "B"
+  },
+  {
+    "id": 14,
+    "question": "The first law of motion is also called the law of:",
+    "options": { "A": "Acceleration", "B": "Inertia", "C": "Force", "D": "Momentum" },
+    "answer": "B"
+  },
+  {
     "id": 15,
-    "question": "The common ratio of the geometric sequence 9, 3, 1, ... is:",
-    "options": { "A": "3", "B": "1/3", "C": "1/9", "D": "1" },
+    "question": "The unit of magnetic field strength is:",
+    "options": { "A": "Weber", "B": "Tesla", "C": "Henry", "D": "Farad" },
     "answer": "B"
   },
   {
     "id": 16,
-    "question": "If cos θ = 1/√2, then θ = (in first quadrant):",
-    "options": { "A": "30°", "B": "45°", "C": "60°", "D": "90°" },
+    "question": "The buoyant force depends on:",
+    "options": { "A": "Mass of the object", "B": "Volume of displaced fluid", "C": "Shape of the object", "D": "Speed of fluid" },
     "answer": "B"
   },
   {
     "id": 17,
-    "question": "The roots of x² + 2x + 1 = 0 are:",
-    "options": { "A": "Real and distinct", "B": "Real and equal", "C": "Complex", "D": "None of these" },
+    "question": "One horsepower is equal to:",
+    "options": { "A": "647 watts", "B": "746 watts", "C": "446 watts", "D": "846 watts" },
     "answer": "B"
   },
   {
     "id": 18,
-    "question": "The projection of vector {1,2} onto {3,0} is:",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "A"
+    "question": "The second law of thermodynamics states that:",
+    "options": { "A": "Energy is conserved", "B": "Entropy increases", "C": "Heat flows naturally from cold to hot", "D": "Work equals heat" },
+    "answer": "B"
   },
   {
     "id": 19,
-    "question": "If 2^x = 16, then x =:",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
+    "question": "The centripetal force acting on an object in circular motion is proportional to:",
+    "options": { "A": "Radius", "B": "Velocity", "C": "Square of velocity", "D": "Inverse of radius" },
     "answer": "C"
   },
   {
     "id": 20,
-    "question": "The determinant of [[1,2],[3,4]] is:",
-    "options": { "A": "-2", "B": "2", "C": "-10", "D": "10" },
-    "answer": "A"
+    "question": "The frequency of a sound wave determines its:",
+    "options": { "A": "Loudness", "B": "Pitch", "C": "Speed", "D": "Amplitude" },
+    "answer": "B"
   },
   {
     "id": 21,
-    "question": "The sum of the first 10 odd numbers is:",
-    "options": { "A": "90", "B": "100", "C": "110", "D": "120" },
+    "question": "The maximum height of a projectile depends on:",
+    "options": { "A": "Horizontal velocity", "B": "Vertical velocity", "C": "Mass of projectile", "D": "Air resistance" },
     "answer": "B"
   },
   {
     "id": 22,
-    "question": "The integral ∫ x³ dx is:",
-    "options": { "A": "x⁴/4 + C", "B": "x⁵/5 + C", "C": "x²/2 + C", "D": "x⁴ + C" },
+    "question": "What is the SI unit of angular velocity?",
+    "options": { "A": "rad/s", "B": "m/s", "C": "rad/s^2", "D": "m/s^2" },
     "answer": "A"
   },
   {
     "id": 23,
-    "question": "The mean of the data set 4, 6, 8, 10, 12 is:",
-    "options": { "A": "6", "B": "7", "C": "8", "D": "9" },
-    "answer": "C"
+    "question": "The focal length of a convex lens is:",
+    "options": { "A": "Positive", "B": "Negative", "C": "Zero", "D": "Infinite" },
+    "answer": "A"
   },
   {
     "id": 24,
-    "question": "If A = [[2,0],[1,3]], then |A| =:",
-    "options": { "A": "5", "B": "6", "C": "7", "D": "8" },
+    "question": "The speed of light in a medium is:",
+    "options": { "A": "Greater than in vacuum", "B": "Less than in vacuum", "C": "Equal to in vacuum", "D": "Zero" },
     "answer": "B"
   },
   {
     "id": 25,
-    "question": "The number of diagonals in a pentagon is:",
-    "options": { "A": "5", "B": "6", "C": "7", "D": "8" },
-    "answer": "A"
-  },
-  {
-    "id": 26,
-    "question": "The SI unit of momentum is:",
-    "options": { "A": "kg·m/s", "B": "N·s", "C": "kg·m²/s²", "D": "Both A and B" },
-    "answer": "D"
-  },
-  {
-    "id": 27,
-    "question": "The time dilation effect is observed when:",
-    "options": { "A": "Speed is low", "B": "Speed approaches c", "C": "Object is at rest", "D": "Gravity is absent" },
-    "answer": "B"
-  },
-  {
-    "id": 28,
-    "question": "The moment of inertia of a rod about its end is:",
-    "options": { "A": "1/3 ML²", "B": "1/12 ML²", "C": "1/2 ML²", "D": "ML²" },
-    "answer": "A"
-  },
-  {
-    "id": 29,
-    "question": "The dimensional formula of impulse is:",
-    "options": { "A": "MLT⁻¹", "B": "MLT⁻²", "C": "ML²T⁻²", "D": "M²LT⁻¹" },
-    "answer": "A"
-  },
-  {
-    "id": 30,
-    "question": "The range of a projectile depends on:",
-    "options": { "A": "Mass of projectile", "B": "Angle of projection", "C": "Height of launch", "D": "Air resistance only" },
-    "answer": "B"
-  },
-  {
-    "id": 31,
-    "question": "The image formed by a plane mirror is:",
-    "options": { "A": "Real and inverted", "B": "Virtual and upright", "C": "Real and upright", "D": "Virtual and inverted" },
-    "answer": "B"
-  },
-  {
-    "id": 32,
-    "question": "The SI unit of capacitance is:",
-    "options": { "A": "Farad", "B": "Ohm", "C": "Henry", "D": "Weber" },
-    "answer": "A"
-  },
-  {
-    "id": 33,
-    "question": "Bernoulli's principle applies to:",
-    "options": { "A": "Static fluids", "B": "Flowing fluids", "C": "Solids", "D": "Plasmas" },
-    "answer": "B"
-  },
-  {
-    "id": 34,
-    "question": "The formula for kinetic energy is:",
-    "options": { "A": "1/2 mv²", "B": "mv²", "C": "1/2 mv", "D": "mgh" },
-    "answer": "A"
-  },
-  {
-    "id": 35,
-    "question": "The speed of sound in air depends on:",
-    "options": { "A": "Frequency", "B": "Wavelength", "C": "Temperature", "D": "Amplitude" },
-    "answer": "C"
-  },
-  {
-    "id": 36,
-    "question": "The half-life of a radioactive isotope is:",
-    "options": { "A": "Time to decay completely", "B": "Time to lose half its activity", "C": "Time to double its activity", "D": "Time to emit one particle" },
-    "answer": "B"
-  },
-  {
-    "id": 37,
-    "question": "The unit of electric flux is:",
-    "options": { "A": "N·m²/C", "B": "V·m", "C": "Both A and B", "D": "C/m²" },
-    "answer": "C"
-  },
-  {
-    "id": 38,
     "question": "The force between two parallel current-carrying wires is:",
     "options": { "A": "Always attractive", "B": "Always repulsive", "C": "Attractive if currents are in same direction", "D": "Repulsive if currents are in same direction" },
     "answer": "C"
   },
   {
+    "id": 26,
+    "question": "The general formula for alkynes is:",
+    "options": { "A": "C_nH_2n+2", "B": "C_nH_2n", "C": "C_nH_2n-2", "D": "C_nH_2n+1" },
+    "answer": "C"
+  },
+  {
+    "id": 27,
+    "question": "The SI unit of molality is:",
+    "options": { "A": "mol/L", "B": "mol/kg", "C": "g/L", "D": "g/kg" },
+    "answer": "B"
+  },
+  {
+    "id": 28,
+    "question": "A hydrocarbon with a triple bond is classified as:",
+    "options": { "A": "Alkane", "B": "Alkene", "C": "Alkyne", "D": "Aromatic" },
+    "answer": "C"
+  },
+  {
+    "id": 29,
+    "question": "The molar mass of H2SO4 is:",
+    "options": { "A": "98 g/mol", "B": "80 g/mol", "C": "64 g/mol", "D": "112 g/mol" },
+    "answer": "A"
+  },
+  {
+    "id": 30,
+    "question": "The boiling point of ethanol is approximately:",
+    "options": { "A": "78°C", "B": "100°C", "C": "0°C", "D": "50°C" },
+    "answer": "A"
+  },
+  {
+    "id": 31,
+    "question": "The symbol for Potassium is:",
+    "options": { "A": "P", "B": "K", "C": "Pt", "D": "Po" },
+    "answer": "B"
+  },
+  {
+    "id": 32,
+    "question": "The symbol 'S' represents:",
+    "options": { "A": "Sodium", "B": "Sulfur", "C": "Silicon", "D": "Selenium" },
+    "answer": "B"
+  },
+  {
+    "id": 33,
+    "question": "The process of converting an alcohol to an alkene is called:",
+    "options": { "A": "Oxidation", "B": "Dehydration", "C": "Hydration", "D": "Reduction" },
+    "answer": "B"
+  },
+  {
+    "id": 34,
+    "question": "The ore of iron is:",
+    "options": { "A": "Bauxite", "B": "Hematite", "C": "Malachite", "D": "Galena" },
+    "answer": "B"
+  },
+  {
+    "id": 35,
+    "question": "The pH of an acidic solution is:",
+    "options": { "A": "7", "B": "Greater than 7", "C": "Less than 7", "D": "14" },
+    "answer": "C"
+  },
+  {
+    "id": 36,
+    "question": "The electronic configuration of helium is:",
+    "options": { "A": "1s^2", "B": "1s^2 2s^1", "C": "1s^1", "D": "1s^2 2p^1" },
+    "answer": "A"
+  },
+  {
+    "id": 37,
+    "question": "The number of electrons in the outermost shell of noble gases is:",
+    "options": { "A": "2", "B": "4", "C": "6", "D": "8" },
+    "answer": "D"
+  },
+  {
+    "id": 38,
+    "question": "Germanium is an example of a:",
+    "options": { "A": "Conductor", "B": "Insulator", "C": "Semiconductor", "D": "Non-metal" },
+    "answer": "C"
+  },
+  {
     "id": 39,
-    "question": "The photoelectric effect supports:",
-    "options": { "A": "Wave nature of light", "B": "Particle nature of light", "C": "Both A and B", "D": "Neither A nor B" },
+    "question": "The number of protons in an atom is equal to its:",
+    "options": { "A": "Mass number", "B": "Atomic number", "C": "Neutron number", "D": "Electron number" },
     "answer": "B"
   },
   {
     "id": 40,
-    "question": "The formula for gravitational potential energy is:",
-    "options": { "A": "mgh", "B": "1/2 mv²", "C": "F × d", "D": "m × a" },
-    "answer": "A"
+    "question": "The process of converting a gas to a liquid is:",
+    "options": { "A": "Evaporation", "B": "Condensation", "C": "Sublimation", "D": "Melting" },
+    "answer": "B"
   },
   {
     "id": 41,
-    "question": "The condition for constructive interference is:",
-    "options": { "A": "Path difference = nλ", "B": "Path difference = (n+1/2)λ", "C": "Path difference = λ/2", "D": "Path difference = 0" },
-    "answer": "A"
+    "question": "The functional group in esters is:",
+    "options": { "A": "-COOH", "B": "-COOR", "C": "-CHO", "D": "-OH" },
+    "answer": "B"
   },
   {
     "id": 42,
-    "question": "The de Broglie wavelength is given by:",
-    "options": { "A": "λ = h/p", "B": "λ = p/h", "C": "λ = h·p", "D": "λ = h²/p" },
-    "answer": "A"
+    "question": "The mass number of an element is the sum of:",
+    "options": { "A": "Protons and electrons", "B": "Protons and neutrons", "C": "Neutrons and electrons", "D": "Protons" },
+    "answer": "B"
   },
   {
     "id": 43,
-    "question": "The second law of thermodynamics states:",
-    "options": { "A": "Energy is conserved", "B": "Entropy increases in isolated systems", "C": "Heat flows from cold to hot", "D": "Work equals heat" },
-    "answer": "B"
+    "question": "The catalyst used in Haber’s process is:",
+    "options": { "A": "Iron", "B": "Nickel", "C": "Platinum", "D": "Copper" },
+    "answer": "A"
   },
   {
     "id": 44,
-    "question": "The magnetic field inside a solenoid is:",
-    "options": { "A": "Zero", "B": "Uniform", "C": "Decreasing", "D": "Increasing" },
-    "answer": "B"
-  },
-  {
-    "id": 45,
-    "question": "The formula for electric potential energy is:",
-    "options": { "A": "k q₁q₂/r", "B": "qV", "C": "Both A and B", "D": "q/r" },
+    "question": "Alpha rays consist of:",
+    "options": { "A": "Electrons", "B": "Protons", "C": "Helium nuclei", "D": "Photons" },
     "answer": "C"
   },
   {
+    "id": 45,
+    "question": "The bond in NaCl is:",
+    "options": { "A": "Covalent", "B": "Ionic", "C": "Metallic", "D": "Hydrogen" },
+    "answer": "B"
+  },
+  {
     "id": 46,
-    "question": "The Doppler effect applies to:",
-    "options": { "A": "Light only", "B": "Sound only", "C": "Both light and sound", "D": "Neither light nor sound" },
+    "question": "The entropy of a system increases in:",
+    "options": { "A": "Exothermic reactions", "B": "Endothermic reactions", "C": "Spontaneous processes", "D": "Equilibrium" },
     "answer": "C"
   },
   {
     "id": 47,
-    "question": "The resistivity of a conductor depends on:",
-    "options": { "A": "Voltage", "B": "Current", "C": "Temperature", "D": "Length" },
-    "answer": "C"
+    "question": "The ionization energy of elements in a group generally:",
+    "options": { "A": "Increases", "B": "Decreases", "C": "Remains constant", "D": "Doubles" },
+    "answer": "B"
   },
   {
     "id": 48,
-    "question": "The law of conservation of energy applies to:",
-    "options": { "A": "Open systems only", "B": "Closed systems", "C": "Non-inertial frames", "D": "Charged systems only" },
-    "answer": "B"
-  },
-  {
-    "id": 49,
-    "question": "The spherical aberration in lenses is due to:",
-    "options": { "A": "Dispersion", "B": "Reflection", "C": "Different focal points", "D": "Interference" },
+    "question": "Gas used in welding is:",
+    "options": { "A": "Oxygen", "B": "Nitrogen", "C": "Acetylene", "D": "Carbon Dioxide" },
     "answer": "C"
   },
   {
-    "id": 50,
-    "question": "The unit of Planck's constant is:",
-    "options": { "A": "J·s", "B": "J/s", "C": "N·m", "D": "kg·m²/s²" },
-    "answer": "A"
-  },
-  {
-    "id": 51,
-    "question": "The chemical formula of gypsum is:",
-    "options": { "A": "CaSO₄·2H₂O", "B": "CaCO₃", "C": "Ca(OH)₂", "D": "CaO" },
-    "answer": "A"
-  },
-  {
-    "id": 52,
-    "question": "The product of reduction of ethanal is:",
-    "options": { "A": "Ethene", "B": "Ethanol", "C": "Ethanoic acid", "D": "Ethyne" },
-    "answer": "B"
-  },
-  {
-    "id": 53,
-    "question": "The bond angle in H₂O molecule is:",
-    "options": { "A": "90°", "B": "104.5°", "C": "120°", "D": "180°" },
-    "answer": "B"
-  },
-  {
-    "id": 54,
-    "question": "The anode in an electrochemical cell is:",
-    "options": { "A": "Site of reduction", "B": "Site of oxidation", "C": "Positive electrode", "D": "Both A and C" },
-    "answer": "B"
-  },
-  {
-    "id": 55,
-    "question": "The general formula for alcohols is:",
-    "options": { "A": "CₙH₂ₙ₊₁OH", "B": "CₙH₂ₙOH", "C": "CₙH₂ₙ₋₁OH", "D": "CₙH₂ₙ₊₂OH" },
-    "answer": "A"
-  },
-  {
-    "id": 56,
-    "question": "The atomic radius of elements in a group:",
-    "options": { "A": "Increases", "B": "Decreases", "C": "Remains constant", "D": "Varies randomly" },
-    "answer": "A"
-  },
-  {
-    "id": 57,
-    "question": "The catalyst used in the contact process is:",
-    "options": { "A": "Fe", "B": "V₂O₅", "C": "Ni", "D": "Pt" },
-    "answer": "B"
-  },
-  {
-    "id": 58,
-    "question": "Raoult's law applies to:",
-    "options": { "A": "Ideal solutions", "B": "Non-ideal solutions", "C": "Pure solvents", "D": "Solids" },
-    "answer": "A"
-  },
-  {
-    "id": 59,
-    "question": "The monomer of nylon-6,6 is:",
-    "options": { "A": "Adipic acid and hexamethylenediamine", "B": "Ethene", "C": "Styrene", "D": "Vinyl chloride" },
-    "answer": "A"
-  },
-  {
-    "id": 60,
-    "question": "The oxidation number of nitrogen in NO₃⁻ is:",
-    "options": { "A": "+3", "B": "+5", "C": "-3", "D": "+1" },
-    "answer": "B"
-  },
-  {
-    "id": 61,
-    "question": "The pH of a 0.01 M HCl solution is:",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "B"
-  },
-  {
-    "id": 62,
-    "question": "The geometry of NH₃ molecule is:",
-    "options": { "A": "Linear", "B": "Trigonal pyramidal", "C": "Tetrahedral", "D": "Trigonal planar" },
-    "answer": "B"
-  },
-  {
-    "id": 63,
-    "question": "The strongest oxidizing agent is:",
-    "options": { "A": "Cl₂", "B": "F₂", "C": "Br₂", "D": "I₂" },
-    "answer": "B"
-  },
-  {
-    "id": 64,
-    "question": "The gas used in fire extinguishers is:",
-    "options": { "A": "O₂", "B": "CO₂", "C": "N₂", "D": "H₂" },
-    "answer": "B"
-  },
-  {
-    "id": 65,
-    "question": "The number of molecules in 44 g of CO₂ is:",
-    "options": { "A": "6.02 × 10²³", "B": "3.01 × 10²³", "C": "12.04 × 10²³", "D": "1.5 × 10²³" },
-    "answer": "A"
-  },
-  {
-    "id": 66,
-    "question": "The hybridization of nitrogen in NH₃ is:",
-    "options": { "A": "sp³", "B": "sp²", "C": "sp", "D": "sp³d" },
-    "answer": "A"
-  },
-  {
-    "id": 67,
-    "question": "The enthalpy change of a reaction is:",
-    "options": { "A": "Energy absorbed", "B": "Heat change at constant pressure", "C": "Work done", "D": "Entropy change" },
-    "answer": "B"
-  },
-  {
-    "id": 68,
-    "question": "The functional group in ketones is:",
-    "options": { "A": "-CO-", "B": "-CHO", "C": "-COOH", "D": "-OH" },
-    "answer": "A"
-  },
-  {
-    "id": 69,
-    "question": "The transition elements belong to:",
+    "id": 49,
+    "question": "The transition elements are part of:",
     "options": { "A": "s-block", "B": "p-block", "C": "d-block", "D": "f-block" },
     "answer": "C"
   },
   {
+    "id": 50,
+    "question": "What is the pH of a strongly acidic solution like HCl in water?",
+    "options": { "A": "7", "B": "Greater than 7", "C": "Less than 7", "D": "14" },
+    "answer": "C"
+  },
+  {
+    "id": 51,
+    "question": "The value of tan 45° is:",
+    "options": { "A": "0", "B": "1", "C": "√2", "D": "√3" },
+    "answer": "B"
+  },
+  {
+    "id": 52,
+    "question": "The value of cos 30° in decimal form is:",
+    "options": { "A": "0.500", "B": "0.707", "C": "0.866", "D": "1.000" },
+    "answer": "C"
+  },
+  {
+    "id": 53,
+    "question": "Which of the following angles has a cosine value equal to cos 30°?",
+    "options": { "A": "cos 60°", "B": "cos 330°", "C": "cos 150°", "D": "cos 90°" },
+    "answer": "B"
+  },
+  {
+    "id": 54,
+    "question": "The common ratio of the geometric sequence 4, 12, 36, ... is:",
+    "options": { "A": "2", "B": "3", "C": "4", "D": "6" },
+    "answer": "B"
+  },
+  {
+    "id": 55,
+    "question": "The number of permutations of the word 'ENGINE' is:",
+    "options": { "A": "120", "B": "360", "C": "720", "D": "1440" },
+    "answer": "C"
+  },
+  {
+    "id": 56,
+    "question": "The solution to the system of equations x + y = 7 and 2x - y = 2 is:",
+    "options": { "A": "(3,4)", "B": "(4,3)", "C": "(2,5)", "D": "(5,2)" },
+    "answer": "A"
+  },
+  {
+    "id": 57,
+    "question": "The number of ways to arrange 4 distinct objects in a circle is:",
+    "options": { "A": "24", "B": "12", "C": "6", "D": "8" },
+    "answer": "C"
+  },
+  {
+    "id": 58,
+    "question": "The derivative of sin(2x) with respect to x is:",
+    "options": { "A": "2 cos(2x)", "B": "cos(2x)", "C": "2 sin(2x)", "D": "- cos(2x)" },
+    "answer": "A"
+  },
+  {
+    "id": 59,
+    "question": "If log_3 27 = x, then x =:",
+    "options": { "A": "2", "B": "3", "C": "4", "D": "9" },
+    "answer": "B"
+  },
+  {
+    "id": 60,
+    "question": "The number of diagonals in a hexagon is:",
+    "options": { "A": "6", "B": "9", "C": "12", "D": "15" },
+    "answer": "B"
+  },
+  {
+    "id": 61,
+    "question": "The roots of the quadratic equation x^2 - 5x + 6 = 0 are:",
+    "options": { "A": "2, 3", "B": "1, 6", "C": "-2, -3", "D": "5, 1" },
+    "answer": "A"
+  },
+  {
+    "id": 62,
+    "question": "If tan θ = 1, then θ is:",
+    "options": { "A": "0°", "B": "30°", "C": "45°", "D": "90°" },
+    "answer": "C"
+  },
+  {
+    "id": 63,
+    "question": "One pico is equal to:",
+    "options": { "A": "10^-9", "B": "10^-12", "C": "10^-6", "D": "10^-3" },
+    "answer": "B"
+  },
+  {
+    "id": 64,
+    "question": "The area of a circle with radius r is:",
+    "options": { "A": "πr^2", "B": "2πr", "C": "πr", "D": "4πr^2" },
+    "answer": "A"
+  },
+  {
+    "id": 65,
+    "question": "The perimeter of a square with side 5 cm is:",
+    "options": { "A": "10 cm", "B": "15 cm", "C": "20 cm", "D": "25 cm" },
+    "answer": "C"
+  },
+  {
+    "id": 66,
+    "question": "The derivative of tan x is:",
+    "options": { "A": "sec^2 x", "B": "csc^2 x", "C": "sec x", "D": "csc x" },
+    "answer": "A"
+  },
+  {
+    "id": 67,
+    "question": "The number of ways to choose 2 books from 5 is:",
+    "options": { "A": "5", "B": "10", "C": "15", "D": "20" },
+    "answer": "B"
+  },
+  {
+    "id": 68,
+    "question": "The eccentricity of a hyperbola is:",
+    "options": { "A": "0", "B": "Between 0 and 1", "C": "1", "D": "Greater than 1" },
+    "answer": "D"
+  },
+  {
+    "id": 69,
+    "question": "The number of elements in the power set of {a,b,c,d} is:",
+    "options": { "A": "8", "B": "12", "C": "16", "D": "20" },
+    "answer": "C"
+  },
+  {
     "id": 70,
-    "question": "The freezing point of a solution is:",
-    "options": { "A": "Higher than pure solvent", "B": "Lower than pure solvent", "C": "Equal to pure solvent", "D": "Zero" },
-    "answer": "B"
-  },
-  {
-    "id": 71,
-    "question": "The molecular formula of ethanoic acid is:",
-    "options": { "A": "CH₃COOH", "B": "CH₃CHO", "C": "CH₃OH", "D": "C₂H₅OH" },
-    "answer": "A"
-  },
-  {
-    "id": 72,
-    "question": "The SI unit of molarity is:",
-    "options": { "A": "mol/L", "B": "g/L", "C": "mol/kg", "D": "g/mol" },
-    "answer": "A"
-  },
-  {
-    "id": 73,
-    "question": "The ore of iron is:",
-    "options": { "A": "Hematite", "B": "Bauxite", "C": "Sphalerite", "D": "Malachite" },
-    "answer": "A"
-  },
-  {
-    "id": 74,
-    "question": "The number of electrons in Cl⁻ ion is:",
-    "options": { "A": "16", "B": "17", "C": "18", "D": "19" },
-    "answer": "C"
-  },
-  {
-    "id": 75,
-    "question": "The process of breaking large molecules into smaller ones is:",
-    "options": { "A": "Polymerization", "B": "Cracking", "C": "Neutralization", "D": "Oxidation" },
-    "answer": "B"
-  },
-  {
-    "id": 76,
-    "question": "Synonym of 'resilient' is:",
-    "options": { "A": "Fragile", "B": "Strong", "C": "Weak", "D": "Rigid" },
-    "answer": "B"
-  },
-  {
-    "id": 77,
-    "question": "Convert to direct speech: He said that he was tired.",
-    "options": { "A": "He said, 'I am tired.'", "B": "He said, 'I was tired.'", "C": "He said, 'I will be tired.'", "D": "He said, 'I have been tired.'" },
-    "answer": "A"
-  },
-  {
-    "id": 78,
-    "question": "The correct preposition in 'She is good ___' is:",
-    "options": { "A": "at", "B": "in", "C": "on", "D": "with" },
-    "answer": "A"
-  },
-  {
-    "id": 79,
-    "question": "Antonym of 'transparent' is:",
-    "options": { "A": "Clear", "B": "Opaque", "C": "Visible", "D": "Bright" },
-    "answer": "B"
-  },
-  {
-    "id": 80,
-    "question": "Choose the correct sentence:",
-    "options": { "A": "We doesn't know the answer.", "B": "We don't know the answer.", "C": "We doesn't knows the answer.", "D": "We don't knows the answer." },
-    "answer": "B"
-  },
-  {
-    "id": 81,
-    "question": "Synonym of 'meticulous' is:",
-    "options": { "A": "Careless", "B": "Precise", "C": "Hasty", "D": "Rough" },
-    "answer": "B"
-  },
-  {
-    "id": 82,
-    "question": "The correct spelling is:",
-    "options": { "A": "Occasion", "B": "Ocassion", "C": "Occassion", "D": "Ocasione" },
-    "answer": "A"
-  },
-  {
-    "id": 83,
-    "question": "Fill in the blank: '___ is a good student.'",
-    "options": { "A": "He", "B": "Him", "C": "His", "D": "No error" },
-    "answer": "A"
-  },
-  {
-    "id": 84,
-    "question": "The active voice of 'The book was read by her' is:",
-    "options": { "A": "She reads the book.", "B": "She read the book.", "C": "She is reading the book.", "D": "She has read the book." },
-    "answer": "B"
-  },
-  {
-    "id": 85,
-    "question": "Antonym of 'generous' is:",
-    "options": { "A": "Kind", "B": "Selfish", "C": "Giving", "D": "Charitable" },
-    "answer": "B"
-  },
-  {
-    "id": 86,
-    "question": "Choose the correct word: 'This decision will ___.'",
-    "options": { "A": "affect", "B": "effect", "C": "impact", "D": "No error" },
-    "answer": "A"
-  },
-  {
-    "id": 87,
-    "question": "Synonym of 'serene' is:",
-    "options": { "A": "Chaotic", "B": "Calm", "C": "Noisy", "D": "Turbulent" },
-    "answer": "B"
-  },
-  {
-    "id": 88,
-    "question": "The correct form of the verb in 'If I ___ rich, I would travel.' is:",
-    "options": { "A": "am", "B": "was", "C": "were", "D": "be" },
-    "answer": "C"
-  },
-  {
-    "id": 89,
-    "question": "The singular of 'mice' is:",
-    "options": { "A": "Mouse", "B": "Mices", "C": "Mice", "D": "Mous" },
-    "answer": "A"
-  },
-  {
-    "id": 90,
-    "question": "Choose the correct sentence:",
-    "options": { "A": "Her and me are friends.", "B": "She and I are friends.", "C": "I and she are friends.", "D": "Me and her are friends." },
-    "answer": "B"
-  },
-  {
-    "id": 91,
-    "question": "The children is playing in the park.",
-    "options": { "A": "are", "B": "was", "C": "be", "D": "No error" },
-    "answer": "A"
-  },
-  {
-    "id": 92,
-    "question": "This is more better than that.",
-    "options": { "A": "better", "B": "best", "C": "good", "D": "No error" },
-    "answer": "A"
-  },
-  {
-    "id": 93,
-    "question": "He go to school yesterday.",
-    "options": { "A": "went", "B": "goes", "C": "going", "D": "No error" },
-    "answer": "A"
-  },
-  {
-    "id": 94,
-    "question": "The dog chase the cat every day.",
-    "options": { "A": "chases", "B": "chased", "C": "chasing", "D": "No error" },
-    "answer": "A"
-  },
-  {
-    "id": 95,
-    "question": "I has finished my homework.",
-    "options": { "A": "have", "B": "had", "C": "having", "D": "No error" },
-    "answer": "A"
-  },
-  {
-    "id": 96,
-    "question": "Synonym of 'prudent' is:",
-    "options": { "A": "Careless", "B": "Wise", "C": "Reckless", "D": "Bold" },
-    "answer": "B"
-  },
-  {
-    "id": 97,
-    "question": "The correct preposition in 'He is confident ___' is:",
-    "options": { "A": "of", "B": "in", "C": "at", "D": "with" },
-    "answer": "B"
-  },
-  {
-    "id": 98,
-    "question": "Antonym of 'scarce' is:",
-    "options": { "A": "Rare", "B": "Abundant", "C": "Limited", "D": "Few" },
-    "answer": "B"
-  },
-  {
-    "id": 99,
-    "question": "Choose the correct sentence:",
-    "options": { "A": "They has a new car.", "B": "They have a new car.", "C": "They having a new car.", "D": "They has new car." },
-    "answer": "B"
-  },
-  {
-    "id": 100,
-    "question": "The phrasal verb 'look after' means:",
-    "options": { "A": "To ignore", "B": "To care for", "C": "To search", "D": "To avoid" },
-    "answer": "B"
-  }
-]
+    "question": "The 4th term of/TRUNCATED
