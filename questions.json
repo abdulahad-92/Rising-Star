@@ -1,602 +1,1102 @@
 [
   {
     "id": 1,
-    "question": "The dimension of impulse is:",
-    "options": { "A": "MLT^-1", "B": "MLT^-2", "C": "ML^2T^-1", "D": "ML^2T^-2" },
-    "answer": "A"
+    "question": "Read the passage and answer the questions: The adoption of renewable energy has reshaped rural economies globally. Communities once dependent on fossil fuels now harness solar and wind power, reducing energy costs by up to 35%. What is the central argument of the passage?",
+    "options": {
+      "A": "Renewable energy is unsustainable in rural areas.",
+      "B": "Renewable energy offers economic benefits but faces significant hurdles.",
+      "C": "Fossil fuels remain more reliable than renewables.",
+      "D": "Job creation is the primary benefit of renewable energy."
+    },
+    "answer": "B"
   },
   {
     "id": 2,
-    "question": "The dimension of power is:",
-    "options": { "A": "ML^2T^-2", "B": "ML^2T^-3", "C": "MLT^-2", "D": "MLT^-3" },
+    "question": "What challenge is explicitly highlighted in the passage?",
+    "options": {
+      "A": "Public opposition to renewable energy.",
+      "B": "High installation costs.",
+      "C": "Lack of skilled workers.",
+      "D": "Limited government support."
+    },
     "answer": "B"
   },
   {
     "id": 3,
-    "question": "The dimensional formula of angular momentum is:",
-    "options": { "A": "ML^2T^-1", "B": "MLT^-1", "C": "ML^2T^-2", "D": "MLT^-2" },
-    "answer": "A"
+    "question": "What percentage of energy cost reduction is mentioned in the passage?",
+    "options": {
+      "A": "25%",
+      "B": "35%",
+      "C": "45%",
+      "D": "55%"
+    },
+    "answer": "B"
   },
   {
     "id": 4,
-    "question": "The Bohr model explains the:",
-    "options": { "A": "Nuclear structure", "B": "Electron orbits", "C": "Wave nature of electrons", "D": "Heisenberg principle" },
+    "question": "What is a benefit of renewable energy mentioned in the passage?",
+    "options": {
+      "A": "Increased fossil fuel use.",
+      "B": "Economic growth in rural areas.",
+      "C": "Higher energy costs.",
+      "D": "Reduced job opportunities."
+    },
     "answer": "B"
   },
   {
     "id": 5,
-    "question": "A wire’s resistance decreases if its:",
-    "options": { "A": "Length increases", "B": "Area increases", "C": "Temperature increases", "D": "Material changes to iron" },
+    "question": "What type of energy sources are mentioned in the passage?",
+    "options": {
+      "A": "Nuclear and geothermal",
+      "B": "Solar and wind",
+      "C": "Coal and oil",
+      "D": "Hydro and biomass"
+    },
     "answer": "B"
   },
   {
     "id": 6,
-    "question": "The Compton effect demonstrates:",
-    "options": { "A": "Wave nature of light", "B": "Particle nature of light", "C": "Dual nature of light", "D": "Quantum entanglement" },
+    "question": "Read the passage and answer the questions: The water crisis affects millions, with rural farmers facing severe shortages due to poor infrastructure. Experts suggest long-term solutions like sustainable irrigation and stricter regulations, while advocacy groups push for immediate relief. How can farmers address water shortages according to the passage?",
+    "options": {
+      "A": "By relocating to urban centers.",
+      "B": "By adopting drip irrigation.",
+      "C": "By importing water supplies.",
+      "D": "By reducing crop diversity."
+    },
     "answer": "B"
   },
   {
     "id": 7,
-    "question": "The principle behind a transformer is:",
-    "options": { "A": "Ohm’s law", "B": "Faraday’s law", "C": "Coulomb’s law", "D": "Newton’s law" },
-    "answer": "B"
+    "question": "What role do advocacy groups play?",
+    "options": {
+      "A": "They monitor crop yields.",
+      "B": "They supply irrigation equipment.",
+      "C": "They promote stricter regulations.",
+      "D": "They fund urban development."
+    },
+    "answer": "C"
   },
   {
     "id": 8,
-    "question": "The work done by friction is:",
-    "options": { "A": "Always positive", "B": "Always negative", "C": "Zero", "D": "Depends on direction" },
+    "question": "The word 'stringent' in the passage means:",
+    "options": {
+      "A": "Lenient",
+      "B": "Strict",
+      "C": "Temporary",
+      "D": "Unenforceable"
+    },
     "answer": "B"
   },
   {
     "id": 9,
-    "question": "Beta particles are:",
-    "options": { "A": "Helium nuclei", "B": "High-energy electrons", "C": "Photons", "D": "Protons" },
+    "question": "What do experts imply about the water crisis?",
+    "options": {
+      "A": "It can be resolved through community efforts alone.",
+      "B": "It requires long-term solutions like sustainable irrigation.",
+      "C": "It is caused solely by industrial runoff.",
+      "D": "It has no impact on agricultural productivity."
+    },
     "answer": "B"
   },
   {
     "id": 10,
-    "question": "In SHM, acceleration is maximum at:",
-    "options": { "A": "Mean position", "B": "Extreme position", "C": "Halfway point", "D": "Rest position" },
-    "answer": "B"
+    "question": "What is a consequence of the water crisis mentioned in the passage?",
+    "options": {
+      "A": "Improved crop yields.",
+      "B": "Increased urban migration.",
+      "C": "Severe shortages for rural farmers.",
+      "D": "Enhanced infrastructure development."
+    },
+    "answer": "C"
   },
   {
     "id": 11,
-    "question": "The unit of Planck’s constant is:",
-    "options": { "A": "J·s", "B": "J/s", "C": "N·m", "D": "kg·m^2/s^2" },
-    "answer": "A"
+    "question": "Read the passage and answer the questions: Traditional craftsmanship, such as handwoven textiles, has gained international acclaim for its artistry. Artisans blend historical techniques with contemporary designs, creating pieces that take 12-18 days to complete using natural dyes. A digital platform markets these crafts globally, increasing artisans' earnings by 30%. What is the main focus of the passage?",
+    "options": {
+      "A": "The decline of traditional craftsmanship.",
+      "B": "The global rise and challenges of handwoven textiles.",
+      "C": "The dominance of automated textile production.",
+      "D": "The high cost of natural dyes."
+    },
+    "answer": "B"
   },
   {
     "id": 12,
-    "question": "The unit of viscosity is:",
-    "options": { "A": "N·s/m^2", "B": "N/m", "C": "kg/s", "D": "m/s^2" },
-    "answer": "A"
+    "question": "How long does it take to create one handwoven piece?",
+    "options": {
+      "A": "3-24 days",
+      "B": "12-18 days",
+      "C": "18-24 days",
+      "D": "24-30 days"
+    },
+    "answer": "B"
   },
   {
     "id": 13,
-    "question": "The SI unit of inductance is:",
-    "options": { "A": "Ohm", "B": "Henry", "C": "Farad", "D": "Volt" },
+    "question": "What has increased artisans' earnings?",
+    "options": {
+      "A": "Government funding.",
+      "B": "A digital marketing platform.",
+      "C": "Automated production methods.",
+      "D": "Imported raw materials."
+    },
     "answer": "B"
   },
   {
     "id": 14,
-    "question": "The first law of motion is also called the law of:",
-    "options": { "A": "Acceleration", "B": "Inertia", "C": "Force", "D": "Momentum" },
+    "question": "The word 'acclaim' in the passage is closest in meaning to:",
+    "options": {
+      "A": "Criticism",
+      "B": "Praise",
+      "C": "Rejection",
+      "D": "Indifference"
+    },
     "answer": "B"
   },
   {
     "id": 15,
-    "question": "The unit of magnetic field strength is:",
-    "options": { "A": "Weber", "B": "Tesla", "C": "Henry", "D": "Farad" },
+    "question": "What threatens the artisans' livelihood?",
+    "options": {
+      "A": "Lack of skilled artisans.",
+      "B": "Competition from automated production.",
+      "C": "High costs of natural dyes.",
+      "D": "Declining global interest."
+    },
     "answer": "B"
   },
   {
     "id": 16,
-    "question": "The buoyant force depends on:",
-    "options": { "A": "Mass of the object", "B": "Volume of displaced fluid", "C": "Shape of the object", "D": "Speed of fluid" },
-    "answer": "B"
+    "question": "What is the purpose of the educational initiatives?",
+    "options": {
+      "A": "To replace traditional methods with automation.",
+      "B": "To train artisans in mass production.",
+      "C": "To preserve traditional methods through innovation.",
+      "D": "To reduce reliance on natural dyes."
+    },
+    "answer": "C"
   },
   {
     "id": 17,
-    "question": "One horsepower is equal to:",
-    "options": { "A": "647 watts", "B": "746 watts", "C": "446 watts", "D": "846 watts" },
+    "question": "Identify the error: 'Each of the participants were given a certificate.'",
+    "options": {
+      "A": "'Each' should be 'All'.",
+      "B": "'were' should be 'was'.",
+      "C": "'given' should be 'gave'.",
+      "D": "No error."
+    },
     "answer": "B"
   },
   {
     "id": 18,
-    "question": "The second law of thermodynamics states that:",
-    "options": { "A": "Energy is conserved", "B": "Entropy increases", "C": "Heat flows naturally from cold to hot", "D": "Work equals heat" },
+    "question": "Convert to indirect speech: 'She said, \"I will finish the report tomorrow.\"'",
+    "options": {
+      "A": "She said that she will finish the report tomorrow.",
+      "B": "She said that she would finish the report tomorrow.",
+      "C": "She says that she would finish the report tomorrow.",
+      "D": "She said that she finishes the report tomorrow."
+    },
     "answer": "B"
   },
   {
     "id": 19,
-    "question": "The centripetal force acting on an object in circular motion is proportional to:",
-    "options": { "A": "Radius", "B": "Velocity", "C": "Square of velocity", "D": "Inverse of radius" },
-    "answer": "C"
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "Neither the manager nor the staff is responsible.",
+      "B": "Neither the manager nor the staff are responsible.",
+      "C": "Neither the manager nor the staff were responsible.",
+      "D": "Neither the manager nor the staff have responsible."
+    },
+    "answer": "A"
   },
   {
     "id": 20,
-    "question": "The frequency of a sound wave determines its:",
-    "options": { "A": "Loudness", "B": "Pitch", "C": "Speed", "D": "Amplitude" },
+    "question": "Fill in the blank: 'The committee is divided __ the new policy.'",
+    "options": {
+      "A": "about",
+      "B": "on",
+      "C": "with",
+      "D": "for"
+    },
     "answer": "B"
   },
   {
     "id": 21,
-    "question": "The maximum height of a projectile depends on:",
-    "options": { "A": "Horizontal velocity", "B": "Vertical velocity", "C": "Mass of projectile", "D": "Air resistance" },
+    "question": "Convert to passive voice: 'The team developed a new software application.'",
+    "options": {
+      "A": "A new software application is developed by the team.",
+      "B": "A new software application was developed by the team.",
+      "C": "A new software application has developed by the team.",
+      "D": "A new software application will be developed by the team."
+    },
     "answer": "B"
   },
   {
     "id": 22,
-    "question": "What is the SI unit of angular velocity?",
-    "options": { "A": "rad/s", "B": "m/s", "C": "rad/s^2", "D": "m/s^2" },
-    "answer": "A"
+    "question": "Choose the correct article: '__ university offers advanced research programs.'",
+    "options": {
+      "A": "A",
+      "B": "An",
+      "C": "The",
+      "D": "No article"
+    },
+    "answer": "C"
   },
   {
     "id": 23,
-    "question": "The focal length of a convex lens is:",
-    "options": { "A": "Positive", "B": "Negative", "C": "Zero", "D": "Infinite" },
-    "answer": "A"
+    "question": "Identify the tense: 'By next month, they will have been working here for five years.'",
+    "options": {
+      "A": "Future Perfect",
+      "B": "Future Continuous",
+      "C": "Future Perfect Continuous",
+      "D": "Present Perfect Continuous"
+    },
+    "answer": "C"
   },
   {
     "id": 24,
-    "question": "The speed of light in a medium is:",
-    "options": { "A": "Greater than in vacuum", "B": "Less than in vacuum", "C": "Equal to in vacuum", "D": "Zero" },
-    "answer": "B"
+    "question": "Fill in the blank: 'If I __ earlier, I would have caught the train.'",
+    "options": {
+      "A": "leave",
+      "B": "left",
+      "C": "had left",
+      "D": "have left"
+    },
+    "answer": "C"
   },
   {
     "id": 25,
-    "question": "The force between two parallel current-carrying wires is:",
-    "options": { "A": "Always attractive", "B": "Always repulsive", "C": "Attractive if currents are in same direction", "D": "Repulsive if currents are in same direction" },
-    "answer": "C"
+    "question": "Correct the sentence: 'The data was misinterpreted by the analyst.'",
+    "options": {
+      "A": "The data were misinterpreted by the analyst.",
+      "B": "The data was misinterpreted by the analyst.",
+      "C": "The data were misinterpreting by the analyst.",
+      "D": "The data was misinterpreted by analyst."
+    },
+    "answer": "A"
   },
   {
     "id": 26,
-    "question": "The general formula for alkynes is:",
-    "options": { "A": "C_nH_2n+2", "B": "C_nH_2n", "C": "C_nH_2n-2", "D": "C_nH_2n+1" },
-    "answer": "C"
+    "question": "Choose the correct preposition: 'The decision depends __ the board's approval.'",
+    "options": {
+      "A": "on",
+      "B": "for",
+      "C": "with",
+      "D": "at"
+    },
+    "answer": "A"
   },
   {
     "id": 27,
-    "question": "The SI unit of molality is:",
-    "options": { "A": "mol/L", "B": "mol/kg", "C": "g/L", "D": "g/kg" },
+    "question": "Identify the error: 'She is more smarter than her colleague.'",
+    "options": {
+      "A": "'more' should be 'most'.",
+      "B": "'smarter' should be 'smart'.",
+      "C": "'than' should be 'then'.",
+      "D": "No error."
+    },
     "answer": "B"
   },
   {
     "id": 28,
-    "question": "A hydrocarbon with a triple bond is classified as:",
-    "options": { "A": "Alkane", "B": "Alkene", "C": "Alkyne", "D": "Aromatic" },
-    "answer": "C"
+    "question": "Convert to active voice: 'The proposal was rejected by the committee.'",
+    "options": {
+      "A": "The committee rejected the proposal.",
+      "B": "The committee was rejecting the proposal.",
+      "C": "The committee will reject the proposal.",
+      "D": "The committee has rejected the proposal."
+    },
+    "answer": "A"
   },
   {
     "id": 29,
-    "question": "The molar mass of H2SO4 is:",
-    "options": { "A": "98 g/mol", "B": "80 g/mol", "C": "64 g/mol", "D": "112 g/mol" },
-    "answer": "A"
-  },
-  {
-    "id": 30,
-    "question": "The boiling point of ethanol is approximately:",
-    "options": { "A": "78°C", "B": "100°C", "C": "0°C", "D": "50°C" },
-    "answer": "A"
-  },
-  {
-    "id": 31,
-    "question": "The symbol for Potassium is:",
-    "options": { "A": "P", "B": "K", "C": "Pt", "D": "Po" },
+    "question": "What is the synonym of 'tenacious' in the context of a scientist persisting through failure?",
+    "options": {
+      "A": "Hesitant",
+      "B": "Persistent",
+      "C": "Indifferent",
+      "D": "Fragile"
+    },
     "answer": "B"
   },
   {
+    "id": 30,
+    "question": "What is the antonym of 'ephemeral'?",
+    "options": {
+      "A": "Temporary",
+      "B": "Brief",
+      "C": "Permanent",
+      "D": "Fleeting"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 31,
+    "question": "Choose the correct word pair: 'The __ of the argument was evident.'",
+    "options": {
+      "A": "wait, weight",
+      "B": "weight, wait",
+      "C": "weight, way",
+      "D": "weigh, way"
+    },
+    "answer": "C"
+  },
+  {
     "id": 32,
-    "question": "The symbol 'S' represents:",
-    "options": { "A": "Sodium", "B": "Sulfur", "C": "Silicon", "D": "Selenium" },
+    "question": "What is the synonym of 'prudent'?",
+    "options": {
+      "A": "Reckless",
+      "B": "Cautious",
+      "C": "Hasty",
+      "D": "Careless"
+    },
     "answer": "B"
   },
   {
     "id": 33,
-    "question": "The process of converting an alcohol to an alkene is called:",
-    "options": { "A": "Oxidation", "B": "Dehydration", "C": "Hydration", "D": "Reduction" },
-    "answer": "B"
+    "question": "What is the antonym of 'mitigate'?",
+    "options": {
+      "A": "Alleviate",
+      "B": "Reduce",
+      "C": "Intensify",
+      "D": "Relieve"
+    },
+    "answer": "C"
   },
   {
     "id": 34,
-    "question": "The ore of iron is:",
-    "options": { "A": "Bauxite", "B": "Hematite", "C": "Malachite", "D": "Galena" },
-    "answer": "B"
-  },
-  {
-    "id": 35,
-    "question": "The pH of an acidic solution is:",
-    "options": { "A": "7", "B": "Greater than 7", "C": "Less than 7", "D": "14" },
-    "answer": "C"
-  },
-  {
-    "id": 36,
-    "question": "The electronic configuration of helium is:",
-    "options": { "A": "1s^2", "B": "1s^2 2s^1", "C": "1s^1", "D": "1s^2 2p^1" },
+    "question": "Choose the correct spelling:",
+    "options": {
+      "A": "Conscientious",
+      "B": "Consciencious",
+      "C": "Conscentious",
+      "D": "Conscentous"
+    },
     "answer": "A"
   },
   {
+    "id": 35,
+    "question": "The word 'innovative' in the context of technology means:",
+    "options": {
+      "A": "Outdated",
+      "B": "Creative",
+      "C": "Expensive",
+      "D": "Unreliable"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 36,
+    "question": "What is the synonym of 'ameliorate' in the context of improving conditions?",
+    "options": {
+      "A": "Worsen",
+      "B": "Enhance",
+      "C": "Ignore",
+      "D": "Delay"
+    },
+    "answer": "B"
+  },
+  {
     "id": 37,
-    "question": "The number of electrons in the outermost shell of noble gases is:",
-    "options": { "A": "2", "B": "4", "C": "6", "D": "8" },
-    "answer": "D"
+    "question": "Correct the sentence: 'Less students attended the seminar this year.'",
+    "options": {
+      "A": "Fewer students attended the seminar this year.",
+      "B": "Less students attend the seminar this year.",
+      "C": "Fewer students attends the seminar this year.",
+      "D": "Less student attended the seminar this year."
+    },
+    "answer": "A"
   },
   {
     "id": 38,
-    "question": "Germanium is an example of a:",
-    "options": { "A": "Conductor", "B": "Insulator", "C": "Semiconductor", "D": "Non-metal" },
-    "answer": "C"
+    "question": "Correct the sentence: 'The manager, along with his team, are presenting the plan.'",
+    "options": {
+      "A": "The manager, along with his team, is presenting the plan.",
+      "B": "The manager, along with his team, were presenting the plan.",
+      "C": "The manager, along with his teams, are presenting the plan.",
+      "D": "The manager, along with his team, presenting the plan."
+    },
+    "answer": "A"
   },
   {
     "id": 39,
-    "question": "The number of protons in an atom is equal to its:",
-    "options": { "A": "Mass number", "B": "Atomic number", "C": "Neutron number", "D": "Electron number" },
+    "question": "Correct the sentence: 'She don't have no time to rest.'",
+    "options": {
+      "A": "She doesn't have no time to rest.",
+      "B": "She doesn't have any time to rest.",
+      "C": "She don't have any time to rest.",
+      "D": "She hasn't a time to rest."
+    },
     "answer": "B"
   },
   {
     "id": 40,
-    "question": "The process of converting a gas to a liquid is:",
-    "options": { "A": "Evaporation", "B": "Condensation", "C": "Sublimation", "D": "Melting" },
-    "answer": "B"
+    "question": "Correct the sentence: 'The report was wrote by the intern.'",
+    "options": {
+      "A": "The report was written by the intern.",
+      "B": "The report is written by the intern.",
+      "C": "The report was writing by the intern.",
+      "D": "The report is wrote by the intern."
+    },
+    "answer": "A"
   },
   {
     "id": 41,
-    "question": "The functional group in esters is:",
-    "options": { "A": "-COOH", "B": "-COOR", "C": "-CHO", "D": "-OH" },
+    "question": "In a triangle, the angles are in the ratio 1:2:3, and the smallest angle is 30°. What is the largest angle?",
+    "options": {
+      "A": "60°",
+      "B": "90°",
+      "C": "120°",
+      "D": "150°"
+    },
     "answer": "B"
   },
   {
     "id": 42,
-    "question": "The mass number of an element is the sum of:",
-    "options": { "A": "Protons and electrons", "B": "Protons and neutrons", "C": "Neutrons and electrons", "D": "Protons" },
-    "answer": "B"
-  },
-  {
-    "id": 43,
-    "question": "The catalyst used in Haber’s process is:",
-    "options": { "A": "Iron", "B": "Nickel", "C": "Platinum", "D": "Copper" },
+    "question": "If f(x) = x² - 4x + 5, find the minimum value of f(x).",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
     "answer": "A"
   },
   {
-    "id": 44,
-    "question": "Alpha rays consist of:",
-    "options": { "A": "Electrons", "B": "Protons", "C": "Helium nuclei", "D": "Photons" },
-    "answer": "C"
-  },
-  {
-    "id": 45,
-    "question": "The bond in NaCl is:",
-    "options": { "A": "Covalent", "B": "Ionic", "C": "Metallic", "D": "Hydrogen" },
+    "id": 43,
+    "question": "Two workers, A and B, can complete a project in 15 days together. If A alone takes 25 days, how long does B take alone?",
+    "options": {
+      "A": "30 days",
+      "B": "37.5 days",
+      "C": "10 days",
+      "D": "45 days"
+    },
     "answer": "B"
   },
   {
+    "id": 44,
+    "question": "The median of the dataset 7, 3, 9, 2, 8, 4, 6, 1 is:",
+    "options": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "7"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 45,
+    "question": "If cos θ = 5/13 and θ is in the first quadrant, what is tan θ?",
+    "options": {
+      "A": "12/5",
+      "B": "5/12",
+      "C": "13/12",
+      "D": "12/13"
+    },
+    "answer": "A"
+  },
+  {
     "id": 46,
-    "question": "The entropy of a system increases in:",
-    "options": { "A": "Exothermic reactions", "B": "Endothermic reactions", "C": "Spontaneous processes", "D": "Equilibrium" },
-    "answer": "C"
+    "question": "A rectangular plot has an area of 800 m² and a perimeter of 120 m. What is the difference between its length and width?",
+    "options": {
+      "A": "10 m",
+      "B": "20 m",
+      "C": "30 m",
+      "D": "40 m"
+    },
+    "answer": "B"
   },
   {
     "id": 47,
-    "question": "The ionization energy of elements in a group generally:",
-    "options": { "A": "Increases", "B": "Decreases", "C": "Remains constant", "D": "Doubles" },
+    "question": "If 6^x = 25, what is x?",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6"
+    },
     "answer": "B"
   },
   {
     "id": 48,
-    "question": "Gas used in welding is:",
-    "options": { "A": "Oxygen", "B": "Nitrogen", "C": "Acetylene", "D": "Carbon Dioxide" },
-    "answer": "C"
+    "question": "The sum of the first 12 odd numbers is:",
+    "options": {
+      "A": "120",
+      "B": "144",
+      "C": "168",
+      "D": "192"
+    },
+    "answer": "B"
   },
   {
     "id": 49,
-    "question": "The transition elements are part of:",
-    "options": { "A": "s-block", "B": "p-block", "C": "d-block", "D": "f-block" },
-    "answer": "C"
+    "question": "A retailer offers a 20% discount on an item originally priced at $500, followed by a 10% tax on the discounted price. What is the final price?",
+    "options": {
+      "A": "$420",
+      "B": "$440",
+      "C": "$450",
+      "D": "$460"
+    },
+    "answer": "B"
   },
   {
     "id": 50,
-    "question": "What is the pH of a strongly acidic solution like HCl in water?",
-    "options": { "A": "7", "B": "Greater than 7", "C": "Less than 7", "D": "14" },
-    "answer": "C"
+    "question": "The probability of selecting a defective item from a batch of 5 defective and 15 non-defective items is:",
+    "options": {
+      "A": "1/4",
+      "B": "1/5",
+      "C": "1/3",
+      "D": "1/2"
+    },
+    "answer": "B"
   },
   {
     "id": 51,
-    "question": "The value of tan 45° is:",
-    "options": { "A": "0", "B": "1", "C": "√2", "D": "√3" },
+    "question": "If 3^x = 81, what is x?",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6"
+    },
     "answer": "B"
   },
   {
     "id": 52,
-    "question": "The value of cos 30° in decimal form is:",
-    "options": { "A": "0.500", "B": "0.707", "C": "0.866", "D": "1.000" },
-    "answer": "C"
-  },
-  {
-    "id": 53,
-    "question": "Which of the following angles has a cosine value equal to cos 30°?",
-    "options": { "A": "cos 60°", "B": "cos 330°", "C": "cos 150°", "D": "cos 90°" },
+    "question": "The average of 6 numbers is 13. If one number is 21 and another is 9, what is the average of the remaining four?",
+    "options": {
+      "A": "12",
+      "B": "13",
+      "C": "14",
+      "D": "15"
+    },
     "answer": "B"
   },
   {
+    "id": 53,
+    "question": "If sin θ = 8/17 and θ is in the first quadrant, what is cos θ?",
+    "options": {
+      "A": "15/17",
+      "B": "8/15",
+      "C": "17/15",
+      "D": "15/8"
+    },
+    "answer": "A"
+  },
+  {
     "id": 54,
-    "question": "The common ratio of the geometric sequence 4, 12, 36, ... is:",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "6" },
+    "question": "A trader sells 60% of his goods at a 25% profit and the rest at a 15% profit. If his total profit is $2100, what is the total cost price?",
+    "options": {
+      "A": "$9000",
+      "B": "$10,000",
+      "C": "$11,000",
+      "D": "$12,000"
+    },
     "answer": "B"
   },
   {
     "id": 55,
-    "question": "The number of permutations of the word 'ENGINE' is:",
-    "options": { "A": "120", "B": "360", "C": "720", "D": "1440" },
+    "question": "If x² = 25, what is x?",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6"
+    },
     "answer": "C"
   },
   {
     "id": 56,
-    "question": "The solution to the system of equations x + y = 7 and 2x - y = 2 is:",
-    "options": { "A": "(3,4)", "B": "(4,3)", "C": "(2,5)", "D": "(5,2)" },
-    "answer": "A"
+    "question": "A triangle has a perimeter of 42 cm, with sides in the ratio 3:4:5. What is the length of the longest side?",
+    "options": {
+      "A": "12 cm",
+      "B": "14 cm",
+      "C": "15 cm",
+      "D": "18 cm"
+    },
+    "answer": "C"
   },
   {
     "id": 57,
-    "question": "The number of ways to arrange 4 distinct objects in a circle is:",
-    "options": { "A": "24", "B": "12", "C": "6", "D": "8" },
+    "question": "A store sells 150 items, 40% at $60 each and 60% at $90 each. After a 10% tax on total revenue, what is the final revenue?",
+    "options": {
+      "A": "$11,400",
+      "B": "$12,600",
+      "C": "$13,200",
+      "D": "$14,100"
+    },
     "answer": "C"
   },
   {
     "id": 58,
-    "question": "The derivative of sin(2x) with respect to x is:",
-    "options": { "A": "2 cos(2x)", "B": "cos(2x)", "C": "2 sin(2x)", "D": "- cos(2x)" },
-    "answer": "A"
+    "question": "If 2^x = 32, what is x?",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6"
+    },
+    "answer": "C"
   },
   {
     "id": 59,
-    "question": "If log_3 27 = x, then x =:",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "9" },
+    "question": "What is the value of tan 60°?",
+    "options": {
+      "A": "1/√3",
+      "B": "√3",
+      "C": "1/2",
+      "D": "1"
+    },
     "answer": "B"
   },
   {
     "id": 60,
-    "question": "The number of diagonals in a hexagon is:",
-    "options": { "A": "6", "B": "9", "C": "12", "D": "15" },
+    "question": "If f(x) = 3x + 5, what is f(2)?",
+    "options": {
+      "A": "8",
+      "B": "11",
+      "C": "12",
+      "D": "15"
+    },
     "answer": "B"
   },
   {
     "id": 61,
-    "question": "The roots of the quadratic equation x^2 - 5x + 6 = 0 are:",
-    "options": { "A": "2, 3", "B": "1, 6", "C": "-2, -3", "D": "5, 1" },
-    "answer": "A"
+    "question": "Solve the system of equations: 2x + y = 7, x - y = 1.",
+    "options": {
+      "A": "(2, 3)",
+      "B": "(3, 1)",
+      "C": "(2, 1)",
+      "D": "(3, 2)"
+    },
+    "answer": "B"
   },
   {
     "id": 62,
-    "question": "If tan x = 1, then x is:",
-    "options": { "A": "0°", "B": "30°", "C": "45°", "D": "90°" },
-    "answer": "C"
+    "question": "What is the area of a circle with radius 5 cm?",
+    "options": {
+      "A": "25π cm²",
+      "B": "50π cm²",
+      "C": "75π cm²",
+      "D": "100π cm²"
+    },
+    "answer": "A"
   },
   {
     "id": 63,
-    "question": "One pico is equal to:",
-    "options": { "A": "10^-9", "B": "10^-12", "C": "10^-6", "D": "10^-3" },
+    "question": "If a car travels 240 km in 4 hours, what is its speed?",
+    "options": {
+      "A": "50 km/h",
+      "B": "60 km/h",
+      "C": "70 km/h",
+      "D": "80 km/h"
+    },
     "answer": "B"
   },
   {
     "id": 64,
-    "question": "The area of a circle with radius r is:",
-    "options": { "A": "πr^2", "B": "2πr", "C": "πr", "D": "4πr^2" },
-    "answer": "A"
-  },
-  {
-    "id": 65,
-    "question": "The perimeter of a square with side 5 cm is:",
-    "options": { "A": "10 cm", "B": "15 cm", "C": "20 cm", "D": "25 cm" },
-    "answer": "C"
-  },
-  {
-    "id": 66,
-    "question": "The derivative of tan x is:",
-    "options": { "A": "sec^2 x", "B": "csc^2 x", "C": "sec x", "D": "csc x" },
-    "answer": "A"
-  },
-  {
-    "id": 67,
-    "question": "The number of ways to choose 2 books from 5 is:",
-    "options": { "A": "5", "B": "10", "C": "15", "D": "20" },
+    "question": "What is the slope of the line passing through (2, 3) and (4, 7)?",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
     "answer": "B"
   },
   {
+    "id": 65,
+    "question": "If log₂(8) = x, what is x?",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 66,
+    "question": "A shop offers a 15% discount on a $200 item. What is the sale price?",
+    "options": {
+      "A": "$160",
+      "B": "$170",
+      "C": "$180",
+      "D": "$190"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 67,
+    "question": "What is the sum of the angles in a quadrilateral?",
+    "options": {
+      "A": "180°",
+      "B": "270°",
+      "C": "360°",
+      "D": "450°"
+    },
+    "answer": "C"
+  },
+  {
     "id": 68,
-    "question": "The eccentricity of a hyperbola is:",
-    "options": { "A": "0", "B": "Between 0 and 1", "C": "1", "D": "Greater than 1" },
-    "answer": "D"
+    "question": "If f(x) = x² + 2x - 3, what is f(-1)?",
+    "options": {
+      "A": "-4",
+      "B": "-2",
+      "C": "0",
+      "D": "2"
+    },
+    "answer": "C"
   },
   {
     "id": 69,
-    "question": "The number of elements in the power set of {a,b,c,d} is:",
-    "options": { "A": "8", "B": "12", "C": "16", "D": "20" },
+    "question": "The ratio of two numbers is 3:5, and their sum is 40. What is the larger number?",
+    "options": {
+      "A": "15",
+      "B": "20",
+      "C": "25",
+      "D": "30"
+    },
     "answer": "C"
   },
   {
     "id": 70,
-    "question": "The 4th term of the arithmetic sequence with first term 3 and common difference 5 is:",
-    "options": { "A": "13", "B": "15", "C": "18", "D": "23" },
-    "answer": "C"
+    "question": "What is the value of sin 30°?",
+    "options": {
+      "A": "1/2",
+      "B": "√3/2",
+      "C": "1/√3",
+      "D": "1"
+    },
+    "answer": "A"
   },
   {
     "id": 71,
-    "question": "The mean of the numbers 2, 4, 6, 8, 10 is:",
-    "options": { "A": "5", "B": "6", "C": "7", "D": "8" },
+    "question": "A box contains 5 red and 3 blue balls. What is the probability of drawing a red ball?",
+    "options": {
+      "A": "3/8",
+      "B": "5/8",
+      "C": "3/5",
+      "D": "5/3"
+    },
     "answer": "B"
   },
   {
     "id": 72,
-    "question": "The slope of the line through (1, 2) and (3, 6) is:",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "B"
+    "question": "If x + y = 10 and x - y = 4, what is x?",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "6",
+      "D": "7"
+    },
+    "answer": "D"
   },
   {
     "id": 73,
-    "question": "The area of a triangle with base 6 cm and height 8 cm is:",
-    "options": { "A": "12 cm^2", "B": "24 cm^2", "C": "36 cm^2", "D": "48 cm^2" },
+    "question": "What is the perimeter of a square with side length 6 cm?",
+    "options": {
+      "A": "18 cm",
+      "B": "24 cm",
+      "C": "30 cm",
+      "D": "36 cm"
+    },
     "answer": "B"
   },
   {
     "id": 74,
-    "question": "The roots of x^2 + 2x + 1 = 0 are:",
-    "options": { "A": "Real and distinct", "B": "Real and equal", "C": "Complex", "D": "Imaginary" },
+    "question": "If 4^x = 64, what is x?",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    },
     "answer": "B"
   },
   {
     "id": 75,
-    "question": "The distance between points (1, 2) and (4, 6) is:",
-    "options": { "A": "5", "B": "6", "C": "7", "D": "8" },
+    "question": "What is the area of a triangle with base 10 cm and height 8 cm?",
+    "options": {
+      "A": "40 cm²",
+      "B": "48 cm²",
+      "C": "80 cm²",
+      "D": "96 cm²"
+    },
     "answer": "A"
   },
   {
     "id": 76,
-    "question": "Synonym of 'vivid' is:",
-    "options": { "A": "Dull", "B": "Bright", "C": "Vague", "D": "Plain" },
+    "question": "What is the next number in the sequence: 1, 4, 9, 16, 25?",
+    "options": {
+      "A": "30",
+      "B": "36",
+      "C": "49",
+      "D": "64"
+    },
     "answer": "B"
   },
   {
     "id": 77,
-    "question": "Synonym of 'meticulous' is:",
-    "options": { "A": "Careless", "B": "Precise", "C": "Hasty", "D": "Negligent" },
+    "question": "If 'CAT' is coded as 'BDW', how is 'DOG' coded?",
+    "options": {
+      "A": "CFI",
+      "B": "EPI",
+      "C": "CFJ",
+      "D": "EPJ"
+    },
     "answer": "B"
   },
   {
     "id": 78,
-    "question": "Antonym of 'fragile' is:",
-    "options": { "A": "Weak", "B": "Strong", "C": "Delicate", "D": "Brittle" },
+    "question": "A is B's father, C is A's son, and D is B's mother. How is C related to D?",
+    "options": {
+      "A": "Father",
+      "B": "Son",
+      "C": "Husband",
+      "D": "Brother"
+    },
     "answer": "B"
   },
   {
     "id": 79,
-    "question": "Synonym of 'innovate' is:",
-    "options": { "A": "Copy", "B": "Create", "C": "Repeat", "D": "Imitate" },
+    "question": "What is the next term in the sequence: 3, 6, 12, 24?",
+    "options": {
+      "A": "36",
+      "B": "48",
+      "C": "60",
+      "D": "72"
+    },
     "answer": "B"
   },
   {
     "id": 80,
-    "question": "Convert to indirect speech: He said, 'I have finished my work.'",
-    "options": { "A": "He said he has finished his work.", "B": "He said he had finished his work.", "C": "He said he will finish his work.", "D": "He said he finishes his work." },
-    "answer": "B"
+    "question": "If the day after tomorrow is Wednesday, what day is it today?",
+    "options": {
+      "A": "Monday",
+      "B": "Tuesday",
+      "C": "Thursday",
+      "D": "Friday"
+    },
+    "answer": "A"
   },
   {
     "id": 81,
-    "question": "The passive voice of 'They are painting the house' is:",
-    "options": { "A": "The house is painted by them.", "B": "The house is being painted by them.", "C": "The house was painted by them.", "D": "The house has been painted by them." },
+    "question": "Star : Sky :: River : ?",
+    "options": {
+      "A": "Ocean",
+      "B": "Valley",
+      "C": "Mountain",
+      "D": "Lake"
+    },
     "answer": "B"
   },
   {
     "id": 82,
-    "question": "Choose the correct sentence:",
-    "options": { "A": "We doesn’t like to travel.", "B": "We don’t likes to travel.", "C": "We don’t like to travel.", "D": "We doesn’t likes to travel." },
-    "answer": "C"
+    "question": "If 4 machines produce 200 units in 8 days, how long will 6 machines take to produce 300 units?",
+    "options": {
+      "A": "6 days",
+      "B": "8 days",
+      "C": "10 days",
+      "D": "12 days"
+    },
+    "answer": "B"
   },
   {
     "id": 83,
-    "question": "Synonym of 'innovate' is:",
-    "options": { "A": "Copy", "B": "Create", "C": "Repeat", "D": "Imitate" },
-    "answer": "B"
+    "question": "What is the next term in the sequence: 2, 6, 12, 20, 30?",
+    "options": {
+      "A": "42",
+      "B": "44",
+      "C": "46",
+      "D": "48"
+    },
+    "answer": "A"
   },
   {
     "id": 84,
-    "question": "The correct spelling is:",
-    "options": { "A": "Accomodate", "B": "Accommodate", "C": "Acommodate", "D": "Accommadate" },
-    "answer": "B"
-  },
-  {
-    "id": 85,
-    "question": "Fill in the blank: '__ sun rises in the east.'",
-    "options": { "A": "A", "B": "An", "C": "The", "D": "None" },
+    "question": "If 'STAR' is coded as '4567', what is 'MOON' coded as?",
+    "options": {
+      "A": "2314",
+      "B": "2143",
+      "C": "3142",
+      "D": "4322"
+    },
     "answer": "C"
   },
   {
+    "id": 85,
+    "question": "A drone flies 50 km north, then 120 km east. What is the straight-line distance from start to end?",
+    "options": {
+      "A": "130 km",
+      "B": "140 km",
+      "C": "150 km",
+      "D": "170 km"
+    },
+    "answer": "A"
+  },
+  {
     "id": 86,
-    "question": "Error Correction: Choose the option that corrects the underlined error: He go to school every day.",
-    "options": { "A": "goes", "B": "going", "C": "gone", "D": "No error" },
+    "question": "A is B's wife, C is B's son, and D is A's daughter. How is D related to C?",
+    "options": {
+      "A": "Sister",
+      "B": "Mother",
+      "C": "Wife",
+      "D": "Daughter"
+    },
     "answer": "A"
   },
   {
     "id": 87,
-    "question": "Error Correction: Choose the option that corrects the underlined error: She is taller than me in the class.",
-    "options": { "A": "tallest", "B": "taller than I", "C": "more tall", "D": "No error" },
-    "answer": "B"
+    "question": "In a sequence of shapes (circle, square, triangle), what is the 13th shape?",
+    "options": {
+      "A": "Circle",
+      "B": "Square",
+      "C": "Triangle",
+      "D": "None"
+    },
+    "answer": "A"
   },
   {
     "id": 88,
-    "question": "Error Correction: Choose the option that corrects the underlined error: I have saw the movie yesterday.",
-    "options": { "A": "seen", "B": "see", "C": "seeing", "D": "No error" },
-    "answer": "A"
+    "question": "If 4 books cost $60, how much do 7 books cost?",
+    "options": {
+      "A": "$90",
+      "B": "$100",
+      "C": "$105",
+      "D": "$110"
+    },
+    "answer": "C"
   },
   {
     "id": 89,
-    "question": "Error Correction: Choose the option that corrects the underlined error: The book is on the table since morning.",
-    "options": { "A": "has been", "B": "was", "C": "will be", "D": "No error" },
-    "answer": "A"
+    "question": "What is the next number in the sequence: 4, 12, 36, 108?",
+    "options": {
+      "A": "216",
+      "B": "324",
+      "C": "432",
+      "D": "540"
+    },
+    "answer": "B"
   },
   {
     "id": 90,
-    "question": "Error Correction: Choose the option that corrects the underlined error: They was playing in the park.",
-    "options": { "A": "were", "B": "are", "C": "is", "D": "No error" },
-    "answer": "A"
+    "question": "If 'GLOW' is coded as 'MSY', what is 'SHINE' coded as?",
+    "options": {
+      "A": "UPLFL",
+      "B": "VRQMG",
+      "C": "UQMNG",
+      "D": "VIPLFL"
+    },
+    "answer": "C"
   },
   {
     "id": 91,
-    "question": "The correct spelling is:",
-    "options": { "A": "Occurence", "B": "Occurrence", "C": "Ocurrance", "D": "Occurrance" },
-    "answer": "B"
+    "question": "A clock shows 5:00. After 210 minutes, what time is it?",
+    "options": {
+      "A": "7:30",
+      "B": "8:00",
+      "C": "8:30",
+      "D": "9:00"
+    },
+    "answer": "C"
   },
   {
     "id": 92,
-    "question": "Antonym of 'hostile' is:",
-    "options": { "A": "Aggressive", "B": "Friendly", "C": "Angry", "D": "Violent" },
-    "answer": "B"
+    "question": "If sin θ = opposite/hypotenuse, what is csc θ?",
+    "options": {
+      "A": "hypotenuse/opposite",
+      "B": "opposite/adjacent",
+      "C": "adjacent/hypotenuse",
+      "D": "hypotenuse/adjacent"
+    },
+    "answer": "A"
   },
   {
     "id": 93,
-    "question": "Choose the correct sentence:",
-    "options": { "A": "She have two brothers.", "B": "She has two brothers.", "C": "She having two brothers.", "D": "She has two brother." },
-    "answer": "B"
+    "question": "In a group of 15 people, each person sends an email to every other person. How many emails are sent?",
+    "options": {
+      "A": "105",
+      "B": "120",
+      "C": "195",
+      "D": "210"
+    },
+    "answer": "D"
   },
   {
     "id": 94,
-    "question": "Antonym of 'complex' is:",
-    "options": { "A": "Difficult", "B": "Simple", "C": "Hard", "D": "Intricate" },
-    "answer": "B"
+    "question": "If the day after tomorrow is Friday, what day is it today?",
+    "options": {
+      "A": "Tuesday",
+      "B": "Wednesday",
+      "C": "Thursday",
+      "D": "Monday"
+    },
+    "answer": "A"
   },
   {
     "id": 95,
-    "question": "Choose the correct sentence:",
-    "options": { "A": "She has two cat.", "B": "She have two cats.", "C": "She has two cats.", "D": "She have two cat." },
+    "question": "What is the missing number in the sequence: 1, 3, 6, 10, 15, ?",
+    "options": {
+      "A": "18",
+      "B": "20",
+      "C": "21",
+      "D": "22"
+    },
     "answer": "C"
   },
   {
     "id": 96,
-    "question": "Read the passage and answer the questions. “Education is the key to success. It opens doors to opportunities and empowers individuals to achieve their goals. A good education system focuses on critical thinking, creativity, and practical skills.” What is the main idea of the passage?",
-    "options": { "A": "Education is unimportant", "B": "Education leads to success", "C": "Creativity is not part of education", "D": "Skills are irrelevant" },
+    "question": "If a square has a diagonal of 10√2 cm, what is its side length?",
+    "options": {
+      "A": "5 cm",
+      "B": "10 cm",
+      "C": "15 cm",
+      "D": "20 cm"
+    },
     "answer": "B"
   },
   {
     "id": 97,
-    "question": "According to the passage, education empowers individuals to:",
-    "options": { "A": "Avoid challenges", "B": "Achieve their goals", "C": "Ignore opportunities", "D": "Limit creativity" },
+    "question": "If 'FAN' is coded as 'AFN', how is 'PEN' coded?",
+    "options": {
+      "A": "AFN",
+      "B": "EPN",
+      "C": "NPE",
+      "D": "PNE"
+    },
     "answer": "B"
   },
   {
     "id": 98,
-    "question": "A good education system emphasizes:",
-    "options": { "A": "Only academic knowledge", "B": "Critical thinking and creativity", "C": "Memorization only", "D": "Physical skills only" },
+    "question": "A car travels 300 km in 5 hours. What is its average speed?",
+    "options": {
+      "A": "50 km/h",
+      "B": "60 km/h",
+      "C": "70 km/h",
+      "D": "80 km/h"
+    },
     "answer": "B"
   },
   {
     "id": 99,
-    "question": "The word 'empowers' in the passage means:",
-    "options": { "A": "Weakens", "B": "Enables", "C": "Discourages", "D": "Confuses" },
+    "question": "What is the next term in the sequence: 5, 10, 20, 40?",
+    "options": {
+      "A": "60",
+      "B": "80",
+      "C": "100",
+      "D": "120"
+    },
     "answer": "B"
   },
   {
     "id": 100,
-    "question": "The passage suggests that education:",
-    "options": { "A": "Closes opportunities", "B": "Opens doors to opportunities", "C": "Limits success", "D": "Ignores practical skills" },
+    "question": "A cube has a volume of 64 cm³. What is the length of its side?",
+    "options": {
+      "A": "2 cm",
+      "B": "4 cm",
+      "C": "6 cm",
+      "D": "8 cm"
+    },
     "answer": "B"
   }
 ]
