@@ -104,14 +104,14 @@ body {
 
 .option:hover {
   background: #ffca28; /* Amber accent on hover */
-  transform: scale(1.05);
+  transform: scale(1.03);
   color: white; /* White text on hover */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .option.selected {
-  background: ; /* Emerald green for selected option */
-  border-color: #3f51b5; /* Rich indigo border */
+  background: black; /* Emerald green for selected option */
+  border-color: black; /* Rich indigo border */
   color: #fff8e1; /* Soft ivory text */
 }
 
