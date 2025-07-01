@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const loading = document.getElementById("loading");
   const results = document.getElementById("results");
   let timerInterval;
-  let timeLeft = 3600; // 60 minutes in seconds
+  let timeLeft = 7200; // 60 + 60 minutes in seconds
   let currentQuestion = 0;
   let answers = {};
 

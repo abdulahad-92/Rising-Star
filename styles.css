@@ -1,9 +1,14 @@
+/* Academic-themed CSS with a modern color scheme for a testing platform */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #e0f7fa, #ffffff);
-  color: #333;
+  background: linear-gradient(
+    135deg,
+    #eceff1,
+    #fff8e1
+  ); /* Light slate to soft ivory gradient for a clean background */
+  color: #455a64; /* Slate gray for primary text */
   line-height: 1.6;
 }
 
@@ -11,33 +16,39 @@ body {
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
+  background: #fff8e1; /* Soft ivory for content area */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #2e7d32;
+  background: #3f51b5; /* Rich indigo for header */
   padding: 15px 30px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  color: white;
+  color: #fff8e1; /* Soft ivory text */
 }
 
 .branding h1 {
   font-size: 1.8rem;
   margin: 0;
+  color: #ffffff; /* Amber accent for heading */
 }
 
 .branding p {
   font-size: 0.9rem;
   margin: 0;
   opacity: 0.9;
+  color: #eceff1; /* Light slate for subtitle */
 }
 
 .timer {
   font-size: 1.2rem;
   font-weight: bold;
+  color: #ffffff; /* Amber accent for timer */
   animation: pulse 2s infinite;
 }
 
@@ -48,17 +59,17 @@ body {
 
 .test-info h2 {
   font-size: 1.5rem;
-  color: #2e7d32;
+  color: #3f51b5; /* Rich indigo for subheading */
 }
 
 .tagline {
   font-style: italic;
-  color: #666;
+  color: #90a4ae; /* Cool gray for tagline */
   margin: 5px 0;
 }
 
 .question-card {
-  background: white;
+  background: #fff8e1; /* Soft ivory for question card */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -71,7 +82,7 @@ body {
 #question-text {
   font-size: 1.2rem;
   margin-bottom: 15px;
-  color: #444;
+  color: #455a64; /* Slate gray for question text */
 }
 
 .options-grid {
@@ -81,24 +92,27 @@ body {
 }
 
 .option {
-  background: #f1f8e9;
-  border: 2px solid #c8e6c9;
+  background: #eceff1; /* Light slate for options */
+  border: 2px solid #3f51b5; /* Rich indigo border */
   border-radius: 5px;
   padding: 10px;
   font-size: 1rem;
   cursor: pointer;
+  color: #455a64; /* Slate gray text */
   transition: all 0.3s ease;
 }
 
 .option:hover {
-  background: #c8e6c9;
+  background: #ffca28; /* Amber accent on hover */
   transform: scale(1.05);
+  color: white; /* White text on hover */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .option.selected {
-  background: #81c784;
-  border-color: #2e7d32;
-  color: white;
+  background: ; /* Emerald green for selected option */
+  border-color: #3f51b5; /* Rich indigo border */
+  color: #fff8e1; /* Soft ivory text */
 }
 
 .navigation {
@@ -109,8 +123,8 @@ body {
 
 #prev-btn,
 #next-btn {
-  background: #4caf50;
-  color: white;
+  background: #3f51b5; /* Rich indigo for buttons */
+  color: #fff8e1; /* Soft ivory text */
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -120,15 +134,22 @@ body {
 
 #prev-btn:hover,
 #next-btn:hover {
-  background: #388e3c;
+  background: #ffca28; /* Amber accent on hover */
+}
+
+.navigation button.disabled {
+  background-color: #eceff1; /* Light slate for disabled */
+  color: #90a4ae; /* Cool gray text */
+  cursor: not-allowed;
+  opacity: 0.6;
 }
 
 .submit-btn {
   display: block;
   width: 200px;
   margin: 20px auto;
-  background: #2e7d32;
-  color: white;
+  background: #3f51b5; /* Rich indigo for submit button */
+  color: #fff8e1; /* Soft ivory text */
   border: none;
   padding: 12px;
   border-radius: 5px;
@@ -138,9 +159,13 @@ body {
 }
 
 .submit-btn:hover {
-  background: #1b5e20;
+  background: #ffca28; /* Amber accent on hover */
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn.hidden {
+  display: none;
 }
 
 .results {
@@ -149,16 +174,46 @@ body {
 }
 
 .results h2 {
-  color: #2e7d32;
+  color: #3f51b5; /* Rich indigo for results heading */
+}
+
+.results p {
+  color: #455a64; /* Slate gray for results text */
+}
+
+.emoji {
+  font-size: 2em;
+}
+
+.error {
+  color: #d32f2f; /* Crimson red for error messages */
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .footer {
   text-align: center;
   padding: 15px 0;
-  background: #f1f8e9;
+  background: #eceff1; /* Light slate for footer */
   margin-top: 30px;
   font-size: 0.9rem;
-  color: #666;
+  color: #90a4ae; /* Cool gray text */
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-size: 1.1em;
+  color: #455a64; /* Slate gray text */
+  background-color: #eceff1; /* Light slate background */
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.loading.hidden {
+  display: none;
 }
 
 .popup {
@@ -170,13 +225,13 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black for overlay */
   z-index: 1000;
   animation: fadeIn 0.5s ease;
 }
 
 .popup-content {
-  background: white;
+  background: #fff8e1; /* Soft ivory for popup */
   padding: 30px;
   border-radius: 10px;
   text-align: center;
@@ -196,20 +251,21 @@ body {
   display: block;
   font-size: 0.9rem;
   margin-bottom: 5px;
-  color: #444;
+  color: #455a64; /* Slate gray for labels */
 }
 
 .form-group input {
   width: 100%;
   padding: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #90a4ae; /* Cool gray border */
   border-radius: 5px;
   font-size: 1rem;
+  color: #455a64; /* Slate gray text */
 }
 
 .popup-content button {
-  background: #2e7d32;
-  color: white;
+  background: #3f51b5; /* Rich indigo for button */
+  color: #fff8e1; /* Soft ivory text */
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -218,9 +274,8 @@ body {
 }
 
 .popup-content button:hover {
-  background: #1b5e20;
+  background: #ffca28; /* Amber accent on hover */
 }
-
 .hidden {
   display: none;
 }
