@@ -1,0 +1,1102 @@
+[
+  {
+    "id": 1,
+    "question": "Read the passage and answer the questions: The adoption of renewable energy has reshaped rural economies globally. Communities once dependent on fossil fuels now harness solar and wind power, reducing energy costs by up to 35%. What is the central argument of the passage?",
+    "options": {
+      "A": "Renewable energy is unsustainable in rural areas.",
+      "B": "Renewable energy offers economic benefits but faces significant hurdles.",
+      "C": "Fossil fuels remain more reliable than renewables.",
+      "D": "Job creation is the primary benefit of renewable energy."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 2,
+    "question": "What challenge is explicitly highlighted in the passage?",
+    "options": {
+      "A": "Public opposition to renewable energy.",
+      "B": "High installation costs.",
+      "C": "Lack of skilled workers.",
+      "D": "Limited government support."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 3,
+    "question": "What percentage of energy cost reduction is mentioned in the passage?",
+    "options": {
+      "A": "25%",
+      "B": "35%",
+      "C": "45%",
+      "D": "55%"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 4,
+    "question": "What is a benefit of renewable energy mentioned in the passage?",
+    "options": {
+      "A": "Increased fossil fuel use.",
+      "B": "Economic growth in rural areas.",
+      "C": "Higher energy costs.",
+      "D": "Reduced job opportunities."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 5,
+    "question": "What type of energy sources are mentioned in the passage?",
+    "options": {
+      "A": "Nuclear and geothermal",
+      "B": "Solar and wind",
+      "C": "Coal and oil",
+      "D": "Hydro and biomass"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 6,
+    "question": "Read the passage and answer the questions: The water crisis affects millions, with rural farmers facing severe shortages due to poor infrastructure. Experts suggest long-term solutions like sustainable irrigation and stricter regulations, while advocacy groups push for immediate relief. How can farmers address water shortages according to the passage?",
+    "options": {
+      "A": "By relocating to urban centers.",
+      "B": "By adopting drip irrigation.",
+      "C": "By importing water supplies.",
+      "D": "By reducing crop diversity."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 7,
+    "question": "What role do advocacy groups play?",
+    "options": {
+      "A": "They monitor crop yields.",
+      "B": "They supply irrigation equipment.",
+      "C": "They promote stricter regulations.",
+      "D": "They fund urban development."
+    },
+    "answer": "C"
+  },
+  {
+    "id": 8,
+    "question": "The word 'stringent' in the passage means:",
+    "options": {
+      "A": "Lenient",
+      "B": "Strict",
+      "C": "Temporary",
+      "D": "Unenforceable"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 9,
+    "question": "What do experts imply about the water crisis?",
+    "options": {
+      "A": "It can be resolved through community efforts alone.",
+      "B": "It requires long-term solutions like sustainable irrigation.",
+      "C": "It is caused solely by industrial runoff.",
+      "D": "It has no impact on agricultural productivity."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 10,
+    "question": "What is a consequence of the water crisis mentioned in the passage?",
+    "options": {
+      "A": "Improved crop yields.",
+      "B": "Increased urban migration.",
+      "C": "Severe shortages for rural farmers.",
+      "D": "Enhanced infrastructure development."
+    },
+    "answer": "C"
+  },
+  {
+    "id": 11,
+    "question": "Read the passage and answer the questions: Traditional craftsmanship, such as handwoven textiles, has gained international acclaim for its artistry. Artisans blend historical techniques with contemporary designs, creating pieces that take 12-18 days to complete using natural dyes. A digital platform markets these crafts globally, increasing artisans' earnings by 30%. What is the main focus of the passage?",
+    "options": {
+      "A": "The decline of traditional craftsmanship.",
+      "B": "The global rise and challenges of handwoven textiles.",
+      "C": "The dominance of automated textile production.",
+      "D": "The high cost of natural dyes."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 12,
+    "question": "How long does it take to create one handwoven piece?",
+    "options": {
+      "A": "3-24 days",
+      "B": "12-18 days",
+      "C": "18-24 days",
+      "D": "24-30 days"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 13,
+    "question": "What has increased artisans' earnings?",
+    "options": {
+      "A": "Government funding.",
+      "B": "A digital marketing platform.",
+      "C": "Automated production methods.",
+      "D": "Imported raw materials."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 14,
+    "question": "The word 'acclaim' in the passage is closest in meaning to:",
+    "options": {
+      "A": "Criticism",
+      "B": "Praise",
+      "C": "Rejection",
+      "D": "Indifference"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 15,
+    "question": "What threatens the artisans' livelihood?",
+    "options": {
+      "A": "Lack of skilled artisans.",
+      "B": "Competition from automated production.",
+      "C": "High costs of natural dyes.",
+      "D": "Declining global interest."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 16,
+    "question": "What is the purpose of the educational initiatives?",
+    "options": {
+      "A": "To replace traditional methods with automation.",
+      "B": "To train artisans in mass production.",
+      "C": "To preserve traditional methods through innovation.",
+      "D": "To reduce reliance on natural dyes."
+    },
+    "answer": "C"
+  },
+  {
+    "id": 17,
+    "question": "Identify the error: 'Each of the participants were given a certificate.'",
+    "options": {
+      "A": "'Each' should be 'All'.",
+      "B": "'were' should be 'was'.",
+      "C": "'given' should be 'gave'.",
+      "D": "No error."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 18,
+    "question": "Convert to indirect speech: 'She said, \"I will finish the report tomorrow.\"'",
+    "options": {
+      "A": "She said that she will finish the report tomorrow.",
+      "B": "She said that she would finish the report tomorrow.",
+      "C": "She says that she would finish the report tomorrow.",
+      "D": "She said that she finishes the report tomorrow."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 19,
+    "question": "Choose the correct sentence:",
+    "options": {
+      "A": "Neither the manager nor the staff is responsible.",
+      "B": "Neither the manager nor the staff are responsible.",
+      "C": "Neither the manager nor the staff were responsible.",
+      "D": "Neither the manager nor the staff have responsible."
+    },
+    "answer": "A"
+  },
+  {
+    "id": 20,
+    "question": "Fill in the blank: 'The committee is divided __ the new policy.'",
+    "options": {
+      "A": "about",
+      "B": "on",
+      "C": "with",
+      "D": "for"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 21,
+    "question": "Convert to passive voice: 'The team developed a new software application.'",
+    "options": {
+      "A": "A new software application is developed by the team.",
+      "B": "A new software application was developed by the team.",
+      "C": "A new software application has developed by the team.",
+      "D": "A new software application will be developed by the team."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 22,
+    "question": "Choose the correct article: '__ university offers advanced research programs.'",
+    "options": {
+      "A": "A",
+      "B": "An",
+      "C": "The",
+      "D": "No article"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 23,
+    "question": "Identify the tense: 'By next month, they will have been working here for five years.'",
+    "options": {
+      "A": "Future Perfect",
+      "B": "Future Continuous",
+      "C": "Future Perfect Continuous",
+      "D": "Present Perfect Continuous"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 24,
+    "question": "Fill in the blank: 'If I __ earlier, I would have caught the train.'",
+    "options": {
+      "A": "leave",
+      "B": "left",
+      "C": "had left",
+      "D": "have left"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 25,
+    "question": "Correct the sentence: 'The data was misinterpreted by the analyst.'",
+    "options": {
+      "A": "The data were misinterpreted by the analyst.",
+      "B": "The data was misinterpreted by the analyst.",
+      "C": "The data were misinterpreting by the analyst.",
+      "D": "The data was misinterpreted by analyst."
+    },
+    "answer": "A"
+  },
+  {
+    "id": 26,
+    "question": "Choose the correct preposition: 'The decision depends __ the board's approval.'",
+    "options": {
+      "A": "on",
+      "B": "for",
+      "C": "with",
+      "D": "at"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 27,
+    "question": "Identify the error: 'She is more smarter than her colleague.'",
+    "options": {
+      "A": "'more' should be 'most'.",
+      "B": "'smarter' should be 'smart'.",
+      "C": "'than' should be 'then'.",
+      "D": "No error."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 28,
+    "question": "Convert to active voice: 'The proposal was rejected by the committee.'",
+    "options": {
+      "A": "The committee rejected the proposal.",
+      "B": "The committee was rejecting the proposal.",
+      "C": "The committee will reject the proposal.",
+      "D": "The committee has rejected the proposal."
+    },
+    "answer": "A"
+  },
+  {
+    "id": 29,
+    "question": "What is the synonym of 'tenacious' in the context of a scientist persisting through failure?",
+    "options": {
+      "A": "Hesitant",
+      "B": "Persistent",
+      "C": "Indifferent",
+      "D": "Fragile"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 30,
+    "question": "What is the antonym of 'ephemeral'?",
+    "options": {
+      "A": "Temporary",
+      "B": "Brief",
+      "C": "Permanent",
+      "D": "Fleeting"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 31,
+    "question": "Choose the correct word pair: 'The __ of the argument was evident.'",
+    "options": {
+      "A": "wait, weight",
+      "B": "weight, wait",
+      "C": "weight, way",
+      "D": "weigh, way"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 32,
+    "question": "What is the synonym of 'prudent'?",
+    "options": {
+      "A": "Reckless",
+      "B": "Cautious",
+      "C": "Hasty",
+      "D": "Careless"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 33,
+    "question": "What is the antonym of 'mitigate'?",
+    "options": {
+      "A": "Alleviate",
+      "B": "Reduce",
+      "C": "Intensify",
+      "D": "Relieve"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 34,
+    "question": "Choose the correct spelling:",
+    "options": {
+      "A": "Conscientious",
+      "B": "Consciencious",
+      "C": "Conscentious",
+      "D": "Conscentous"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 35,
+    "question": "The word 'innovative' in the context of technology means:",
+    "options": {
+      "A": "Outdated",
+      "B": "Creative",
+      "C": "Expensive",
+      "D": "Unreliable"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 36,
+    "question": "What is the synonym of 'ameliorate' in the context of improving conditions?",
+    "options": {
+      "A": "Worsen",
+      "B": "Enhance",
+      "C": "Ignore",
+      "D": "Delay"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 37,
+    "question": "Correct the sentence: 'Less students attended the seminar this year.'",
+    "options": {
+      "A": "Fewer students attended the seminar this year.",
+      "B": "Less students attend the seminar this year.",
+      "C": "Fewer students attends the seminar this year.",
+      "D": "Less student attended the seminar this year."
+    },
+    "answer": "A"
+  },
+  {
+    "id": 38,
+    "question": "Correct the sentence: 'The manager, along with his team, are presenting the plan.'",
+    "options": {
+      "A": "The manager, along with his team, is presenting the plan.",
+      "B": "The manager, along with his team, were presenting the plan.",
+      "C": "The manager, along with his teams, are presenting the plan.",
+      "D": "The manager, along with his team, presenting the plan."
+    },
+    "answer": "A"
+  },
+  {
+    "id": 39,
+    "question": "Correct the sentence: 'She don't have no time to rest.'",
+    "options": {
+      "A": "She doesn't have no time to rest.",
+      "B": "She doesn't have any time to rest.",
+      "C": "She don't have any time to rest.",
+      "D": "She hasn't a time to rest."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 40,
+    "question": "Correct the sentence: 'The report was wrote by the intern.'",
+    "options": {
+      "A": "The report was written by the intern.",
+      "B": "The report is written by the intern.",
+      "C": "The report was writing by the intern.",
+      "D": "The report is wrote by the intern."
+    },
+    "answer": "A"
+  },
+  {
+    "id": 41,
+    "question": "In a triangle, the angles are in the ratio 1:2:3, and the smallest angle is 30°. What is the largest angle?",
+    "options": {
+      "A": "60°",
+      "B": "90°",
+      "C": "120°",
+      "D": "150°"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 42,
+    "question": "If f(x) = x² - 4x + 5, find the minimum value of f(x).",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 43,
+    "question": "Two workers, A and B, can complete a project in 15 days together. If A alone takes 25 days, how long does B take alone?",
+    "options": {
+      "A": "30 days",
+      "B": "37.5 days",
+      "C": "10 days",
+      "D": "45 days"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 44,
+    "question": "The median of the dataset 7, 3, 9, 2, 8, 4, 6, 1 is:",
+    "options": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "7"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 45,
+    "question": "If cos θ = 5/13 and θ is in the first quadrant, what is tan θ?",
+    "options": {
+      "A": "12/5",
+      "B": "5/12",
+      "C": "13/12",
+      "D": "12/13"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 46,
+    "question": "A rectangular plot has an area of 800 m² and a perimeter of 120 m. What is the difference between its length and width?",
+    "options": {
+      "A": "10 m",
+      "B": "20 m",
+      "C": "30 m",
+      "D": "40 m"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 47,
+    "question": "If 6^x = 25, what is x?",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 48,
+    "question": "The sum of the first 12 odd numbers is:",
+    "options": {
+      "A": "120",
+      "B": "144",
+      "C": "168",
+      "D": "192"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 49,
+    "question": "A retailer offers a 20% discount on an item originally priced at $500, followed by a 10% tax on the discounted price. What is the final price?",
+    "options": {
+      "A": "$420",
+      "B": "$440",
+      "C": "$450",
+      "D": "$460"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 50,
+    "question": "The probability of selecting a defective item from a batch of 5 defective and 15 non-defective items is:",
+    "options": {
+      "A": "1/4",
+      "B": "1/5",
+      "C": "1/3",
+      "D": "1/2"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 51,
+    "question": "If 3^x = 81, what is x?",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 52,
+    "question": "The average of 6 numbers is 13. If one number is 21 and another is 9, what is the average of the remaining four?",
+    "options": {
+      "A": "12",
+      "B": "13",
+      "C": "14",
+      "D": "15"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 53,
+    "question": "If sin θ = 8/17 and θ is in the first quadrant, what is cos θ?",
+    "options": {
+      "A": "15/17",
+      "B": "8/15",
+      "C": "17/15",
+      "D": "15/8"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 54,
+    "question": "A trader sells 60% of his goods at a 25% profit and the rest at a 15% profit. If his total profit is $2100, what is the total cost price?",
+    "options": {
+      "A": "$9000",
+      "B": "$10,000",
+      "C": "$11,000",
+      "D": "$12,000"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 55,
+    "question": "If x² = 25, what is x?",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 56,
+    "question": "A triangle has a perimeter of 42 cm, with sides in the ratio 3:4:5. What is the length of the longest side?",
+    "options": {
+      "A": "12 cm",
+      "B": "14 cm",
+      "C": "15 cm",
+      "D": "18 cm"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 57,
+    "question": "A store sells 150 items, 40% at $60 each and 60% at $90 each. After a 10% tax on total revenue, what is the final revenue?",
+    "options": {
+      "A": "$11,400",
+      "B": "$12,600",
+      "C": "$13,200",
+      "D": "$14,100"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 58,
+    "question": "If 2^x = 32, what is x?",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 59,
+    "question": "What is the value of tan 60°?",
+    "options": {
+      "A": "1/√3",
+      "B": "√3",
+      "C": "1/2",
+      "D": "1"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 60,
+    "question": "If f(x) = 3x + 5, what is f(2)?",
+    "options": {
+      "A": "8",
+      "B": "11",
+      "C": "12",
+      "D": "15"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 61,
+    "question": "Solve the system of equations: 2x + y = 7, x - y = 1.",
+    "options": {
+      "A": "(2, 3)",
+      "B": "(3, 1)",
+      "C": "(2, 1)",
+      "D": "(3, 2)"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 62,
+    "question": "What is the area of a circle with radius 5 cm?",
+    "options": {
+      "A": "25π cm²",
+      "B": "50π cm²",
+      "C": "75π cm²",
+      "D": "100π cm²"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 63,
+    "question": "If a car travels 240 km in 4 hours, what is its speed?",
+    "options": {
+      "A": "50 km/h",
+      "B": "60 km/h",
+      "C": "70 km/h",
+      "D": "80 km/h"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 64,
+    "question": "What is the slope of the line passing through (2, 3) and (4, 7)?",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 65,
+    "question": "If log₂(8) = x, what is x?",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 66,
+    "question": "A shop offers a 15% discount on a $200 item. What is the sale price?",
+    "options": {
+      "A": "$160",
+      "B": "$170",
+      "C": "$180",
+      "D": "$190"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 67,
+    "question": "What is the sum of the angles in a quadrilateral?",
+    "options": {
+      "A": "180°",
+      "B": "270°",
+      "C": "360°",
+      "D": "450°"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 68,
+    "question": "If f(x) = x² + 2x - 3, what is f(-1)?",
+    "options": {
+      "A": "-4",
+      "B": "-2",
+      "C": "0",
+      "D": "2"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 69,
+    "question": "The ratio of two numbers is 3:5, and their sum is 40. What is the larger number?",
+    "options": {
+      "A": "15",
+      "B": "20",
+      "C": "25",
+      "D": "30"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 70,
+    "question": "What is the value of sin 30°?",
+    "options": {
+      "A": "1/2",
+      "B": "√3/2",
+      "C": "1/√3",
+      "D": "1"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 71,
+    "question": "A box contains 5 red and 3 blue balls. What is the probability of drawing a red ball?",
+    "options": {
+      "A": "3/8",
+      "B": "5/8",
+      "C": "3/5",
+      "D": "5/3"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 72,
+    "question": "If x + y = 10 and x - y = 4, what is x?",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "6",
+      "D": "7"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 73,
+    "question": "What is the perimeter of a square with side length 6 cm?",
+    "options": {
+      "A": "18 cm",
+      "B": "24 cm",
+      "C": "30 cm",
+      "D": "36 cm"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 74,
+    "question": "If 4^x = 64, what is x?",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 75,
+    "question": "What is the area of a triangle with base 10 cm and height 8 cm?",
+    "options": {
+      "A": "40 cm²",
+      "B": "48 cm²",
+      "C": "80 cm²",
+      "D": "96 cm²"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 76,
+    "question": "What is the next number in the sequence: 1, 4, 9, 16, 25?",
+    "options": {
+      "A": "30",
+      "B": "36",
+      "C": "49",
+      "D": "64"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 77,
+    "question": "If 'CAT' is coded as 'BDW', how is 'DOG' coded?",
+    "options": {
+      "A": "CFI",
+      "B": "EPI",
+      "C": "CFJ",
+      "D": "EPJ"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 78,
+    "question": "A is B's father, C is A's son, and D is B's mother. How is C related to D?",
+    "options": {
+      "A": "Father",
+      "B": "Son",
+      "C": "Husband",
+      "D": "Brother"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 79,
+    "question": "What is the next term in the sequence: 3, 6, 12, 24?",
+    "options": {
+      "A": "36",
+      "B": "48",
+      "C": "60",
+      "D": "72"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 80,
+    "question": "If the day after tomorrow is Wednesday, what day is it today?",
+    "options": {
+      "A": "Monday",
+      "B": "Tuesday",
+      "C": "Thursday",
+      "D": "Friday"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 81,
+    "question": "Star : Sky :: River : ?",
+    "options": {
+      "A": "Ocean",
+      "B": "Valley",
+      "C": "Mountain",
+      "D": "Lake"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 82,
+    "question": "If 4 machines produce 200 units in 8 days, how long will 6 machines take to produce 300 units?",
+    "options": {
+      "A": "6 days",
+      "B": "8 days",
+      "C": "10 days",
+      "D": "12 days"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 83,
+    "question": "What is the next term in the sequence: 2, 6, 12, 20, 30?",
+    "options": {
+      "A": "42",
+      "B": "44",
+      "C": "46",
+      "D": "48"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 84,
+    "question": "If 'STAR' is coded as '4567', what is 'MOON' coded as?",
+    "options": {
+      "A": "2314",
+      "B": "2143",
+      "C": "3142",
+      "D": "4322"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 85,
+    "question": "A drone flies 50 km north, then 120 km east. What is the straight-line distance from start to end?",
+    "options": {
+      "A": "130 km",
+      "B": "140 km",
+      "C": "150 km",
+      "D": "170 km"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 86,
+    "question": "A is B's wife, C is B's son, and D is A's daughter. How is D related to C?",
+    "options": {
+      "A": "Sister",
+      "B": "Mother",
+      "C": "Wife",
+      "D": "Daughter"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 87,
+    "question": "In a sequence of shapes (circle, square, triangle), what is the 13th shape?",
+    "options": {
+      "A": "Circle",
+      "B": "Square",
+      "C": "Triangle",
+      "D": "None"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 88,
+    "question": "If 4 books cost $60, how much do 7 books cost?",
+    "options": {
+      "A": "$90",
+      "B": "$100",
+      "C": "$105",
+      "D": "$110"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 89,
+    "question": "What is the next number in the sequence: 4, 12, 36, 108?",
+    "options": {
+      "A": "216",
+      "B": "324",
+      "C": "432",
+      "D": "540"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 90,
+    "question": "If 'GLOW' is coded as 'MSY', what is 'SHINE' coded as?",
+    "options": {
+      "A": "UPLFL",
+      "B": "VRQMG",
+      "C": "UQMNG",
+      "D": "VIPLFL"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 91,
+    "question": "A clock shows 5:00. After 210 minutes, what time is it?",
+    "options": {
+      "A": "7:30",
+      "B": "8:00",
+      "C": "8:30",
+      "D": "9:00"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 92,
+    "question": "If sin θ = opposite/hypotenuse, what is csc θ?",
+    "options": {
+      "A": "hypotenuse/opposite",
+      "B": "opposite/adjacent",
+      "C": "adjacent/hypotenuse",
+      "D": "hypotenuse/adjacent"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 93,
+    "question": "In a group of 15 people, each person sends an email to every other person. How many emails are sent?",
+    "options": {
+      "A": "105",
+      "B": "120",
+      "C": "195",
+      "D": "210"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 94,
+    "question": "If the day after tomorrow is Friday, what day is it today?",
+    "options": {
+      "A": "Tuesday",
+      "B": "Wednesday",
+      "C": "Thursday",
+      "D": "Monday"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 95,
+    "question": "What is the missing number in the sequence: 1, 3, 6, 10, 15, ?",
+    "options": {
+      "A": "18",
+      "B": "20",
+      "C": "21",
+      "D": "22"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 96,
+    "question": "If a square has a diagonal of 10√2 cm, what is its side length?",
+    "options": {
+      "A": "5 cm",
+      "B": "10 cm",
+      "C": "15 cm",
+      "D": "20 cm"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 97,
+    "question": "If 'FAN' is coded as 'AFN', how is 'PEN' coded?",
+    "options": {
+      "A": "AFN",
+      "B": "EPN",
+      "C": "NPE",
+      "D": "PNE"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 98,
+    "question": "A car travels 300 km in 5 hours. What is its average speed?",
+    "options": {
+      "A": "50 km/h",
+      "B": "60 km/h",
+      "C": "70 km/h",
+      "D": "80 km/h"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 99,
+    "question": "What is the next term in the sequence: 5, 10, 20, 40?",
+    "options": {
+      "A": "60",
+      "B": "80",
+      "C": "100",
+      "D": "120"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 100,
+    "question": "A cube has a volume of 64 cm³. What is the length of its side?",
+    "options": {
+      "A": "2 cm",
+      "B": "4 cm",
+      "C": "6 cm",
+      "D": "8 cm"
+    },
+    "answer": "B"
+  }
+]
