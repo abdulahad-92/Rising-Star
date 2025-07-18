@@ -1,161 +1,139 @@
 [
   {
     "id": 1,
-    "question": "Which province in Pakistan has the longest coastline?",
+    "question": "Which Pakistani leader signed the Simla Agreement in 1972?",
     "options": {
-      "A": "Sindh",
-      "B": "Punjab",
-      "C": "Balochistan",
-      "D": "Khyber Pakhtunkhwa"
-    },
-    "answer": "C"
-  },
-  {
-    "id": 2,
-    "question": "Who was the first Chief Justice of Pakistan?",
-    "options": {
-      "A": "Mohammad Munir",
-      "B": "A.R. Cornelius",
-      "C": "Abdur Rashid",
-      "D": "Muhammad Shahabuddin"
-    },
-    "answer": "C"
-  },
-  {
-    "id": 3,
-    "question": "What is the national animal of Pakistan?",
-    "options": {
-      "A": "Tiger",
-      "B": "Markhor",
-      "C": "Leopard",
-      "D": "Elephant"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 4,
-    "question": "Which city hosts the Minar-e-Pakistan?",
-    "options": {
-      "A": "Karachi",
-      "B": "Lahore",
-      "C": "Islamabad",
-      "D": "Quetta"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 5,
-    "question": "When was the Pakistan Resolution passed?",
-    "options": {
-      "A": "1940",
-      "B": "1946",
-      "C": "1947",
-      "D": "1935"
+      "A": "Zulfiqar Ali Bhutto",
+      "B": "Yahya Khan",
+      "C": "Ayub Khan",
+      "D": "Pervez Musharraf"
     },
     "answer": "A"
   },
   {
-    "id": 6,
-    "question": "What is the highest peak in Pakistan?",
+    "id": 2,
+    "question": "What is the capital city of Gilgit-Baltistan?",
     "options": {
-      "A": "Nanga Parbat",
-      "B": "K2",
-      "C": "Rakaposhi",
-      "D": "Tirich Mir"
+      "A": "Skardu",
+      "B": "Gilgit",
+      "C": "Hunza",
+      "D": "Chilas"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 3,
+    "question": "Which river is known as the 'Lifeline of Punjab'?",
+    "options": {
+      "A": "Chenab",
+      "B": "Ravi",
+      "C": "Jhelum",
+      "D": "Indus"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 4,
+    "question": "Who was the first Pakistani to win an Oscar?",
+    "options": {
+      "A": "Sharmeen Obaid-Chinoy",
+      "B": "Ali Zafar",
+      "C": "Nusrat Fateh Ali Khan",
+      "D": "Mehdi Hassan"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 5,
+    "question": "What is the primary language spoken in Azad Jammu and Kashmir?",
+    "options": {
+      "A": "Punjabi",
+      "B": "Urdu",
+      "C": "Pahari",
+      "D": "Sindhi"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 6,
+    "question": "Which mountain range separates Pakistan from Afghanistan?",
+    "options": {
+      "A": "Karakoram",
+      "B": "Hindu Kush",
+      "C": "Sulaiman",
+      "D": "Himalayas"
     },
     "answer": "B"
   },
   {
     "id": 7,
-    "question": "Which sport is associated with the Quaid-e-Azam Trophy?",
+    "question": "Who designed the national flag of Pakistan?",
     "options": {
-      "A": "Cricket",
-      "B": "Hockey",
-      "C": "Football",
-      "D": "Squash"
+      "A": "Muhammad Ali Jinnah",
+      "B": "Amiruddin Kidwai",
+      "C": "Fatima Jinnah",
+      "D": "Chughtai"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 8,
-    "question": "Who wrote the national anthem of Pakistan?",
+    "question": "What is the largest man-made forest in Pakistan?",
     "options": {
-      "A": "Allama Iqbal",
-      "B": "Hafeez Jalandhari",
-      "C": "Faiz Ahmed Faiz",
-      "D": "Josh Malihabadi"
+      "A": "Changa Manga",
+      "B": "Jallo Park",
+      "C": "Margalla Hills",
+      "D": "Lal Suhanra"
     },
-    "answer": "B"
+    "answer": "A"
   },
   {
     "id": 9,
-    "question": "What is the currency of Pakistan?",
+    "question": "Which Pakistani city is famous for its truck art?",
     "options": {
-      "A": "Rupee",
-      "B": "Dollar",
-      "C": "Pound",
-      "D": "Dinar"
-    },
-    "answer": "A"
-  },
-  {
-    "id": 10,
-    "question": "Which desert covers parts of Sindh and Punjab?",
-    "options": {
-      "A": "Thar",
-      "B": "Cholistan",
-      "C": "Thal",
-      "D": "Kharan"
-    },
-    "answer": "A"
-  },
-  {
-    "id": 11,
-    "question": "Who was the first Governor-General of Pakistan?",
-    "options": {
-      "A": "Liaquat Ali Khan",
-      "B": "Muhammad Ali Jinnah",
-      "C": "Khwaja Nazimuddin",
-      "D": "Iskander Mirza"
+      "A": "Lahore",
+      "B": "Karachi",
+      "C": "Multan",
+      "D": "Peshawar"
     },
     "answer": "B"
   },
   {
-    "id": 12,
-    "question": "What is the official religion of Pakistan?",
+    "id": 10,
+    "question": "What is the highest civilian award in Pakistan?",
     "options": {
-      "A": "Hinduism",
-      "B": "Islam",
-      "C": "Christianity",
-      "D": "Buddhism"
+      "A": "Nishan-e-Haider",
+      "B": "Hilal-e-Imtiaz",
+      "C": "Nishan-e-Pakistan",
+      "D": "Sitara-e-Pakistan"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 11,
+    "question": "Which historical site is located in Taxila?",
+    "options": {
+      "A": "Mohenjo-Daro",
+      "B": "Harappa",
+      "C": "Dharmarajika Stupa",
+      "D": "Ranikot Fort"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 12,
+    "question": "What is the national sport of Pakistan?",
+    "options": {
+      "A": "Cricket",
+      "B": "Hockey",
+      "C": "Squash",
+      "D": "Kabaddi"
     },
     "answer": "B"
   },
   {
     "id": 13,
-    "question": "Which river forms the boundary between Sindh and Balochistan?",
-    "options": {
-      "A": "Indus",
-      "B": "Hub",
-      "C": "Jhelum",
-      "D": "Chenab"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 14,
-    "question": "When did Pakistan join the United Nations?",
-    "options": {
-      "A": "1947",
-      "B": "1948",
-      "C": "1950",
-      "D": "1955"
-    },
-    "answer": "A"
-  },
-  {
-    "id": 15,
-    "question": "What is the largest province by area in Pakistan?",
+    "question": "Which Pakistani province borders Iran?",
     "options": {
       "A": "Sindh",
       "B": "Punjab",
@@ -165,937 +143,959 @@
     "answer": "C"
   },
   {
-    "id": 16,
-    "question": "Choose the correct sentence:",
+    "id": 14,
+    "question": "When was the Lahore Resolution renamed the Pakistan Resolution?",
     "options": {
-      "A": "She don't like to read.",
-      "B": "She doesn't like to read.",
-      "C": "She not like to read.",
-      "D": "She likes not to read."
+      "A": "1940",
+      "B": "1946",
+      "C": "1947",
+      "D": "1956"
     },
-    "answer": "B"
+    "answer": "A"
+  },
+  {
+    "id": 15,
+    "question": "Which Pakistani scientist is known as the 'Father of Pakistan's Nuclear Program'?",
+    "options": {
+      "A": "Abdul Qadeer Khan",
+      "B": "Pervez Hoodbhoy",
+      "C": "Samar Mubarakmand",
+      "D": "Atta-ur-Rehman"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 16,
+    "question": "Choose the sentence with the correct use of 'fewer' vs. 'less':",
+    "options": {
+      "A": "She has fewer books than her brother.",
+      "B": "She has less books than her brother.",
+      "C": "She has fewer time than her brother.",
+      "D": "She has less time than her brother."
+    },
+    "answer": "A"
   },
   {
     "id": 17,
-    "question": "Fill in the blank: They worked ____ efficiently to meet the deadline.",
+    "question": "Fill in the blank: The team worked ___ to complete the project.",
     "options": {
-      "A": "more",
-      "B": "very",
-      "C": "most",
-      "D": "less"
+      "A": "hard",
+      "B": "hardly",
+      "C": "harder",
+      "D": "hardest"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 18,
+    "question": "Choose the correct sentence structure:",
+    "options": {
+      "A": "Running quickly, the race was won by him.",
+      "B": "Running quickly, he won the race.",
+      "C": "He won the race running quickly.",
+      "D": "The race was won by him running quickly."
     },
     "answer": "B"
   },
   {
-    "id": 18,
-    "question": "Choose the correct preposition: He is good ____ mathematics.",
+    "id": 19,
+    "question": "Read the passage and answer the question: Pakistan's culture is a rich tapestry of traditions, blending influences from Central Asia, the Middle East, and South Asia. Its festivals, such as Eid and Basant, reflect vibrant communal harmony. What is the main theme of the passage?",
     "options": {
-      "A": "in",
-      "B": "at",
+      "A": "Economic growth",
+      "B": "Cultural diversity",
+      "C": "Political history",
+      "D": "Geographical features"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 20,
+    "question": "Identify the antonym of 'profound':",
+    "options": {
+      "A": "Deep",
+      "B": "Shallow",
+      "C": "Intense",
+      "D": "Significant"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 21,
+    "question": "Choose the correct passive voice: The song was sung by the choir.",
+    "options": {
+      "A": "The choir sang the song.",
+      "B": "The song was sung by the choir.",
+      "C": "The choir was singing the song.",
+      "D": "The song is sung by the choir."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 22,
+    "question": "Identify the correctly spelled word:",
+    "options": {
+      "A": "Occurence",
+      "B": "Occurrence",
+      "C": "Occurrance",
+      "D": "Occurencee"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 23,
+    "question": "Choose the sentence with proper punctuation:",
+    "options": {
+      "A": "After the storm, the sky cleared up.",
+      "B": "After the storm the sky cleared up.",
+      "C": "After the storm; the sky cleared up.",
+      "D": "After the storm, the sky,"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 24,
+    "question": "Read the passage and answer the question: Pakistan's culture is a rich tapestry of traditions, blending influences from Central Asia, the Middle East, and South Asia. Its festivals, such as Eid and Basant, reflect vibrant communal harmony. Which festivals are mentioned in the passage?",
+    "options": {
+      "A": "Diwali and Holi",
+      "B": "Eid and Basant",
+      "C": "Christmas and Easter",
+      "D": "Shab-e-Barat and Muharram"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 25,
+    "question": "Choose the correct synonym for 'benevolent':",
+    "options": {
+      "A": "Cruel",
+      "B": "Kind",
+      "C": "Cautious",
+      "D": "Careless"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 26,
+    "question": "Fill in the blank: She is ___ than her sister.",
+    "options": {
+      "A": "tall",
+      "B": "taller",
+      "C": "tallest",
+      "D": "most tall"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 27,
+    "question": "Identify the correct sentence:",
+    "options": {
+      "A": "He don’t like to read.",
+      "B": "He doesn’t like to read.",
+      "C": "He not like to read.",
+      "D": "He isn’t like to read."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 28,
+    "question": "Choose the correct preposition: She is good ___ singing.",
+    "options": {
+      "A": "at",
+      "B": "in",
+      "C": "on",
+      "D": "with"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 29,
+    "question": "Identify the part of speech of 'quickly' in 'She runs quickly.'",
+    "options": {
+      "A": "Adjective",
+      "B": "Adverb",
+      "C": "Noun",
+      "D": "Verb"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 30,
+    "question": "Choose the correct antonym for 'expand':",
+    "options": {
+      "A": "Increase",
+      "B": "Grow",
+      "C": "Contract",
+      "D": "Extend"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 31,
+    "question": "Fill in the blank: The book ___ on the table.",
+    "options": {
+      "A": "is",
+      "B": "are",
+      "C": "were",
+      "D": "be"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 32,
+    "question": "Choose the correct synonym for 'vivid':",
+    "options": {
+      "A": "Dull",
+      "B": "Bright",
+      "C": "Vague",
+      "D": "Weak"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 33,
+    "question": "Identify the correct sentence structure:",
+    "options": {
+      "A": "Having finished, the project was submitted.",
+      "B": "Having finished, he submitted the project.",
+      "C": "He submitted the project having finished.",
+      "D": "The project was submitted having finished."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 34,
+    "question": "Choose the correct form: The children ___ playing in the park.",
+    "options": {
+      "A": "is",
+      "B": "are",
+      "C": "was",
+      "D": "were"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 35,
+    "question": "Identify the antonym of 'generous':",
+    "options": {
+      "A": "Kind",
+      "B": "Selfish",
+      "C": "Friendly",
+      "D": "Helpful"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 36,
+    "question": "Choose the correct synonym for 'obstruct':",
+    "options": {
+      "A": "Assist",
+      "B": "Block",
+      "C": "Support",
+      "D": "Encourage"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 37,
+    "question": "Fill in the blank: He ___ to the meeting yesterday.",
+    "options": {
+      "A": "go",
+      "B": "goes",
+      "C": "went",
+      "D": "gone"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 38,
+    "question": "Choose the correct preposition: They are interested ___ learning new skills.",
+    "options": {
+      "A": "at",
+      "B": "in",
       "C": "on",
       "D": "with"
     },
     "answer": "B"
   },
   {
-    "id": 19,
-    "question": "Fill in the blank: They are ____ to complete the project on time.",
-    "options": {
-      "A": "likely",
-      "B": "like",
-      "C": "liking",
-      "D": "likelihood"
-    },
-    "answer": "A"
-  },
-  {
-    "id": 20,
-    "question": "Choose the correct preposition: She arrived ____ the airport early.",
-    "options": {
-      "A": "in",
-      "B": "at",
-      "C": "on",
-      "D": "to"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 21,
-    "question": "Choose the correct sentence:",
-    "options": {
-      "A": "She don't like to study.",
-      "B": "She doesn't like to study.",
-      "C": "She not like to study.",
-      "D": "She likes not to study."
-    },
-    "answer": "B"
-  },
-  {
-    "id": 22,
-    "question": "Fill in the blank: He is ____ than his brother at solving puzzles.",
-    "options": {
-      "A": "good",
-      "B": "better",
-      "C": "best",
-      "D": "well"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 23,
-    "question": "Synonym of 'adaptable':",
-    "options": {
-      "A": "Rigid",
-      "B": "Flexible",
-      "C": "Stiff",
-      "D": "Fixed"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 24,
-    "question": "Antonym of 'modest':",
-    "options": {
-      "A": "Humble",
-      "B": "Arrogant",
-      "C": "Simple",
-      "D": "Quiet"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 25,
-    "question": "Synonym of 'innovative':",
-    "options": {
-      "A": "Traditional",
-      "B": "Creative",
-      "C": "Old",
-      "D": "Common"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 26,
-    "question": "Antonym of 'fragile':",
-    "options": {
-      "A": "Strong",
-      "B": "Delicate",
-      "C": "Brittle",
-      "D": "Weak"
-    },
-    "answer": "A"
-  },
-  {
-    "id": 27,
-    "question": "Antonym of 'confident':",
-    "options": {
-      "A": "Sure",
-      "B": "Unsure",
-      "C": "Bold",
-      "D": "Assured"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 28,
-    "question": "Fill in the blank: They worked ____ to finish the task.",
-    "options": {
-      "A": "hardly",
-      "B": "hard",
-      "C": "harder",
-      "D": "hardest"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 29,
-    "question": "Choose the correct tense: We ____ the project by tomorrow.",
-    "options": {
-      "A": "complete",
-      "B": "completed",
-      "C": "will complete",
-      "D": "completing"
-    },
-    "answer": "C"
-  },
-  {
-    "id": 30,
-    "question": "Antonym of 'rapid':",
-    "options": {
-      "A": "Slow",
-      "B": "Fast",
-      "C": "Quick",
-      "D": "Swift"
-    },
-    "answer": "A"
-  },
-  {
-    "id": 31,
-    "question": "Synonym of 'persistent':",
-    "options": {
-      "A": "Weak",
-      "B": "Determined",
-      "C": "Lazy",
-      "D": "Temporary"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 32,
-    "question": "Antonym of 'generous':",
-    "options": {
-      "A": "Kind",
-      "B": "Stingy",
-      "C": "Giving",
-      "D": "Friendly"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 33,
-    "question": "Fill in the blank: He ____ a letter yesterday.",
-    "options": {
-      "A": "write",
-      "B": "wrote",
-      "C": "written",
-      "D": "writing"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 34,
-    "question": "Choose the correct sentence:",
-    "options": {
-      "A": "The team are playing well.",
-      "B": "The team is playing well.",
-      "C": "The team plays well.",
-      "D": "The team were playing well."
-    },
-    "answer": "B"
-  },
-  {
-    "id": 35,
-    "question": "Synonym of 'cautious':",
-    "options": {
-      "A": "Reckless",
-      "B": "Careful",
-      "C": "Hasty",
-      "D": "Bold"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 36,
-    "question": "Antonym of 'complex':",
-    "options": {
-      "A": "Simple",
-      "B": "Difficult",
-      "C": "Complicated",
-      "D": "Hard"
-    },
-    "answer": "A"
-  },
-  {
-    "id": 37,
-    "question": "Fill in the blank: She ____ to the market every weekend.",
-    "options": {
-      "A": "go",
-      "B": "goes",
-      "C": "going",
-      "D": "gone"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 38,
-    "question": "Choose the correct preposition: He is allergic ____ cats.",
-    "options": {
-      "A": "with",
-      "B": "to",
-      "C": "at",
-      "D": "on"
-    },
-    "answer": "B"
-  },
-  {
     "id": 39,
-    "question": "Synonym of 'reliable':",
+    "question": "Identify the correct spelling:",
     "options": {
-      "A": "Untrustworthy",
-      "B": "Dependable",
-      "C": "Unstable",
-      "D": "Weak"
+      "A": "Recieve",
+      "B": "Receive",
+      "C": "Receeve",
+      "D": "Recievee"
     },
     "answer": "B"
   },
   {
     "id": 40,
-    "question": "Antonym of 'temporary':",
+    "question": "Choose the correct synonym for 'persistent':",
     "options": {
-      "A": "Short-term",
-      "B": "Brief",
-      "C": "Permanent",
-      "D": "Fleeting"
+      "A": "Temporary",
+      "B": "Consistent",
+      "C": "Irregular",
+      "D": "Weak"
     },
-    "answer": "C"
+    "answer": "B"
   },
   {
     "id": 41,
-    "question": "What is the value of 2 + 3 × 4?",
+    "question": "If a number is divisible by both 3 and 4, it must also be divisible by:",
     "options": {
-      "A": "20",
-      "B": "14",
-      "C": "10",
-      "D": "8"
+      "A": "7",
+      "B": "12",
+      "C": "9",
+      "D": "6"
     },
     "answer": "B"
   },
   {
     "id": 42,
-    "question": "Solve for x: 2x + 5 = 11",
-    "options": {
-      "A": "2",
-      "B": "3",
-      "C": "4",
-      "D": "5"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 43,
-    "question": "What is the perimeter of a rectangle with length 8 cm and width 5 cm?",
-    "options": {
-      "A": "18 cm",
-      "B": "26 cm",
-      "C": "30 cm",
-      "D": "40 cm"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 44,
-    "question": "What is the next term in the sequence: 2, 4, 8, 16?",
-    "options": {
-      "A": "24",
-      "B": "28",
-      "C": "32",
-      "D": "36"
-    },
-    "answer": "C"
-  },
-  {
-    "id": 45,
-    "question": "Simplify: 3(2x + 4) =",
-    "options": {
-      "A": "6x + 4",
-      "B": "6x + 12",
-      "C": "3x + 12",
-      "D": "2x + 12"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 46,
-    "question": "What is the value of 4²?",
-    "options": {
-      "A": "8",
-      "B": "12",
-      "C": "16",
-      "D": "20"
-    },
-    "answer": "C"
-  },
-  {
-    "id": 47,
-    "question": "Solve for x: x² - 9 = 0",
-    "options": {
-      "A": "3",
-      "B": "-3",
-      "C": "±3",
-      "D": "0"
-    },
-    "answer": "C"
-  },
-  {
-    "id": 48,
-    "question": "What is the area of a square with side 6 cm?",
-    "options": {
-      "A": "24 cm²",
-      "B": "36 cm²",
-      "C": "48 cm²",
-      "D": "60 cm²"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 49,
-    "question": "What number is one-third of 27?",
-    "options": {
-      "A": "6",
-      "B": "9",
-      "C": "12",
-      "D": "15"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 50,
-    "question": "If the sequence 5, 10, 15, 20 continues, what is the 6th term?",
-    "options": {
-      "A": "25",
-      "B": "30",
-      "C": "35",
-      "D": "40"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 51,
-    "question": "The force that opposes motion between two surfaces is:",
-    "options": {
-      "A": "Gravity",
-      "B": "Friction",
-      "C": "Tension",
-      "D": "Thrust"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 52,
-    "question": "Which of these is a scalar quantity?",
-    "options": {
-      "A": "Velocity",
-      "B": "Acceleration",
-      "C": "Speed",
-      "D": "Force"
-    },
-    "answer": "C"
-  },
-  {
-    "id": 53,
-    "question": "What is the SI unit of power?",
-    "options": {
-      "A": "Watt",
-      "B": "Joule",
-      "C": "Newton",
-      "D": "Pascal"
-    },
-    "answer": "A"
-  },
-  {
-    "id": 54,
-    "question": "The acceleration due to gravity on Earth is approximately:",
-    "options": {
-      "A": "9.8 m/s²",
-      "B": "8.9 m/s²",
-      "C": "10.0 m/s²",
-      "D": "7.8 m/s²"
-    },
-    "answer": "A"
-  },
-  {
-    "id": 55,
-    "question": "Which law states that every action has an equal and opposite reaction?",
-    "options": {
-      "A": "Newton's First Law",
-      "B": "Newton's Second Law",
-      "C": "Newton's Third Law",
-      "D": "Law of Conservation"
-    },
-    "answer": "C"
-  },
-  {
-    "id": 56,
-    "question": "The energy stored in a stretched spring is:",
-    "options": {
-      "A": "Kinetic Energy",
-      "B": "Potential Energy",
-      "C": "Thermal Energy",
-      "D": "Chemical Energy"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 57,
-    "question": "What is the SI unit of electric charge?",
-    "options": {
-      "A": "Coulomb",
-      "B": "Volt",
-      "C": "Ohm",
-      "D": "Ampere"
-    },
-    "answer": "A"
-  },
-  {
-    "id": 58,
-    "question": "Which color of light has the longest wavelength?",
-    "options": {
-      "A": "Violet",
-      "B": "Blue",
-      "C": "Green",
-      "D": "Red"
-    },
-    "answer": "D"
-  },
-  {
-    "id": 59,
-    "question": "The principle of floatation is based on:",
-    "options": {
-      "A": "Archimedes' Principle",
-      "B": "Pascal's Principle",
-      "C": "Bernoulli's Principle",
-      "D": "Hooke's Law"
-    },
-    "answer": "A"
-  },
-  {
-    "id": 60,
-    "question": "What type of mirror is used in car headlights?",
-    "options": {
-      "A": "Concave",
-      "B": "Convex",
-      "C": "Plane",
-      "D": "Parabolic"
-    },
-    "answer": "A"
-  },
-  {
-    "id": 61,
-    "question": "The frequency of a wave is measured in:",
-    "options": {
-      "A": "Hertz",
-      "B": "Meters",
-      "C": "Seconds",
-      "D": "Watts"
-    },
-    "answer": "A"
-  },
-  {
-    "id": 62,
-    "question": "Which gas is most abundant in Earth's atmosphere?",
-    "options": {
-      "A": "Oxygen",
-      "B": "Nitrogen",
-      "C": "Carbon Dioxide",
-      "D": "Argon"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 63,
-    "question": "The law of conservation of energy states that:",
-    "options": {
-      "A": "Energy can be created",
-      "B": "Energy cannot be created or destroyed",
-      "C": "Energy is always lost",
-      "D": "Energy is constant"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 64,
-    "question": "What is the boiling point of water at sea level?",
-    "options": {
-      "A": "90°C",
-      "B": "100°C",
-      "C": "110°C",
-      "D": "120°C"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 65,
-    "question": "Which instrument measures atmospheric pressure?",
-    "options": {
-      "A": "Barometer",
-      "B": "Thermometer",
-      "C": "Hygrometer",
-      "D": "Anemometer"
-    },
-    "answer": "A"
-  },
-  {
-    "id": 66,
-    "question": "The speed of sound is fastest in:",
-    "options": {
-      "A": "Air",
-      "B": "Water",
-      "C": "Steel",
-      "D": "Vacuum"
-    },
-    "answer": "C"
-  },
-  {
-    "id": 67,
-    "question": "What is the primary source of energy for Earth?",
-    "options": {
-      "A": "Moon",
-      "B": "Sun",
-      "C": "Wind",
-      "D": "Geothermal"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 68,
-    "question": "Which of these is a vector quantity?",
-    "options": {
-      "A": "Mass",
-      "B": "Time",
-      "C": "Velocity",
-      "D": "Temperature"
-    },
-    "answer": "C"
-  },
-  {
-    "id": 69,
-    "question": "The resistance of a conductor depends on:",
-    "options": {
-      "A": "Length",
-      "B": "Temperature",
-      "C": "Material",
-      "D": "All of the above"
-    },
-    "answer": "D"
-  },
-  {
-    "id": 70,
-    "question": "The process of heat transfer in solids is called:",
-    "options": {
-      "A": "Conduction",
-      "B": "Convection",
-      "C": "Radiation",
-      "D": "Evaporation"
-    },
-    "answer": "A"
-  },
-  {
-    "id": 71,
-    "question": "Which element is the most electronegative?",
-    "options": {
-      "A": "Oxygen",
-      "B": "Carbon",
-      "C": "Hydrogen",
-      "D": "Fluorine"
-    },
-    "answer": "D"
-  },
-  {
-    "id": 72,
-    "question": "What is the product of the reaction between an acid and a base?",
-    "options": {
-      "A": "Salt and Water",
-      "B": "Gas and Salt",
-      "C": "Water and Gas",
-      "D": "Acid and Base"
-    },
-    "answer": "A"
-  },
-  {
-    "id": 73,
-    "question": "Which gas is responsible for the green color in the aurora borealis?",
-    "options": {
-      "A": "Nitrogen",
-      "B": "Oxygen",
-      "C": "Helium",
-      "D": "Neon"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 74,
-    "question": "The pH of a neutral solution is:",
-    "options": {
-      "A": "5",
-      "B": "7",
-      "C": "9",
-      "D": "11"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 75,
-    "question": "Which compound is used as a fertilizer?",
-    "options": {
-      "A": "Sodium Chloride",
-      "B": "Ammonium Nitrate",
-      "C": "Calcium Carbonate",
-      "D": "Potassium Iodide"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 76,
-    "question": "What is the common name for sodium bicarbonate?",
-    "options": {
-      "A": "Baking Soda",
-      "B": "Washing Soda",
-      "C": "Caustic Soda",
-      "D": "Soda Ash"
-    },
-    "answer": "A"
-  },
-  {
-    "id": 77,
-    "question": "Which of these is an example of a noble gas?",
-    "options": {
-      "A": "Chlorine",
-      "B": "Argon",
-      "C": "Sulfur",
-      "D": "Phosphorus"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 78,
-    "question": "The reaction of a metal with an acid produces:",
-    "options": {
-      "A": "Hydrogen Gas",
-      "B": "Oxygen Gas",
-      "C": "Nitrogen Gas",
-      "D": "Carbon Dioxide"
-    },
-    "answer": "A"
-  },
-  {
-    "id": 79,
-    "question": "Which of the following is a hydrocarbon?",
-    "options": {
-      "A": "CH₃OH",
-      "B": "C₂H₅OH",
-      "C": "C₃H₆",
-      "D": "CH₃COOH"
-    },
-    "answer": "C"
-  },
-  {
-    "id": 80,
-    "question": "What is the primary source of carbon compounds in nature?",
-    "options": {
-      "A": "Coal",
-      "B": "Petroleum",
-      "C": "Natural Gas",
-      "D": "All of the above"
-    },
-    "answer": "D"
-  },
-  {
-    "id": 81,
-    "question": "What is the value of 3³?",
-    "options": {
-      "A": "9",
-      "B": "27",
-      "C": "81",
-      "D": "243"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 82,
-    "question": "Solve for x: 5x - 10 = 0",
-    "options": {
-      "A": "1",
-      "B": "2",
-      "C": "3",
-      "D": "4"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 83,
-    "question": "What is the area of a rectangle with length 6 cm and width 4 cm?",
-    "options": {
-      "A": "10 cm²",
-      "B": "24 cm²",
-      "C": "20 cm²",
-      "D": "48 cm²"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 84,
-    "question": "What is the next term in 1, 3, 6, 10?",
-    "options": {
-      "A": "15",
-      "B": "18",
-      "C": "21",
-      "D": "25"
-    },
-    "answer": "A"
-  },
-  {
-    "id": 85,
-    "question": "Simplify: (2/3) × 3",
-    "options": {
-      "A": "6",
-      "B": "2",
-      "C": "3",
-      "D": "9"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 86,
-    "question": "What is the value of 2 + 5 × 3?",
-    "options": {
-      "A": "21",
-      "B": "17",
-      "C": "15",
-      "D": "25"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 87,
-    "question": "Solve for x: x² - 4 = 0",
-    "options": {
-      "A": "2",
-      "B": "±2",
-      "C": "-2",
-      "D": "0"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 88,
-    "question": "What is the perimeter of a square with side 5 cm?",
-    "options": {
-      "A": "10 cm",
-      "B": "15 cm",
-      "C": "20 cm",
-      "D": "25 cm"
-    },
-    "answer": "C"
-  },
-  {
-    "id": 89,
-    "question": "What is the value of √144?",
-    "options": {
-      "A": "10",
-      "B": "12",
-      "C": "14",
-      "D": "16"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 90,
-    "question": "If a = 3 and b = 4, what is a + b?",
-    "options": {
-      "A": "5",
-      "B": "6",
-      "C": "7",
-      "D": "8"
-    },
-    "answer": "C"
-  },
-  {
-    "id": 91,
-    "question": "What is the slope of a line parallel to y = 2x + 3?",
-    "options": {
-      "A": "-2",
-      "B": "2",
-      "C": "3",
-      "D": "0"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 92,
-    "question": "Solve: 2(x + 3) = 10",
-    "options": {
-      "A": "2",
-      "B": "3",
-      "C": "4",
-      "D": "5"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 93,
-    "question": "What is the sum of angles in a triangle?",
-    "options": {
-      "A": "90°",
-      "B": "180°",
-      "C": "270°",
-      "D": "360°"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 94,
-    "question": "What is the value of 10 ÷ 2?",
-    "options": {
-      "A": "2",
-      "B": "5",
-      "C": "10",
-      "D": "15"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 95,
-    "question": "Simplify: 4² - 3²",
-    "options": {
-      "A": "1",
-      "B": "7",
-      "C": "10",
-      "D": "16"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 96,
-    "question": "What is the value of 20 ÷ 3?",
-    "options": {
-      "A": "6",
-      "B": "7",
-      "C": "8",
-      "D": "9"
-    },
-    "answer": "B"
-  },
-  {
-    "id": 97,
-    "question": "Solve for x: 3x + 5 = 14",
+    "question": "Solve for x: 2x + 5 = 13",
     "options": {
       "A": "3",
       "B": "4",
       "C": "5",
       "D": "6"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
-    "id": 98,
-    "question": "What is the area of a circle with radius 7 cm? (Use π ≈ 3.14)",
+    "id": 43,
+    "question": "What is the area of a triangle with base 6 cm and height 8 cm?",
     "options": {
-      "A": "154 cm²",
-      "B": "44 cm²",
-      "C": "28 cm²",
-      "D": "49 cm²"
+      "A": "12 cm²",
+      "B": "24 cm²",
+      "C": "36 cm²",
+      "D": "48 cm²"
     },
-    "answer": "A"
+    "answer": "B"
   },
   {
-    "id": 99,
-    "question": "What is the value of 5³?",
+    "id": 44,
+    "question": "In a queue, Ali is 7th from the front, and Sara is 12th from the back. If there are 3 people between them, how many people are in the queue?",
     "options": {
-      "A": "25",
-      "B": "75",
-      "C": "125",
-      "D": "150"
+      "A": "19",
+      "B": "20",
+      "C": "21",
+      "D": "22"
     },
     "answer": "C"
   },
   {
-    "id": 100,
-    "question": "If a triangle has sides 3 cm, 4 cm, and 5 cm, what type of triangle is it?",
+    "id": 45,
+    "question": "What number is missing: 2, 5, 11, 23, ?",
     "options": {
-      "A": "Equilateral",
-      "B": "Isosceles",
-      "C": "Right-angled",
-      "D": "Scalene"
+      "A": "47",
+      "B": "46",
+      "C": "45",
+      "D": "44"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 46,
+    "question": "If today is Wednesday, what day will it be 100 days from now?",
+    "options": {
+      "A": "Saturday",
+      "B": "Sunday",
+      "C": "Monday",
+      "D": "Tuesday"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 47,
+    "question": "A shop offers a 20% discount on a Rs. 500 item. What is the discounted price?",
+    "options": {
+      "A": "Rs. 420",
+      "B": "Rs. 440",
+      "C": "Rs. 450",
+      "D": "Rs. 460"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 48,
+    "question": "If all cats are mammals and some mammals are black, which must be true?",
+    "options": {
+      "A": "All cats are black.",
+      "B": "Some cats are black.",
+      "C": "No cats are black.",
+      "D": "None of these."
+    },
+    "answer": "D"
+  },
+  {
+    "id": 49,
+    "question": "A train travels 60 km/h for the first half of the journey and 40 km/h for the second half. What is the average speed if the total distance is 120 km?",
+    "options": {
+      "A": "48 km/h",
+      "B": "50 km/h",
+      "C": "52 km/h",
+      "D": "54 km/h"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 50,
+    "question": "If 3x + 2y = 13 and 2x - y = 4, what is the value of x + y?",
+    "options": {
+      "A": "5",
+      "B": "6",
+      "C": "7",
+      "D": "8"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 51,
+    "question": "A car accelerates from rest at 2 m/s² for 5 seconds. What is its final velocity?",
+    "options": {
+      "A": "5 m/s",
+      "B": "10 m/s",
+      "C": "15 m/s",
+      "D": "20 m/s"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 52,
+    "question": "Which force keeps a satellite in orbit around Earth?",
+    "options": {
+      "A": "Gravitational force",
+      "B": "Frictional force",
+      "C": "Magnetic force",
+      "D": "Electrostatic force"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 53,
+    "question": "What is the energy of a photon with a frequency of 6 × 10¹⁴ Hz? (h = 6.63 × 10⁻³⁴ J·s)",
+    "options": {
+      "A": "3.98 × 10⁻¹⁹ J",
+      "B": "4.98 × 10⁻¹⁹ J",
+      "C": "5.98 × 10⁻¹⁹ J",
+      "D": "6.98 × 10⁻¹⁹ J"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 54,
+    "question": "A ball is thrown vertically upward with an initial velocity of 20 m/s. What is the maximum height reached? (g = 10 m/s²)",
+    "options": {
+      "A": "10 m",
+      "B": "20 m",
+      "C": "30 m",
+      "D": "40 m"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 55,
+    "question": "Which of these materials has the highest specific heat capacity?",
+    "options": {
+      "A": "Water",
+      "B": "Iron",
+      "C": "Copper",
+      "D": "Aluminum"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 56,
+    "question": "A current of 2 A flows through a 10 Ω resistor. What is the power dissipated?",
+    "options": {
+      "A": "20 W",
+      "B": "30 W",
+      "C": "40 W",
+      "D": "50 W"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 57,
+    "question": "What is the angle of refraction if light enters glass (n = 1.5) from air (n = 1) at an angle of incidence of 30°?",
+    "options": {
+      "A": "19.5°",
+      "B": "20.0°",
+      "C": "22.0°",
+      "D": "25.0°"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 58,
+    "question": "What is the focal length of a convex lens with a power of 5 D?",
+    "options": {
+      "A": "0.1 m",
+      "B": "0.2 m",
+      "C": "0.3 m",
+      "D": "0.4 m"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 59,
+    "question": "A wave has a wavelength of 2 m and a frequency of 50 Hz. What is its speed?",
+    "options": {
+      "A": "25 m/s",
+      "B": "50 m/s",
+      "C": "100 m/s",
+      "D": "200 m/s"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 60,
+    "question": "What is the work done by a force of 10 N moving an object 5 m in the direction of the force?",
+    "options": {
+      "A": "25 J",
+      "B": "50 J",
+      "C": "75 J",
+      "D": "100 J"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 61,
+    "question": "What is the frequency of a pendulum with a length of 1 m? (g = 10 m/s²)",
+    "options": {
+      "A": "0.5 Hz",
+      "B": "1.0 Hz",
+      "C": "1.5 Hz",
+      "D": "2.0 Hz"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 62,
+    "question": "Which gas is the primary contributor to the greenhouse effect?",
+    "options": {
+      "A": "Nitrogen",
+      "B": "Oxygen",
+      "C": "Carbon dioxide",
+      "D": "Argon"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 63,
+    "question": "What is the heat required to raise the temperature of 1 kg of water from 20°C to 30°C? (Specific heat of water = 4186 J/kg·°C)",
+    "options": {
+      "A": "4186 J",
+      "B": "20930 J",
+      "C": "41860 J",
+      "D": "83720 J"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 64,
+    "question": "What is the first law of thermodynamics also known as?",
+    "options": {
+      "A": "Law of entropy",
+      "B": "Law of energy conservation",
+      "C": "Law of heat transfer",
+      "D": "Law of thermal equilibrium"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 65,
+    "question": "What is the primary source of energy for Earth's climate system?",
+    "options": {
+      "A": "Geothermal energy",
+      "B": "Solar energy",
+      "C": "Nuclear energy",
+      "D": "Tidal energy"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 66,
+    "question": "What is the speed of sound in air at 20°C?",
+    "options": {
+      "A": "331 m/s",
+      "B": "343 m/s",
+      "C": "350 m/s",
+      "D": "360 m/s"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 67,
+    "question": "What is the unit of electric charge?",
+    "options": {
+      "A": "Ampere",
+      "B": "Volt",
+      "C": "Coulomb",
+      "D": "Ohm"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 68,
+    "question": "A body of mass 2 kg is moving with a velocity of 5 m/s. What is its kinetic energy?",
+    "options": {
+      "A": "25 J",
+      "B": "50 J",
+      "C": "75 J",
+      "D": "100 J"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 69,
+    "question": "What is the direction of the magnetic field inside a solenoid carrying current?",
+    "options": {
+      "A": "Radial",
+      "B": "Circular",
+      "C": "Parallel to the axis",
+      "D": "Perpendicular to the axis"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 70,
+    "question": "What is the efficiency of a machine that does 200 J of work with an input energy of 250 J?",
+    "options": {
+      "A": "70%",
+      "B": "75%",
+      "C": "80%",
+      "D": "85%"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 71,
+    "question": "Which element is the most electronegative?",
+    "options": {
+      "A": "Oxygen",
+      "B": "Fluorine",
+      "C": "Chlorine",
+      "D": "Nitrogen"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 72,
+    "question": "Which gas is produced when calcium carbonate reacts with hydrochloric acid?",
+    "options": {
+      "A": "Oxygen",
+      "B": "Carbon dioxide",
+      "C": "Hydrogen",
+      "D": "Chlorine"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 73,
+    "question": "What is the molecular geometry of H₂O?",
+    "options": {
+      "A": "Linear",
+      "B": "Tetrahedral",
+      "C": "Bent",
+      "D": "Trigonal planar"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 74,
+    "question": "Which element has the highest ionization energy in the second period?",
+    "options": {
+      "A": "Lithium",
+      "B": "Beryllium",
+      "C": "Boron",
+      "D": "Neon"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 75,
+    "question": "What is the pH of a solution with [H⁺] = 1 × 10⁻⁶ M?",
+    "options": {
+      "A": "2",
+      "B": "4",
+      "C": "6",
+      "D": "8"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 76,
+    "question": "Which compound is an isomer of C₄H₁₀?",
+    "options": {
+      "A": "C₄H₈",
+      "B": "C₃H₈",
+      "C": "C₅H₁₂",
+      "D": "C₄H₁₀ (butane)"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 77,
+    "question": "What is the product of the reaction between ethanol and acetic acid?",
+    "options": {
+      "A": "Ethyl acetate",
+      "B": "Acetic anhydride",
+      "C": "Ethanol",
+      "D": "Ethane"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 78,
+    "question": "Which metal is extracted by the electrolytic reduction of its ore?",
+    "options": {
+      "A": "Iron",
+      "B": "Aluminum",
+      "C": "Copper",
+      "D": "Zinc"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 79,
+    "question": "What is the oxidation state of sulfur in H₂SO₄?",
+    "options": {
+      "A": "+2",
+      "B": "+4",
+      "C": "+6",
+      "D": "+8"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 80,
+    "question": "Which functional group is present in aldehydes?",
+    "options": {
+      "A": "-OH",
+      "B": "-CHO",
+      "C": "-COOH",
+      "D": "-NH₂"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 81,
+    "question": "What is the LCM of 12 and 18?",
+    "options": {
+      "A": "24",
+      "B": "36",
+      "C": "48",
+      "D": "72"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 82,
+    "question": "Solve for x: x² - 5x + 6 = 0",
+    "options": {
+      "A": "1, 2",
+      "B": "2, 3",
+      "C": "3, 4",
+      "D": "4, 5"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 83,
+    "question": "What is the area of a circle with radius 7 cm?",
+    "options": {
+      "A": "44 cm²",
+      "B": "154 cm²",
+      "C": "308 cm²",
+      "D": "616 cm²"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 84,
+    "question": "What is the next term in 1, 4, 9, 16, 25?",
+    "options": {
+      "A": "30",
+      "B": "36",
+      "C": "42",
+      "D": "49"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 85,
+    "question": "What is the value of sin 60°?",
+    "options": {
+      "A": "1/2",
+      "B": "√2/2",
+      "C": "√3/2",
+      "D": "1"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 86,
+    "question": "What is 15% of 240?",
+    "options": {
+      "A": "30",
+      "B": "36",
+      "C": "40",
+      "D": "48"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 87,
+    "question": "Solve for x: (2x/3) - 4 = 2",
+    "options": {
+      "A": "9",
+      "B": "10",
+      "C": "12",
+      "D": "15"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 88,
+    "question": "What is the perimeter of a rectangle with length 7 cm and diagonal 25 cm?",
+    "options": {
+      "A": "34 cm",
+      "B": "36 cm",
+      "C": "38 cm",
+      "D": "40 cm"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 89,
+    "question": "What is the value of sin 60°?",
+    "options": {
+      "A": "1/2",
+      "B": "√2/2",
+      "C": "√3/2",
+      "D": "1"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 90,
+    "question": "If a² + b² = 25 and ab = 6, what is (a + b)²?",
+    "options": {
+      "A": "13",
+      "B": "25",
+      "C": "37",
+      "D": "49"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 91,
+    "question": "What is the slope of a line perpendicular to y = -3x + 5?",
+    "options": {
+      "A": "-3",
+      "B": "-1/3",
+      "C": "1/3",
+      "D": "3"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 92,
+    "question": "Solve: 2^(x-1) = 8",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 93,
+    "question": "What is the sum of the interior angles of a pentagon?",
+    "options": {
+      "A": "360°",
+      "B": "540°",
+      "C": "720°",
+      "D": "1080°"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 94,
+    "question": "What is 25% of 80?",
+    "options": {
+      "A": "18",
+      "B": "20",
+      "C": "22",
+      "D": "24"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 95,
+    "question": "Simplify: (x² - 4)/(x - 2)",
+    "options": {
+      "A": "x - 2",
+      "B": "x + 2",
+      "C": "x² + 2",
+      "D": "x - 4"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 96,
+    "question": "What is the HCF of 24 and 36?",
+    "options": {
+      "A": "6",
+      "B": "8",
+      "C": "12",
+      "D": "18"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 97,
+    "question": "Solve for x: x² - 2x - 8 = 0",
+    "options": {
+      "A": "-2, 4",
+      "B": "-4, 2",
+      "C": "2, 4",
+      "D": "-2, -4"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 98,
+    "question": "What is the circumference of a circle with diameter 14 cm?",
+    "options": {
+      "A": "22 cm",
+      "B": "44 cm",
+      "C": "88 cm",
+      "D": "176 cm"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 99,
+    "question": "What is the next term in 3, 7, 12, 18?",
+    "options": {
+      "A": "25",
+      "B": "24",
+      "C": "23",
+      "D": "22"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 100,
+    "question": "What is the value of (2/3)/(1/6)?",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "6"
     },
     "answer": "C"
   }
