@@ -1,4 +1,4 @@
-*DUET Score Analyzer: Automated Student Performance Reports*
+*Automated Student Performance Reports*
 ==============================================================
 A Python script generating personalized HTML reports & Excel rankings for entry tests (CURRENTLY IN DEVELOPMENT)
 *Overview*
@@ -23,3 +23,4 @@ Python 3.x | pandas | ApexCharts | html2canvas | jsPDF | python-dotenv
 * Automates performance report generation, saving instructors time
 * Provides personalized feedback and insights for students
 * Enables data-driven decision making with Excel output and rankings
+
